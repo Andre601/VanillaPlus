@@ -1,0 +1,21 @@
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      VanillaPlus &copy; 2025 is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        CC BY-NC-SA 4.0
+        <span class="twemoji">
+          {% include ".icons/fontawesome/brands/creative-commons.svg" %}
+          {% include ".icons/fontawesome/brands/creative-commons-by.svg" %}
+          {% include ".icons/fontawesome/brands/creative-commons-nc.svg" %}
+          {% include ".icons/fontawesome/brands/creative-commons-sa.svg" %}
+        </span>
+      </a>
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  {% endif %}
+</div>

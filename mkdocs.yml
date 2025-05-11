@@ -1,0 +1,98 @@
+site_name: "VanillaPlus"
+site_description: "Website and Wiki of the VanillaPlus Minecraft Server."
+site_author: "Andre601"
+site_url: "https://docs.andre601.ch/VanillaPlus"
+
+copyright: |-
+  VanillaPlus &copy; 2025 by <a href="https://andre601.ch" target="_blank" rel="nofollow">Andre601</a> and all
+  <a href="https://github.com/Andre601/VanillaPlus/graphs/contributors" target="_blank" rel="nofollow">Contributors</a>
+  is licensed under 
+
+repo_name: "Andre601/VanillaPlus"
+repo_url: "https://github.com/Andre601/VanillaPlus"
+
+theme:
+  name: "material"
+  custom_dir: "docs/.theme"
+  favicon: "assets/img/favicon/android-chrome-512x512.png"
+  logo: "assets/img/favicon/android-chrome-512x512.png"
+  icon:
+    admonition:
+      note: octicons/pencil-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/comment-16
+  palette:
+    scheme: "slate"
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+
+extra_css:
+  - assets/stylesheet/frontpage.css
+
+markdown_extensions: 
+  - attr_list:
+  - toc:
+      permalink: true
+  - md_in_html:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+  - pymdownx.magiclink:
+  - pymdownx.superfences:
+  - pymdownx.tilde:
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+        - download
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.blocks.html:
+
+nav:
+  - Main Site: index.md
+  - About:
+    - about/index.md
+  - Wiki:
+    - wiki/index.md
+    - Armor:
+      - wiki/armor/index.md
+      - wiki/armor/copper_boots.md
+      - wiki/armor/copper_chestplate.md
+      - wiki/armor/copper_helmet.md
+      - wiki/armor/copper_leggings.md
+    - Furniture:
+      - wiki/furniture/index.md
+      - wiki/furniture/chair.md
+      - wiki/furniture/office_table.md
+      - wiki/furniture/trashcan.md
+    - Items:
+      - wiki/items/index.md
+      - wiki/items/aluminum_hammer.md
+      - wiki/items/aluminum_ingot.md
+      - wiki/items/crushed_ender_pearl.md
+      - wiki/items/teleport_crystal.md
