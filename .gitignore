@@ -1,2 +1,6 @@
 # Project exclude paths
 /target/
+/.idea/
+
+# Exclude dependency reduced pom
+/dependency-reduced-pom.xml
