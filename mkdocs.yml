@@ -96,3 +96,14 @@ nav:
       - wiki/items/aluminum_ingot.md
       - wiki/items/crushed_ender_pearl.md
       - wiki/items/teleport_crystal.md
+    - Tools:
+      - wiki/tools/index.md
+      - wiki/tools/copper_axe.md
+      - wiki/tools/copper_hoe.md
+      - wiki/tools/copper_pickaxe.md
+      - wiki/tools/copper_shovel.md
+      - wiki/tools/scythe.md
+    - Weapons:
+      - wiki/weapons/copper_sword.md
+      - wiki/weapons/iron_bow.md
+      
