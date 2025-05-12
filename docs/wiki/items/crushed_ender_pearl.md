@@ -18,7 +18,7 @@
 </table>
 ///
 
-**Crushed Ender Pearl** is an item used to craft the [Teleport Crystal](teleport_crystal.md).
+**Crushed Ender Pearl** is an item used to craft the [Teleport Crystal](../tools/teleport_crystal.md).
 
 ## Obtaining
 
@@ -27,10 +27,7 @@
 /// note | This recipe is Shapeless.
 ///
 
-The Aluminum Hammer will be returned in the crafting grid with 1 durability being removed from it.  
-Should the Aluminum Hammer have no durability left will it be removed.
-
-The recipe will return 2 Crushed Ender Pearls for 1 Ender Pearl.
+The Aluminum Hammer used will be returned in the Crafting Grid with one durability used.
 
 | Ingredients                                         | Crafting recipe                                                                                    |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------------|

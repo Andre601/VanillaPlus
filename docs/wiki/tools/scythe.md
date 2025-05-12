@@ -13,7 +13,7 @@
     </tr>
     <tr>
       <td>Durability</td>
-      <td>10</td>
+      <td>Wood: 59<br>Stone: 131<br>Gold: 32<br>Copper: 190<br>Iron: 250<br>Diamond: 1561<br>Netherite: 2031</td>
     </tr>
     <tr>
       <td>Stackable</td>
@@ -27,7 +27,20 @@
 
 ## Usage
 
-By left-clicking to harvest any crop (Wheat, Carrots, Potatoes, etc.) will the scythe harvest a `3x3` area. Only fully grown crops will be harvested and other blocks remain unaffected.
+Harvesting any crops (Wheat, Carrots, Potatoes, etc.) with the Scythe will also harvest any mature crop in the surrounding 8 blocks of the harvested crop, allowing the player to farm a `3x3` area with a single use of the Scythe.
+
+### List of Harvestable Blocks
+
+| Block          | Notes                            |
+|----------------|----------------------------------|
+| Beetroot       | Only harvested once fully grown. |
+| Brown Mushroom |                                  |
+| Carrot         | Only harvested once fully grown. |
+| Potato         | Only harvested once fully grown. |
+| Red Mushroom   |                                  |
+| Short Grass    |                                  |
+| Tall Grass     |                                  |
+| Wheat          | Only harvested once fully grown. |
 
 ## Obtaining
 
@@ -44,7 +57,7 @@ By left-clicking to harvest any crop (Wheat, Carrots, Potatoes, etc.) will the s
 
 ### Smithing
 
-A Netherite Scythe can be made by putting a Diamond Scythe alongside a Netherite Upgrade Template and a Netherite Ingot into a Smithing Table.
+A Netherite Scythe can be crafted in a Smithing table by placing a Diamond Scythe alongside a Netherite Ingot and a Netherite Upgrade Template in it.
 
 ## Data Values
 

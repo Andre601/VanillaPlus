@@ -35,11 +35,15 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.indexes
 
 extra_css:
   - assets/stylesheet/frontpage.css
+
+plugins: 
+  - search
+  - glightbox
+
 
 markdown_extensions: 
   - attr_list:
@@ -85,6 +89,10 @@ nav:
       - wiki/armor/copper_chestplate.md
       - wiki/armor/copper_helmet.md
       - wiki/armor/copper_leggings.md
+    - Blocks:
+      - wiki/blocks/aluminum_block.md
+      - wiki/blocks/bauxite_ore.md
+      - wiki/blocks/raw_bauxite_block.md
     - Furniture:
       - wiki/furniture/index.md
       - wiki/furniture/chair.md
@@ -95,15 +103,21 @@ nav:
       - wiki/items/aluminum_hammer.md
       - wiki/items/aluminum_ingot.md
       - wiki/items/crushed_ender_pearl.md
-      - wiki/items/teleport_crystal.md
+      - wiki/items/iron_rod.md
+      - wiki/items/raw_bauxite.md
+    - Mechanics:
+      - wiki/mechanics/claims.md
     - Tools:
       - wiki/tools/index.md
       - wiki/tools/copper_axe.md
       - wiki/tools/copper_hoe.md
       - wiki/tools/copper_pickaxe.md
       - wiki/tools/copper_shovel.md
+      - wiki/tools/recipe_book.md
       - wiki/tools/scythe.md
+      - wiki/tools/teleport_crystal.md
     - Weapons:
+      - wiki/weapons/index.md
       - wiki/weapons/copper_sword.md
       - wiki/weapons/iron_bow.md
       

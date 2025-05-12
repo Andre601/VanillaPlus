@@ -26,7 +26,7 @@ The Item exists in all 12 wood types.
 ## Usage
 
 The item can be placed on the ground by right-clicking with it.  
-A free area of at least 1 x 3 x 1 (l x w x h) is required for the item to be placable.
+A free area of at least `1x3x1` (`LxWxH`) is required for the item to be placable.
 
 ## Obtaining
 

@@ -23,6 +23,15 @@
 
 ## Obtaining
 
+### Crafting
+
+/// note | This recipe is Shapeless.
+///
+
+| Ingredients | Crafting recipe |
+|----|----|
+| [Block of Aluminum](../blocks/aluminum_block.md) | ![recipes](../../assets/img/recipes/aluminum_ingot.png) |
+
 ### Smelting
 
 Aluminum Ingots can be obtained by smelting [Raw Bauxite](raw_bauxite.md) in a Furnace or Blast furnace.  

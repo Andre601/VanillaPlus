@@ -37,9 +37,9 @@ The saving will only work if the player has at least 1 XP level available, while
 /// note | This recipe is Shapeless.
 ///
 
-| Ingredients                                                    | Crafting recipe                                                                              |
-|----------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| Amethyst Shard + [Crushed Ender Pearl](crushed_ender_pearl.md) | ![teleport_crystal](../../assets/img/recipes/teleport_crystal.png){ style="max-width: 75%" } |
+| Ingredients                                                             | Crafting recipe                                                                              |
+|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| Amethyst Shard + [Crushed Ender Pearl](../items/crushed_ender_pearl.md) | ![teleport_crystal](../../assets/img/recipes/teleport_crystal.png){ style="max-width: 75%" } |
 
 ## Data Values
 

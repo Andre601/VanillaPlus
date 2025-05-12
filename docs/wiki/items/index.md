@@ -15,9 +15,13 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
     
 -   ### [Crushed Ender Pearl](crushed_ender_pearl.md)
     
-    Crushed Ender Pearl is an item used to craft the [Teleport Crystal](teleport_crystal.md).
+    Crushed Ender Pearl is an item used to craft the [Teleport Crystal](../tools/teleport_crystal.md).
+
+-   ### [Iron Rod](iron_rod.md)
     
--   ### [Teleport Crystal](teleport_crystal.md)
+    Iron Rod is an item that can be crafted from 2 Iron Ingots.
+
+-   ### [Raw Bauxite](raw_bauxite.md)
     
-    Teleport Crystal is an item that allows you to save a location to later teleport back to.
+    Raw Bauxite is an item obtained from Bauxite Ore that can be smelted into [Aluminun Ingots](aluminum_ingot.md).
 ///

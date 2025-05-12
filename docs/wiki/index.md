@@ -16,4 +16,12 @@ This Wiki aims to help you understand the individual features this server has, s
 -   ### [Items](items/index.md)
     
     VanillaPlus contains various Items that can be obtained naturally or through other means such as crafting, smelting or smithing.
+
+-   ### [Tools](tools/index.md)
+    
+    VanillaPlus provides a Set of tools, such as Copper-tier tools or the [Scythe](tools/scythe.md).
+
+-   ### [Weapons](weapons/index.md)
+    
+    VanillaPlus provides custom weapons that can be crafted.
 ///
