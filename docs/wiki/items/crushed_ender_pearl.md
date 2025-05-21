@@ -24,14 +24,10 @@
 
 ### Crafting
 
-/// note | This recipe is Shapeless.
+/// info | Will use 1 durability from the Aluminum Hammer
 ///
 
-The Aluminum Hammer used will be returned in the Crafting Grid with one durability used.
-
-| Ingredients                                         | Crafting recipe                                                                                    |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [Aluminum Hammer](aluminum_hammer.md) + Ender Pearl | ![crushed_ender_pearl](../../assets/img/recipes/crushed_ender_pearl.png){ style="max-width: 75%" } |
+{{ crafting("crushed_ender_pearl") }}
 
 ## Data Values
 

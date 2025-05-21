@@ -46,18 +46,16 @@ Harvesting any crops (Wheat, Carrots, Potatoes, etc.) with the Scythe will also 
 
 ### Crafting
 
-| Ingredients                    | Crafting recipe                                                                          |
-|--------------------------------|------------------------------------------------------------------------------------------|
-| Matching Wooden Planks + Stick | ![wooden_scythe](../../assets/img/recipes/wooden_scythe.gif){ style="max-width: 75%" }   |
-| Cobblestone + Stick            | ![stone_scythe](../../assets/img/recipes/stone_scythe.gif){ style="max-width: 75%" }     |
-| Gold Ingot + Stick             | ![golden_scythe](../../assets/img/recipes/golden_scythe.gif){ style="max-width: 75%" }   |
-| Copper Ingot + Stick           | ![copper_scythe](../../assets/img/recipes/copper_scythe.gif){ style="max-width: 75%" }   |
-| Iron Ingot + Stick             | ![iron_scythe](../../assets/img/recipes/iron_scythe.gif){ style="max-width: 75%" }       |
-| Diamond + Stick                | ![diamond_scythe](../../assets/img/recipes/diamond_scythe.gif){ style="max-width: 75%" } |
+{{ crafting("wooden_scythe", footer=False) }}
+{{ crafting("stone_scythe", header=False, footer=False) }}
+{{ crafting("golden_scythe", header=False, footer=False) }}
+{{ crafting("copper_scythe", header=False, footer=False) }}
+{{ crafting("iron_scythe", header=False, footer=False) }}
+{{ crafting("diamond_scythe", header=False) }}
 
 ### Smithing
 
-A Netherite Scythe can be crafted in a Smithing table by placing a Diamond Scythe alongside a Netherite Ingot and a Netherite Upgrade Template in it.
+{{ smithing("netherite_scythe") }}
 
 ## Data Values
 

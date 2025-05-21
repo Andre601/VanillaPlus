@@ -43,9 +43,7 @@ The block can be placed at 3 orientations similar to Logs.
 
 ### Crafting
 
-| Ingredients                                  | Crafting recipe                                                                          |
-|----------------------------------------------|------------------------------------------------------------------------------------------|
-| [Aluminum Ingot](../items/aluminum_ingot.md) | ![aluminum_block](../../assets/img/recipes/aluminum_block.png){ style="max-width: 75%" } |
+{{ crafting("aluminum_block") }}
 
 ## Data Values
 

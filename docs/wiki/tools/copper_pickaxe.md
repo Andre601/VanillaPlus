@@ -31,9 +31,7 @@ It is considered the same tier as an Iron Pickaxe, meaning any block that can be
 
 ### Crafting
 
-| Ingredients          | Crafting recipe                                                                          |
-|----------------------|------------------------------------------------------------------------------------------|
-| Copper Ingot + Stick | ![copper_pickaxe](../../assets/img/recipes/copper_pickaxe.png){ style="max-width: 75%" } |
+{{ crafting("copper_pickaxe") }}
 
 ## Data Values
 

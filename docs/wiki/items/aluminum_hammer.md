@@ -36,9 +36,7 @@ There are no other uses for this item outside the crafting recipes.
 
 ### Crafting
 
-| Ingredients                                 | Crafting recipe                                                                            |
-|---------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Aluminum Ingot](aluminum_ingot.md) + Stick | ![aluminum_hammer](../../assets/img/recipes/aluminum_hammer.gif){ style="max-width: 75%" } |
+{{ crafting("aluminum_hammer") }}
 
 ## Data Values
 

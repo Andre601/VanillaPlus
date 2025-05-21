@@ -29,9 +29,7 @@ Iron Rods are used in crafting recipes for weapons such as the [Iron Bow](../wea
 
 ### Crafting
 
-| Ingredients | Crafting recipe                                                              |
-|-------------|------------------------------------------------------------------------------|
-| Iron Ingot  | ![iron_rod](../../assets/img/recipes/iron_rod.png){ style="max-width: 75%" } |
+{{ crafting("iron_rod") }}
 
 ## Data Values
 

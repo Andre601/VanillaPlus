@@ -29,9 +29,7 @@
 
 ### Crafting
 
-| Ingredients          | Crafting recipe                                                                  |
-|----------------------|----------------------------------------------------------------------------------|
-| Copper Ingot + Stick | ![copper_hoe](../../assets/img/recipes/copper_hoe.gif){ style="max-width: 75%" } |
+{{ crafting("copper_hoe") }}
 
 ## Data Values
 

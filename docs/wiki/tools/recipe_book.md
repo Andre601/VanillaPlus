@@ -33,12 +33,7 @@ Right-clicking with the Item in hand will open the Recipes GUI, which lists all 
 
 ### Crafting
 
-/// note | This recipe is Shapeless.
-///
-
-| Ingredients           | Crafting recipe                                                                    |
-|-----------------------|------------------------------------------------------------------------------------|
-| Crafting Table + Book | ![recipe_book](../../assets/img/recipes/recipe_book.png){ style="max-width: 75%" } |
+{{ crafting("recipe_book") }}
 
 ## Data Values
 

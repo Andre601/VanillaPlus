@@ -29,9 +29,7 @@
 
 ### Crafting
 
-| Ingredients          | Crafting recipe                                                                      |
-|----------------------|--------------------------------------------------------------------------------------|
-| Copper Ingot + Stick | ![copper_sword](../../assets/img/recipes/copper_sword.png){ style="max-width: 75%" } |
+{{ crafting("copper_sword") }}
 
 ## Data Values
 

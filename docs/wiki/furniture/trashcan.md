@@ -31,9 +31,7 @@ Interacting with the furniture through right-clicking it will open an inventory.
 
 ### Crafting
 
-| Ingredients                                  | Crafting recipe                                                              |
-|----------------------------------------------|------------------------------------------------------------------------------|
-| [Aluminum Ingot](../items/aluminum_ingot.md) | ![trashcan](../../assets/img/recipes/trashcan.png){ style="max-width: 75%" } |
+{{ crafting("trashcan") }}
 
 ## Data Values
 

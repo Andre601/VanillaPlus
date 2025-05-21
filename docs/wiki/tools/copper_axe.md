@@ -29,9 +29,7 @@
 
 ### Crafting
 
-| Ingredients          | Crafting recipe                                                                  |
-|----------------------|----------------------------------------------------------------------------------|
-| Copper Ingot + Stick | ![copper_axe](../../assets/img/recipes/copper_axe.gif){ style="max-width: 75%" } |
+{{ crafting("copper_axe") }}
 
 ## Data Values
 

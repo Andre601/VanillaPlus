@@ -25,12 +25,7 @@
 
 ### Crafting
 
-/// info | This recipe is shapeless.
-///
-
-| Ingredients                                            | Crafting recipe                                          |
-|--------------------------------------------------------|----------------------------------------------------------|
-| [Block of raw Bauxite](../blocks/raw_bauxite_block.md) | ![raw_bauxite](../../assets/img/recipes/raw_bauxite.png) |
+{{ crafting("raw_bauxite") }}
 
 ### Mining
 

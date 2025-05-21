@@ -32,9 +32,18 @@ Holding the sneak button will dismount the player from the chair.
 
 ### Crafting
 
-| Ingredients                                                                         | Crafting recipe                                                        |
-|-------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Matching Wooden Fence Gate + Matching Wooden Fences + Matching Wooden Slab + Carpet | ![chair](../../assets/img/recipes/chair.gif){ style="max-width: 75%" } |
+{{ crafting("acacia_chair", footer=False) }}
+{{ crafting("bamboo_chair", header=False, footer=False) }}
+{{ crafting("birch_chair", header=False, footer=False) }}
+{{ crafting("cherry_chair", header=False, footer=False) }}
+{{ crafting("crimson_chair", header=False, footer=False) }}
+{{ crafting("dark_oak_chair", header=False, footer=False) }}
+{{ crafting("jungle_chair", header=False, footer=False) }}
+{{ crafting("mangrove_chair", header=False, footer=False) }}
+{{ crafting("oak_chair", header=False, footer=False) }}
+{{ crafting("pale_oak_chair", header=False, footer=False) }}
+{{ crafting("spruce_chair", header=False, footer=False) }}
+{{ crafting("warped_chair", header=False) }}
 
 ## Data Values
 

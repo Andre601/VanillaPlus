@@ -25,17 +25,12 @@
 
 ### Crafting
 
-/// note | This recipe is Shapeless.
-///
-
-| Ingredients | Crafting recipe |
-|----|----|
-| [Block of Aluminum](../blocks/aluminum_block.md) | ![recipes](../../assets/img/recipes/aluminum_ingot.png) |
+{{ crafting("aluminum_ingot") }}
 
 ### Smelting
 
-Aluminum Ingots can be obtained by smelting [Raw Bauxite](raw_bauxite.md) in a Furnace or Blast furnace.  
-It takes 10 seconds for 1 Raw Bauxite to be smelted into 1 Aluminum Ingot and you gain 0.8 Experience for every smelted item you take out from the furnace.
+{{ smelting("aluminum_ingot_1", footer=False) }}
+{{ smelting("aluminum_ingot_2", header=False) }}
 
 ## Data Values
 

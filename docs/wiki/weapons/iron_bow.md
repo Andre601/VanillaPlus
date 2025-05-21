@@ -29,9 +29,7 @@
 
 ### Crafting
 
-| Ingredients          | Crafting recipe                                                              |
-|----------------------|------------------------------------------------------------------------------|
-| Copper Ingot + Stick | ![iron_bow](../../assets/img/recipes/iron_bow.gif){ style="max-width: 75%" } |
+{{ crafting("iron_bow") }}
 
 ## Data Values
 

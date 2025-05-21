@@ -29,9 +29,7 @@
 
 ### Crafting
 
-| Ingredients          | Crafting recipe                                                                        |
-|----------------------|----------------------------------------------------------------------------------------|
-| Copper Ingot + Stick | ![copper_shovel](../../assets/img/recipes/copper_shovel.png){ style="max-width: 75%" } |
+{{ crafting("copper_shovel") }}
 
 ## Data Values
 

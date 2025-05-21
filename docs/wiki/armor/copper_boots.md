@@ -40,9 +40,8 @@ The Item accepts any enchantment that Chestplates of different tiers can receive
 
 ### Crafting
 
-| Ingredients  | Crafting recipe                                                                      |
-|--------------|--------------------------------------------------------------------------------------|
-| Copper Ingot | ![copper_boots](../../assets/img/recipes/copper_boots.png){ style="max-width: 75%" } |
+{{ crafting("copper_boots") }}
+
 
 ## Data Values
 

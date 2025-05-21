@@ -32,9 +32,18 @@ A free area of at least `1x3x1` (`LxWxH`) is required for the item to be placabl
 
 ### Crafting
 
-| Ingredients                                  | Crafting recipe                                                        |
-|----------------------------------------------|------------------------------------------------------------------------|
-| Matching Wooden Slab + Matching Stripped Log | ![office_table](../../assets/img/recipes/office_table.gif){ style="max-width: 75%" } |
+{{ crafting("acacia_office_table", footer=False) }}
+{{ crafting("bamboo_office_table", header=False, footer=False) }}
+{{ crafting("birch_office_table", header=False, footer=False) }}
+{{ crafting("cherry_office_table", header=False, footer=False) }}
+{{ crafting("crimson_office_table", header=False, footer=False) }}
+{{ crafting("dark_oak_office_table", header=False, footer=False) }}
+{{ crafting("jungle_office_table", header=False, footer=False) }}
+{{ crafting("mangrove_office_table", header=False, footer=False) }}
+{{ crafting("oak_office_table", header=False, footer=False) }}
+{{ crafting("pale_oak_office_table", header=False, footer=False) }}
+{{ crafting("spruce_office_table", header=False, footer=False) }}
+{{ crafting("warped_office_table", header=False) }}
 
 ## Data Values
 

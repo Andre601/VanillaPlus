@@ -1,0 +1,908 @@
+{
+    "crafting": {
+        "acacia_chair": {
+            "result": "acacia_chair",
+            "slot1": "acacia_fence_gate",
+            "slot2": "carpet",
+            "slot4": "acacia_fence",
+            "slot5": "acacia_slab",
+            "slot6": "acacia_fence"
+        },
+        "acacia_office_table": {
+            "result": "acacia_office_table",
+            "slot1": "acacia_slab",
+            "slot2": "acacia_slab",
+            "slot3": "acacia_slab",
+            "slot4": "stripped_acacia_log",
+            "slot6": "stripped_acacia_log"
+        },
+        "aluminum_block": {
+            "result": "aluminum_block",
+            "slot1": "aluminum_ingot",
+            "slot2": "aluminum_ingot",
+            "slot3": "aluminum_ingot",
+            "slot4": "aluminum_ingot",
+            "slot5": "aluminum_ingot",
+            "slot6": "aluminum_ingot",
+            "slot7": "aluminum_ingot",
+            "slot8": "aluminum_ingot",
+            "slot9": "aluminum_ingot"
+        },
+        "aluminum_hammer": {
+            "result": "aluminum_hammer",
+            "slot2": "aluminum_ingot",
+            "slot5": "stick",
+            "slot6": "aluminum_ingot",
+            "slot7": "stick"
+        },
+        "aluminum_ingot": {
+            "result": "aluminum_ingot",
+            "slot1": "aluminum_block",
+            "shapeless": true,
+            "quantity": 9
+        },
+        "bamboo_chair": {
+            "result": "bamboo_chair",
+            "slot1": "bamboo_fence_gate",
+            "slot2": "carpet",
+            "slot4": "bamboo_fence",
+            "slot5": "bamboo_slab",
+            "slot6": "bamboo_fence"
+        },
+        "bamboo_office_table": {
+            "result": "bamboo_office_table",
+            "slot1": "bamboo_slab",
+            "slot2": "bamboo_slab",
+            "slot3": "bamboo_slab",
+            "slot4": "stripped_bamboo_block",
+            "slot6": "stripped_bamboo_block"
+        },
+        "birch_chair": {
+            "result": "birch_chair",
+            "slot1": "birch_fence_gate",
+            "slot2": "carpet",
+            "slot4": "birch_fence",
+            "slot5": "birch_slab",
+            "slot6": "birch_fence"
+        },
+        "birch_office_table": {
+            "result": "birch_office_table",
+            "slot1": "birch_slab",
+            "slot2": "birch_slab",
+            "slot3": "birch_slab",
+            "slot4": "stripped_birch_log",
+            "slot6": "stripped_birch_log"
+        },
+        "cherry_chair": {
+            "result": "cherry_chair",
+            "slot1": "cherry_fence_gate",
+            "slot2": "carpet",
+            "slot4": "cherry_fence",
+            "slot5": "cherry_slab",
+            "slot6": "cherry_fence"
+        },
+        "cherry_office_table": {
+            "result": "cherry_office_table",
+            "slot1": "cherry_slab",
+            "slot2": "cherry_slab",
+            "slot3": "cherry_slab",
+            "slot4": "stripped_cherry_log",
+            "slot6": "stripped_cherry_log"
+        },
+        "copper_axe": {
+            "result": "copper_axe",
+            "slot1": "copper_ingot",
+            "slot2": "copper_ingot",
+            "slot4": "copper_ingot",
+            "slot5": "stick",
+            "slot8": "stick"
+        },
+        "copper_boots": {
+            "result": "copper_boots",
+            "slot1": "copper_ingot",
+            "slot3": "copper_ingot",
+            "slot4": "copper_ingot",
+            "slot6": "copper_ingot"
+        },
+        "copper_chestplate": {
+            "result": "copper_chestplate",
+            "slot1": "copper_ingot",
+            "slot3": "copper_ingot",
+            "slot4": "copper_ingot",
+            "slot5": "copper_ingot",
+            "slot6": "copper_ingot",
+            "slot7": "copper_ingot",
+            "slot8": "copper_ingot",
+            "slot9": "copper_ingot"
+        },
+        "copper_helmet": {
+            "result": "copper_helmet",
+            "slot1": "copper_ingot",
+            "slot2": "copper_ingot",
+            "slot3": "copper_ingot",
+            "slot4": "copper_ingot",
+            "slot6": "copper_ingot"
+        },
+        "copper_hoe": {
+            "result": "copper_hoe",
+            "slot1": "copper_ingot",
+            "slot2": "copper_ingot",
+            "slot5": "stick",
+            "slot8": "stick"
+        },
+        "copper_leggings": {
+            "result": "copper_leggings",
+            "slot1": "copper_ingot",
+            "slot2": "copper_ingot",
+            "slot3": "copper_ingot",
+            "slot4": "copper_ingot",
+            "slot6": "copper_ingot",
+            "slot7": "copper_ingot",
+            "slot9": "copper_ingot"
+        },
+        "copper_pickaxe": {
+            "result": "copper_pickaxe",
+            "slot1": "copper_ingot",
+            "slot2": "copper_ingot",
+            "slot3": "copper_ingot",
+            "slot5": "stick",
+            "slot8": "stick"
+        },
+        "copper_scythe": {
+            "result": "copper_scythe",
+            "slot2": "copper_ingot",
+            "slot3": "copper_ingot",
+            "slot4": "copper_ingot",
+            "slot6": "stick",
+            "slot9": "stick"
+        },
+        "copper_shovel": {
+            "result": "copper_shovel",
+            "slot2": "copper_ingot",
+            "slot5": "stick",
+            "slot8": "stick"
+        },
+        "copper_sword": {
+            "result": "copper_sword",
+            "slot2": "copper_ingot",
+            "slot5": "copper_ingot",
+            "slot8": "stick"
+        },
+        "crimson_chair": {
+            "result": "crimson_chair",
+            "slot1": "crimson_fence_gate",
+            "slot2": "carpet",
+            "slot4": "crimson_fence",
+            "slot5": "crimson_slab",
+            "slot6": "crimson_fence"
+        },
+        "crimson_office_table": {
+            "result": "crimson_office_table",
+            "slot1": "crimson_slab",
+            "slot2": "crimson_slab",
+            "slot3": "crimson_slab",
+            "slot4": "stripped_crimson_stem",
+            "slot6": "stripped_crimson_stem"
+        },
+        "crushed_ender_pearl": {
+            "result": "crushed_ender_pearl",
+            "slot1": "ender_pearl",
+            "slot2": "aluminum_hammer",
+            "shapeless": true,
+            "quantity": 2
+        },
+        "dark_oak_chair": {
+            "result": "dark_oak_chair",
+            "slot1": "dark_oak_fence_gate",
+            "slot2": "carpet",
+            "slot4": "dark_oak_fence",
+            "slot5": "dark_oak_slab",
+            "slot6": "dark_oak_fence"
+        },
+        "dark_oak_office_table": {
+            "result": "dark_oak_office_table",
+            "slot1": "dark_oak_slab",
+            "slot2": "dark_oak_slab",
+            "slot3": "dark_oak_slab",
+            "slot4": "stripped_dark_oak_log",
+            "slot6": "stripped_dark_oak_log"
+        },
+        "diamond_scythe": {
+            "result": "diamond_scythe",
+            "slot2": "diamond",
+            "slot3": "diamond",
+            "slot4": "diamond",
+            "slot6": "stick",
+            "slot9": "stick"
+        },
+        "golden_scythe": {
+            "result": "golden_scythe",
+            "slot2": "gold_ingot",
+            "slot3": "gold_ingot",
+            "slot4": "gold_ingot",
+            "slot6": "stick",
+            "slot9": "stick"
+        },
+        "iron_bow": {
+            "result": "iron_bow",
+            "slot2": "iron_rod",
+            "slot3": "string",
+            "slot4": "iron_rod",
+            "slot6": "string",
+            "slot8": "iron_rod",
+            "slot9": "string"
+        },
+        "iron_rod": {
+            "result": "iron_rod",
+            "slot2": "iron_ingot",
+            "slot5": "iron_ingot",
+            "quantity": 4
+        },
+        "iron_scythe": {
+            "result": "iron_scythe",
+            "slot2": "iron_ingot",
+            "slot3": "iron_ingot",
+            "slot4": "iron_ingot",
+            "slot6": "stick",
+            "slot9": "stick"
+        },
+        "jungle_chair": {
+            "result": "jungle_chair",
+            "slot1": "jungle_fence_gate",
+            "slot2": "carpet",
+            "slot4": "jungle_fence",
+            "slot5": "jungle_slab",
+            "slot6": "jungle_fence"
+        },
+        "jungle_office_table": {
+            "result": "jungle_office_table",
+            "slot1": "jungle_slab",
+            "slot2": "jungle_slab",
+            "slot3": "jungle_slab",
+            "slot4": "stripped_jungle_log",
+            "slot6": "stripped_jungle_log"
+        },
+        "mangrove_chair": {
+            "result": "mangrove_chair",
+            "slot1": "mangrove_fence_gate",
+            "slot2": "carpet",
+            "slot4": "mangrove_fence",
+            "slot5": "mangrove_slab",
+            "slot6": "mangrove_fence"
+        },
+        "mangrove_office_table": {
+            "result": "mangrove_office_table",
+            "slot1": "mangrove_slab",
+            "slot2": "mangrove_slab",
+            "slot3": "mangrove_slab",
+            "slot4": "stripped_mangrove_log",
+            "slot6": "stripped_mangrove_log"
+        },
+        "oak_chair": {
+            "result": "oak_chair",
+            "slot1": "oak_fence_gate",
+            "slot2": "carpet",
+            "slot4": "oak_fence",
+            "slot5": "oak_slab",
+            "slot6": "oak_fence"
+        },
+        "oak_office_table": {
+            "result": "oak_office_table",
+            "slot1": "oak_slab",
+            "slot2": "oak_slab",
+            "slot3": "oak_slab",
+            "slot4": "stripped_oak_log",
+            "slot6": "stripped_oak_log"
+        },
+        "pale_oak_chair": {
+            "result": "pale_oak_chair",
+            "slot1": "pale_oak_fence_gate",
+            "slot2": "carpet",
+            "slot4": "pale_oak_fence",
+            "slot5": "pale_oak_slab",
+            "slot6": "pale_oak_fence"
+        },
+        "pale_oak_office_table": {
+            "result": "pale_oak_office_table",
+            "slot1": "pale_oak_slab",
+            "slot2": "pale_oak_slab",
+            "slot3": "pale_oak_slab",
+            "slot4": "stripped_pale_oak_log",
+            "slot6": "stripped_pale_oak_log"
+        },
+        "raw_bauxite": {
+            "result": "raw_bauxite",
+            "slot1": "raw_bauxite_block",
+            "shapeless": true,
+            "quantity": 9
+        },
+        "raw_bauxite_block": {
+            "result": "raw_bauxite_block",
+            "slot1": "raw_bauxite",
+            "slot2": "raw_bauxite",
+            "slot3": "raw_bauxite",
+            "slot4": "raw_bauxite",
+            "slot5": "raw_bauxite",
+            "slot6": "raw_bauxite",
+            "slot7": "raw_bauxite",
+            "slot8": "raw_bauxite",
+            "slot9": "raw_bauxite"
+        },
+        "recipe_book": {
+            "result": "recipe_book",
+            "slot1": "crafting_table",
+            "slot2": "book",
+            "shapeless": true
+        },
+        "spruce_chair": {
+            "result": "spruce_chair",
+            "slot1": "spruce_fence_gate",
+            "slot2": "carpet",
+            "slot4": "spruce_fence",
+            "slot5": "spruce_slab",
+            "slot6": "spruce_fence"
+        },
+        "spruce_office_table": {
+            "result": "spruce_office_table",
+            "slot1": "spruce_slab",
+            "slot2": "spruce_slab",
+            "slot3": "spruce_slab",
+            "slot4": "stripped_spruce_log",
+            "slot6": "stripped_spruce_log"
+        },
+        "stone_scythe": {
+            "result": "stone_scythe",
+            "slot2": "cobblestone",
+            "slot3": "cobblestone",
+            "slot4": "cobblestone",
+            "slot6": "stick",
+            "slot9": "stick"
+        },
+        "teleport_crystal": {
+            "result": "teleport_crystal",
+            "slot1": "crushed_ender_pearl",
+            "slot2": "amethyst_shard",
+            "shapeless": true
+        },
+        "trashcan": {
+            "result": "trashcan",
+            "slot1": "aluminum_ingot",
+            "slot3": "aluminum_ingot",
+            "slot4": "aluminum_ingot",
+            "slot6": "aluminum_ingot",
+            "slot7": "aluminum_ingot",
+            "slot8": "aluminum_ingot",
+            "slot9": "aluminum_ingot"
+        },
+        "warped_chair": {
+            "result": "warped_chair",
+            "slot1": "warped_fence_gate",
+            "slot2": "carpet",
+            "slot4": "warped_fence",
+            "slot5": "warped_slab",
+            "slot6": "warped_fence"
+        },
+        "warped_office_table": {
+            "result": "warped_office_table",
+            "slot1": "warped_slab",
+            "slot2": "warped_slab",
+            "slot3": "warped_slab",
+            "slot4": "stripped_warped_stem",
+            "slot6": "stripped_warped_stem"
+        },
+        "wooden_scythe": {
+            "result": "wooden_scythe",
+            "slot2": "planks",
+            "slot3": "planks",
+            "slot4": "planks",
+            "slot6": "stick",
+            "slot9": "stick"
+        }
+    },
+    "items": {
+        "acacia_chair": {
+            "title": "Acacia Chair",
+            "img": "furniture/acacia_chair.gif"
+        },
+        "acacia_fence": {
+            "title": "Acacia Fence",
+            "img": "blocks/acacia_fence.png"
+        },
+        "acacia_fence_gate": {
+            "title": "Acacia Fence Gate",
+            "img": "blocks/acacia_fence_gate.png"
+        },
+        "acacia_office_table": {
+            "title": "Acacia Office Table",
+            "img": "furniture/acacia_office_table.png"
+        },
+        "acacia_slab": {
+            "title": "Acacia Slab",
+            "img": "blocks/acacia_slab.png"
+        },
+        "aluminum_block": {
+            "title": "Block of Aluminum",
+            "img": "blocks/aluminum_block.png",
+            "link": "blocks/aluminum_block"
+        },
+        "aluminum_ingot": {
+            "title": "Aluminum Ingot",
+            "img": "items/aluminum_ingot.png",
+            "link": "items/aluminum_ingot"
+        },
+        "aluminum_hammer": {
+            "title": "Aluminum Hammer",
+            "img": "items/aluminum_hammer.png",
+            "link": "items/aluminum_hammer"
+        },
+        "amethyst_shard": {
+            "title": "Amethyst Shard",
+            "img": "items/amethyst_shard.png"
+        },
+        "bamboo_chair": {
+            "title": "Bamboo Chair",
+            "img": "furniture/bamboo_chair.gif"
+        },
+        "bamboo_fence": {
+            "title": "Bamboo Fence",
+            "img": "blocks/bamboo_fence.png"
+        },
+        "bamboo_fence_gate": {
+            "title": "Bamboo Fence Gate",
+            "img": "blocks/bamboo_fence_gate.png"
+        },
+        "bamboo_slab": {
+            "title": "Bamboo Slab",
+            "img": "blocks/bamboo_slab.png"
+        },
+        "bamboo_office_table": {
+            "title": "Bamboo Office Table",
+            "img": "furniture/bamboo_office_table.png"
+        },
+        "birch_chair": {
+            "title": "Birch Chair",
+            "img": "furniture/birch_chair.gif"
+        },
+        "birch_fence": {
+            "title": "Birch Fence",
+            "img": "blocks/birch_fence.png"
+        },
+        "birch_fence_gate": {
+            "title": "Birch Fence Gate",
+            "img": "blocks/birch_fence_gate.png"
+        },
+        "birch_office_table": {
+            "title": "Birch Office Table",
+            "img": "furniture/birch_office_table.png"
+        },
+        "birch_slab": {
+            "title": "Birch Slab",
+            "img": "blocks/birch_slab.png"
+        },
+        "book": {
+            "title": "Book",
+            "img": "items/book.png"
+        },
+        "carpet": {
+            "title": "Carpet [Any]",
+            "lore": "<gray>Any carpet can be used.",
+            "img": "blocks/carpet.gif"
+        },
+        "cherry_chair": {
+            "title": "Cherry Chair",
+            "img": "furniture/cherry_chair.gif"
+        },
+        "cherry_fence": {
+            "title": "Cherry Fence",
+            "img": "blocks/cherry_fence.png"
+        },
+        "cherry_fence_gate": {
+            "title": "Cherry Fence Gate",
+            "img": "blocks/cherry_fence_gate.png"
+        },
+        "cherry_office_table": {
+            "title": "Cherry Office Table",
+            "img": "furniture/cherry_office_table.png"
+        },
+        "cherry_slab": {
+            "title": "Cherry Slab",
+            "img": "blocks/cherry_slab.png"
+        },
+        "cobblestone": {
+            "title": "Cobblestone",
+            "img": "blocks/cobblestone.png"
+        },
+        "copper_axe": {
+            "title": "Copper Axe",
+            "lore": "\n<gray>When in Main Hand:\n <dark_green>9 Attack Damage\n <dark_green>0.9 Attack Speed",
+            "img": "items/copper_axe.png"
+        },
+        "copper_boots": {
+            "title": "Copper Boots",
+            "lore": "\n<gray>When on Feet:\n<blue>+2 Armor",
+            "img": "items/copper_boots.png"
+        },
+        "copper_chestplate": {
+            "title": "Copper Chestplate",
+            "lore": "\n<gray>When on Body:\n<blue>+6 Armor",
+            "img": "items/copper_chestplate.png"
+        },
+        "copper_helmet": {
+            "title": "Copper Helmet",
+            "lore": "\n<gray>When on Head:\n<blue>+2 Armor",
+            "img": "items/copper_helmet.png"
+        },
+        "copper_hoe": {
+            "title": "Copper Hoe",
+            "lore": "\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>3 Attack Speed",
+            "img": "items/copper_hoe.png"
+        },
+        "copper_ingot": {
+            "title": "Copper Ingot",
+            "img": "items/copper_ingot.png"
+        },
+        "copper_leggings": {
+            "title": "Copper Leggings",
+            "lore": "\n<gray>When on Legs:\n<blue>+5 Armor",
+            "img": "items/copper_leggings.png"
+        },
+        "copper_pickaxe": {
+            "title": "Copper Pickaxe",
+            "lore": "\n<gray>When in Main Hand:\n <dark_green>4 Attack Damage\n <dark_green>1.2 Attack Speed",
+            "img": "items/copper_pickaxe.png"
+        },
+        "copper_scythe": {
+            "title": "Copper Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>3 Attack Speed",
+            "img": "items/copper_scythe.png"
+        },
+        "copper_shovel": {
+            "title": "Copper Shovel",
+            "lore": "\n<gray>When in Main Hand:\n <dark_green>4.5 Attack Damage\n <dark_green>1 Attack Speed",
+            "img": "items/copper_shovel.png"
+        },
+        "copper_sword": {
+            "title": "Copper Sword",
+            "lore": "\n<gray>When in Main Hand:\n <dark_green>6 Attack Damage\n <dark_green>1.6 Attack Speed",
+            "img": "items/copper_sword.png"
+        },
+        "crafting_table": {
+            "title": "Crafting Table",
+            "img": "blocks/crafting_table.png"
+        },
+        "crimson_chair": {
+            "title": "Crimson Chair",
+            "img": "furniture/crimson_chair.gif"
+        },
+        "crimson_fence": {
+            "title": "Crimson Fence",
+            "img": "blocks/crimson_fence.png"
+        },
+        "crimson_fence_gate": {
+            "title": "Crimson Fence Gate",
+            "img": "blocks/crimson_fence_gate.png"
+        },
+        "crimson_office_table": {
+            "title": "Crimson Office Table",
+            "img": "furniture/crimson_office_table.png"
+        },
+        "crimson_slab": {
+            "title": "Crimson Slab",
+            "img": "blocks/crimson_slab.png"
+        },
+        "crushed_ender_pearl": {
+            "title": "Crushed Ender Pearl",
+            "img": "items/crushed_ender_pearl.png",
+            "link": "items/crushed_ender_pearl"
+        },
+        "dark_oak_chair": {
+            "title": "Dark Oak Chair",
+            "img": "furniture/dark_oak_chair.gif"
+        },
+        "dark_oak_fence": {
+            "title": "Dark Oak Fence",
+            "img": "blocks/dark_oak_fence.png"
+        },
+        "dark_oak_fence_gate": {
+            "title": "Dark Oak Fence Gate",
+            "img": "blocks/dark_oak_fence_gate.png"
+        },
+        "dark_oak_office_table": {
+            "title": "Dark Oak Office Table",
+            "img": "furniture/dark_oak_office_table.png"
+        },
+        "dark_oak_slab": {
+            "title": "Dark Oak Slab",
+            "img": "blocks/dark_oak_slab.png"
+        },
+        "diamond": {
+            "title": "Diamond",
+            "img": "items/diamond.png"
+        },
+        "diamond_scythe": {
+            "title": "Diamond Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>4 Attack Speed",
+            "img": "items/diamond_scythe.png"
+        },
+        "ender_pearl": {
+            "title": "Ender Pearl",
+            "img": "items/ender_pearl.png"
+        },
+        "fuel": {
+            "title": "Any fuel source",
+            "img": "items/coal.png"
+        },
+        "gold_ingot": {
+            "title": "Gold Ingot",
+            "img": "items/gold_ingot.png"
+        },
+        "golden_scythe": {
+            "title": "Golden Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>1 Attack Speed",
+            "img": "items/golden_scythe.png"
+        },
+        "iron_bow": {
+            "title": "Iron Bow",
+            "img": "items/iron_bow.png"
+        },
+        "iron_ingot": {
+            "title": "Iron Ingot",
+            "img": "items/iron_ingot.png"
+        },
+        "iron_rod": {
+            "title": "Iron Rod",
+            "img": "items/iron_rod.png"
+        },
+        "iron_scythe": {
+            "title": "Iron Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>3 Attack Speed",
+            "img": "items/iron_scythe.png"
+        },
+        "jungle_chair": {
+            "title": "Jungle Chair",
+            "img": "furniture/jungle_chair.gif"
+        },
+        "jungle_fence": {
+            "title": "Jungle Fence",
+            "img": "blocks/jungle_fence.png"
+        },
+        "jungle_fence_gate": {
+            "title": "Jungle Fence Gate",
+            "img": "blocks/jungle_fence_gate.png"
+        },
+        "jungle_office_table": {
+            "title": "Jungle Office Table",
+            "img": "furniture/jungle_office_table.png"
+        },
+        "jungle_slab": {
+            "title": "Jungle Slab",
+            "img": "blocks/jungle_slab.png"
+        },
+        "mangrove_chair": {
+            "title": "Mangrove Chair",
+            "img": "furniture/mangrove_chair.gif"
+        },
+        "mangrove_fence": {
+            "title": "Mangrove Fence",
+            "img": "blocks/mangrove_fence.png"
+        },
+        "mangrove_fence_gate": {
+            "title": "Mangrove Fence Gate",
+            "img": "blocks/mangrove_fence_gate.png"
+        },
+        "mangrove_office_table": {
+            "title": "Mangrove Office Table",
+            "img": "furniture/mangrove_office_table.png"
+        },
+        "mangrove_slab": {
+            "title": "Mangrove Slab",
+            "img": "blocks/mangrove_slab.png"
+        },
+        "netherite_ingot": {
+            "title": "Netherite Ingot",
+            "img": "items/netherite_ingot.png"
+        },
+        "netherite_scythe": {
+            "title": "Netherite Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>4 Attack Speed",
+            "img": "items/netherite_scythe.png"
+        },
+        "netherite_upgrade_smithing_template": {
+            "title": "<yellow>Netherite Upgrade",
+            "img": "items/netherite_upgrade_smithing_template.png"
+        },
+        "oak_chair": {
+            "title": "Oak Chair",
+            "img": "furniture/oak_chair.gif"
+        },
+        "oak_fence": {
+            "title": "Oak Fence",
+            "img": "blocks/oak_fence.png"
+        },
+        "oak_fence_gate": {
+            "title": "Oak Fence Gate",
+            "img": "blocks/oak_fence_gate.png"
+        },
+        "oak_office_table": {
+            "title": "Oak Office Table",
+            "img": "furniture/oak_office_table.png"
+        },
+        "oak_slab": {
+            "title": "Oak Slab",
+            "img": "blocks/oak_slab.png"
+        },
+        "pale_oak_chair": {
+            "title": "Pale Oak Chair",
+            "img": "furniture/pale_oak_chair.gif"
+        },
+        "pale_oak_fence": {
+            "title": "Pale Oak Fence",
+            "img": "blocks/pale_oak_fence.png"
+        },
+        "pale_oak_fence_gate": {
+            "title": "Pale Oak Fence Gate",
+            "img": "blocks/pale_oak_fence_gate.png"
+        },
+        "pale_oak_office_table": {
+            "title": "Pale Oak Office Table",
+            "img": "furniture/pale_oak_office_table.png"
+        },
+        "pale_oak_slab": {
+            "title": "Pale Oak Slab",
+            "img": "blocks/pale_oak_slab.png"
+        },
+        "planks": {
+            "title": "Wooden Planks [Any]",
+            "lore": "<gray>Any Wooden Plank can be used",
+            "img": "blocks/planks.gif"
+        },
+        "raw_bauxite": {
+            "title": "Raw Bauxite",
+            "img": "items/raw_bauxite.png",
+            "link": "items/raw_bauxite"
+        },
+        "raw_bauxite_block": {
+            "title": "Block of raw Bauxite",
+            "img": "blocks/raw_bauxite_block.png",
+            "link": "blocks/raw_bauxite_block"
+        },
+        "recipe_book": {
+            "title": "Recipe Book",
+            "lore": "<gray>Shows all <aqua>custom\n<aqua>recipes <gray>on this server.\n\n<aqua>Right Click: <gray>Show recipes.",
+            "img": "items/recipe_book.png"
+        },
+        "spruce_chair": {
+            "title": "Spruce Chair",
+            "img": "furniture/spruce_chair.gif"
+        },
+        "spruce_fence": {
+            "title": "Spruce Fence",
+            "img": "blocks/spruce_fence.png"
+        },
+        "spruce_fence_gate": {
+            "title": "Spruce Fence Gate",
+            "img": "blocks/spruce_fence_gate.png"
+        },
+        "spruce_office_table": {
+            "title": "Spruce Office Table",
+            "img": "furniture/spruce_office_table.png"
+        },
+        "spruce_slab": {
+            "title": "Spruce Slab",
+            "img": "blocks/spruce_slab.png"
+        },
+        "stick": {
+            "title": "Stick",
+            "img": "items/stick.png"
+        },
+        "stone_scythe": {
+            "title": "Stone Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>2 Attack Speed",
+            "img": "items/stone_scythe.png"
+        },
+        "stripped_acacia_log": {
+            "title": "Stripped Acacia Log",
+            "img": "blocks/stripped_acacia_log.png"
+        },
+        "string": {
+            "title": "String",
+            "img": "items/string.png"
+        },
+        "stripped_bamboo_block": {
+            "title": "Block of Stripped Bamboo",
+            "img": "blocks/stripped_bamboo_block.png"
+        },
+        "stripped_birch_log": {
+            "title": "Stripped Birch Log",
+            "img": "blocks/stripped_birch_log.png"
+        },
+        "stripped_cherry_log": {
+            "title": "Stripped Cherry Log",
+            "img": "blocks/stripped_cherry_log.png"
+        },
+        "stripped_crimson_stem": {
+            "title": "Stripped Crimson Stem",
+            "img": "blocks/stripped_crimson_stem.png"
+        },
+        "stripped_dark_oak_log": {
+            "title": "Stripped Dark Oak Log",
+            "img": "blocks/stripped_dark_oak_log.png"
+        },
+        "stripped_jungle_log": {
+            "title": "Stripped Jungle Log",
+            "img": "blocks/stripped_jungle_log.png"
+        },
+        "stripped_mangrove_log": {
+            "title": "Stripped Mangrove Log",
+            "img": "blocks/stripped_mangrove_log.png"
+        },
+        "stripped_oak_log": {
+            "title": "Stripped Oak Log",
+            "img": "blocks/stripped_oak_log.png"
+        },
+        "stripped_pale_oak_log": {
+            "title": "Stripped Pale Log",
+            "img": "blocks/stripped_pale_oak_log.png"
+        },
+        "stripped_spruce_log": {
+            "title": "Stripped Spruce Log",
+            "img": "blocks/stripped_spruce_log.png"
+        },
+        "stripped_warped_stem": {
+            "title": "Stripped Warped Stem",
+            "img": "blocks/stripped_warped_stem.png"
+        },
+        "teleport_crystal": {
+            "title": "Teleport Crystal",
+            "lore": "<gray>Teleports you to a\n<gray>previously saved location.\n\n<gray>Requires <aqua>1 XP Level</aqua> to\n<gray>save your location.\n\n<aqua>1st Right Click: <gray>Save Location.\n<aqua>2nd Right Click: <gray>Teleport.",
+            "img": "items/teleport_crystal.png"
+        },
+        "trashcan": {
+            "title": "Trashcan",
+            "img": "furniture/trashcan.png"
+        },
+        "warped_chair": {
+            "title": "Warped Chair",
+            "img": "furniture/warped_chair.gif"
+        },
+        "warped_fence": {
+            "title": "Birch Fence",
+            "img": "blocks/warped_fence.png"
+        },
+        "warped_fence_gate": {
+            "title": "Birch Fence Gate",
+            "img": "blocks/warped_fence_gate.png"
+        },
+        "warped_office_table": {
+            "title": "Warped Office Table",
+            "img": "furniture/warped_office_table.png"
+        },
+        "warped_slab": {
+            "title": "Warped Slab",
+            "img": "blocks/warped_slab.png"
+        },
+        "wooden_scythe": {
+            "title": "Wooden Scythe",
+            "lore": "<gray>Can break a <aqua>3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n <dark_green>1 Attack Damage\n <dark_green>1 Attack Speed",
+            "img": "items/wooden_scythe.png"
+        }
+    },
+    "smelting": {
+        "aluminum_ingot_1": {
+            "ingredient": "raw_bauxite",
+            "result": "aluminum_ingot"
+        },
+        "aluminum_ingot_2": {
+            "ingredient": "raw_bauxite_block",
+            "result": "aluminum_ingot"
+        }
+    },
+    "smithing": {
+        "netherite_scythe": {
+            "result": "netherite_scythe",
+            "base": "diamond_scythe",
+            "template": "netherite_upgrade_smithing_template",
+            "addition": "netherite_ingot"
+        }
+    }
+}

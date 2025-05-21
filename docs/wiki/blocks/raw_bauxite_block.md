@@ -41,9 +41,7 @@
 
 ### Crafting
 
-| Ingredients                            | Crafting recipe                                                                                |
-|----------------------------------------|------------------------------------------------------------------------------------------------|
-| [Raw Bauxite](../items/raw_bauxite.md) | ![raw_bauxite_block](../../assets/img/recipes/raw_bauxite_block.png){ style="max-width: 75%" } |
+{{ crafting("raw_bauxite_block") }}
 
 ## Data Values
 
