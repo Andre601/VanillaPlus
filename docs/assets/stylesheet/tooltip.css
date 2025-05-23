@@ -126,7 +126,7 @@
 	grid-template-areas: 
 	"slot1 . ."
 	"fire arrow slot0"
-	"slot2 . .";
+	"slot2 exp exp";
 }
 
 .smithing {
@@ -156,6 +156,13 @@
 	grid-area: fire;
 	height: 32px !important;
 	width: auto;
+}
+
+.exp {
+	grid-area: exp;
+	color: #555555;
+	text-align: right;
+	font-size: .7rem;
 }
 
 .slot0 {

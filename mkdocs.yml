@@ -36,6 +36,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - content.tooltips
 
 extra_css:
   - assets/stylesheet/frontpage.css

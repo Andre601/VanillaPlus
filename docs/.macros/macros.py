@@ -131,6 +131,7 @@ def define_env(env):
             '<img src="/VanillaPlus/assets/img/recipes/fire.gif" alt="" class="fire" draggable="false">',
             f'{get_slot_html("fuel", items, 2)}',
             '<img src="/VanillaPlus/assets/img/recipes/arrow.gif" class="arrow" draggable="false">',
+            f'<span class="exp">Exp: {recipe.get("exp", "0.0")}</span>',
             '</div>',
             '</td>',
             '</tr>'

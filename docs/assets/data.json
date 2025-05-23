@@ -890,11 +890,13 @@
     "smelting": {
         "aluminum_ingot_1": {
             "ingredient": "raw_bauxite",
-            "result": "aluminum_ingot"
+            "result": "aluminum_ingot",
+            "exp": 0.8
         },
         "aluminum_ingot_2": {
             "ingredient": "raw_bauxite_block",
-            "result": "aluminum_ingot"
+            "result": "aluminum_ingot",
+            "exp": 0.8
         }
     },
     "smithing": {
