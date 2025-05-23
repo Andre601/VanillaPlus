@@ -7,3 +7,6 @@
 
 # Ignore IML
 /VanillaPlus.iml
+
+# Ignore Pycache
+docs/.macros/__pycache__/
