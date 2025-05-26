@@ -41,6 +41,7 @@ theme:
 extra_css:
   - assets/stylesheet/frontpage.css
   - assets/stylesheet/tooltip.css
+  - assets/stylesheet/theme.css
 
 extra_javascript:
   - assets/javascript/tooltip.js
@@ -88,6 +89,7 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
   - pymdownx.blocks.html:
+  - pymdownx.blocks.caption:
 
 nav:
   - Main Site: index.md
@@ -118,7 +120,9 @@ nav:
       - wiki/items/iron_rod.md
       - wiki/items/raw_bauxite.md
     - Mechanics:
+      - wiki/mechanics/index.md
       - wiki/mechanics/claims.md
+      - wiki/mechanics/waila.md
     - Tools:
       - wiki/tools/index.md
       - wiki/tools/copper_axe.md

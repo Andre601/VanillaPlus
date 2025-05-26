@@ -1,0 +1,7 @@
+figure.caption {
+    float: right;
+    max-width: 50%;
+    border: 1px solid var(--md-typeset-table-color);
+    padding: 0 1em;
+    margin-top: 0;
+}
