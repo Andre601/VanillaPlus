@@ -129,7 +129,6 @@ public class PlayerListener implements Listener{
         if(block == null || block.getType().isAir())
             return;
         
-        SoundGroup soundGroup = block.getBlockSoundGroup();
         switch(block.getType()){
             case AMETHYST_BLOCK -> block.setType(Material.BUDDING_AMETHYST);
             case DEEPSLATE_BRICKS -> block.setType(Material.CRACKED_DEEPSLATE_BRICKS);
@@ -143,7 +142,6 @@ public class PlayerListener implements Listener{
             }
         }
         
-        //event.getPlayer().playSound(location, soundGroup.getBreakSound(), soundGroup.getVolume(), soundGroup.getPitch());
         event.getPlayer().playSound(block.getLocation(), Sound.ITEM_MACE_SMASH_GROUND, 0.5f, 1.0f);
         event.getPlayer().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getBlockData());
         
