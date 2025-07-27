@@ -36,76 +36,11 @@ public class PlayerListener implements Listener{
     }
     
     @EventHandler
-    @SuppressWarnings("UnstableApiUsage")
     public void onPlayerInteract(PlayerInteractEvent event){
-        if(event.getAction() != Action.RIGHT_CLICK_BLOCK && event.getAction() != Action.RIGHT_CLICK_AIR)
-            return;
-        
-        Block block = event.getClickedBlock();
-        if(block != null && !block.getType().isAir()){
-            CustomFurniture furniture = CustomFurniture.byAlreadySpawned(block);
-            if(furniture != null && furniture.getNamespacedID().equals("vanillaplus:trashcan")){
-                event.setCancelled(true);
-                event.getPlayer().openInventory(new TrashcanInventory(block.getLocation()).getInventory());
-                return;
-            }
-        }
-        
-        if(!event.hasItem() || event.getHand() != EquipmentSlot.HAND)
-            return;
-        
-        CustomStack item = CustomStack.byItemStack(event.getItem());
-        if(item == null)
-            return;
-        
-        if(item.getId().endsWith("_scythe")){
-            event.setCancelled(true);
-            return;
-        }
-        
-        if(!item.getNamespacedID().equals("vanillaplus:teleport_crystal"))
-            return;
-        
-        ItemStack stack = event.getItem();
-        if(!stack.hasData(DataComponentTypes.MAX_DAMAGE))
-            return;
-        
-        PersistentDataContainer pdc = stack.getItemMeta().getPersistentDataContainer();
-        
-        Player player = event.getPlayer();
-        
-        if(pdc.has(tpLocation, PersistentDataType.STRING)){
-            Location location = StringUtil.toLocation(pdc.get(tpLocation, PersistentDataType.STRING));
-            if(location == null){
-                player.sendMessage(VanillaPlus.MM.deserialize("<red>Unable to teleport you. If this issue persists, report it!"));
-                return;
-            }
-            
-            player.teleport(location);
-            player.playSound(player, Sound.ENTITY_PLAYER_TELEPORT, SoundCategory.PLAYERS, 1.0f, 1.0f);
-            
-            stack.editMeta(meta -> meta.getPersistentDataContainer().remove(tpLocation));
-            stack.setData(DataComponentTypes.LORE, ItemLore.lore().lines(getTPLore(null)).build());
-            stack.resetData(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE);
-            stack.damage(1, player);
+        if(event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.RIGHT_CLICK_AIR){
+            handleRightClick(event);
         }else{
-            if(player.getLevel() < 1){
-                player.sendMessage(VanillaPlus.MM.deserialize("<red>You need at least <white>1 XP Level</white> to store a Location!"));
-                return;
-            }
-            
-            player.setLevel(player.getLevel() - 1);
-            player.playSound(player, Sound.BLOCK_BEACON_ACTIVATE, SoundCategory.PLAYERS, 1.0f, 2.0f);
-            
-            String loc = StringUtil.toString(player.getLocation());
-            if(loc == null){
-                player.sendMessage(VanillaPlus.MM.deserialize("<red>Unable to set Location. If this issue persists, report it!"));
-                return;
-            }
-            
-            stack.editMeta(meta -> meta.getPersistentDataContainer().set(tpLocation, PersistentDataType.STRING, loc));
-            stack.setData(DataComponentTypes.LORE, ItemLore.lore().lines(getTPLore(player.getLocation())).build());
-            stack.setData(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true);
+            handleLeftClick(event);
         }
     }
     
@@ -173,6 +108,115 @@ public class PlayerListener implements Listener{
         }
         
         stack.damage(1, event.getPlayer());
+    }
+    
+    private void handleLeftClick(PlayerInteractEvent event){
+        if(!event.hasItem() || event.getHand() != EquipmentSlot.HAND)
+            return;
+        
+        ItemStack stack = event.getItem();
+        if(!stack.hasData(DataComponentTypes.MAX_DAMAGE))
+            return;
+        
+        CustomStack item = CustomStack.byItemStack(stack);
+        if(item == null)
+            return;
+        
+        if(!item.getNamespacedID().equals("vanillaplus:aluminum_hammer"))
+            return;
+        
+        Block block = event.getClickedBlock();
+        if(block == null || block.getType().isAir())
+            return;
+        
+        SoundGroup soundGroup = block.getBlockSoundGroup();
+        switch(block.getType()){
+            case AMETHYST_BLOCK -> block.setType(Material.BUDDING_AMETHYST);
+            case DEEPSLATE_BRICKS -> block.setType(Material.CRACKED_DEEPSLATE_BRICKS);
+            case DEEPSLATE_TILES -> block.setType(Material.CRACKED_DEEPSLATE_TILES);
+            case NETHER_BRICKS -> block.setType(Material.CRACKED_NETHER_BRICKS);
+            case POLISHED_BLACKSTONE_BRICKS -> block.setType(Material.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+            case STONE -> block.setType(Material.COBBLESTONE);
+            case STONE_BRICKS -> block.setType(Material.CRACKED_STONE_BRICKS);
+            default -> {
+                return;
+            }
+        }
+        
+        //event.getPlayer().playSound(location, soundGroup.getBreakSound(), soundGroup.getVolume(), soundGroup.getPitch());
+        event.getPlayer().playSound(block.getLocation(), Sound.ITEM_MACE_SMASH_GROUND, 0.5f, 1.0f);
+        event.getPlayer().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getBlockData());
+        
+        stack.damage(1, event.getPlayer());
+    }
+    
+    private void handleRightClick(PlayerInteractEvent event){
+        Block block = event.getClickedBlock();
+        if(block != null && !block.getType().isAir()){
+            CustomFurniture furniture = CustomFurniture.byAlreadySpawned(block);
+            if(furniture != null && furniture.getNamespacedID().equals("vanillaplus:trashcan")){
+                event.setCancelled(true);
+                event.getPlayer().openInventory(new TrashcanInventory(block.getLocation()).getInventory());
+                return;
+            }
+        }
+        
+        if(!event.hasItem() || event.getHand() != EquipmentSlot.HAND)
+            return;
+        
+        CustomStack item = CustomStack.byItemStack(event.getItem());
+        if(item == null)
+            return;
+        
+        if(item.getId().endsWith("_scythe")){
+            event.setCancelled(true);
+            return;
+        }
+        
+        if(!item.getNamespacedID().equals("vanillaplus:teleport_crystal"))
+            return;
+        
+        ItemStack stack = event.getItem();
+        if(!stack.hasData(DataComponentTypes.MAX_DAMAGE))
+            return;
+        
+        PersistentDataContainer pdc = stack.getItemMeta().getPersistentDataContainer();
+        
+        Player player = event.getPlayer();
+        
+        if(pdc.has(tpLocation, PersistentDataType.STRING)){
+            Location location = StringUtil.toLocation(pdc.get(tpLocation, PersistentDataType.STRING));
+            if(location == null){
+                player.sendMessage(VanillaPlus.MM.deserialize("<red>Unable to teleport you. If this issue persists, report it!"));
+                return;
+            }
+            
+            player.teleport(location);
+            player.playSound(player, Sound.ENTITY_PLAYER_TELEPORT, SoundCategory.PLAYERS, 1.0f, 1.0f);
+            
+            stack.editMeta(meta -> meta.getPersistentDataContainer().remove(tpLocation));
+            stack.setData(DataComponentTypes.LORE, ItemLore.lore().lines(getTPLore(null)).build());
+            stack.resetData(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE);
+            stack.damage(1, player);
+        }else{
+            if(player.getLevel() < 1){
+                player.sendMessage(VanillaPlus.MM.deserialize("<red>You need at least <white>1 XP Level</white> to store a Location!"));
+                return;
+            }
+            
+            player.setLevel(player.getLevel() - 1);
+            player.playSound(player, Sound.BLOCK_BEACON_ACTIVATE, SoundCategory.PLAYERS, 1.0f, 2.0f);
+            
+            String loc = StringUtil.toString(player.getLocation());
+            if(loc == null){
+                player.sendMessage(VanillaPlus.MM.deserialize("<red>Unable to set Location. If this issue persists, report it!"));
+                return;
+            }
+            
+            stack.editMeta(meta -> meta.getPersistentDataContainer().set(tpLocation, PersistentDataType.STRING, loc));
+            stack.setData(DataComponentTypes.LORE, ItemLore.lore().lines(getTPLore(player.getLocation())).build());
+            stack.setData(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true);
+        }
     }
     
     private List<Component> getTPLore(Location location){

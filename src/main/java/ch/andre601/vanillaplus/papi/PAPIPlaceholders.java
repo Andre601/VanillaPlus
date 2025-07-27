@@ -43,11 +43,13 @@ public class PAPIPlaceholders extends PlaceholderExpansion{
         if(!args[0].equalsIgnoreCase("translate"))
             return null;
         
+        // %vanillaplus_translate_<translation_key>:<fallback>%
+        
         String[] parts = args[1].split(":");
         
         String text = plugin.getTranslatorUtil().getTranslation(player.locale().toString(), parts[0]);
-        String replace = parts.length == 1 ? parts[0] : parts[1];
+        String fallback = parts.length == 1 ? parts[0] : parts[1];
         
-        return text == null ? replace : text;
+        return text == null ? fallback : text;
     }
 }
