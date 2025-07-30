@@ -13,8 +13,8 @@ VanillaPlus is a Minecraft Multiplayer Server that provides custom blocks, items
 
 ## Server Info
 
-**Minecraft Version:** 1.21.5  
-**Server Domain:** vanillaplus.andre601.ch
+**Minecraft Version:** 1.21.7/8  
+**Server Domain:** play.mcvanilla.org
 
 Learn more about the server on the [About Page](about/index.md).
 
