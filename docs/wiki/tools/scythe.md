@@ -31,7 +31,6 @@ Breaking a block with the Scythe will break a 3x3x3 area with the broken block a
 Only blocks that match one of the following criteria will be broken, with non-matching blocks being ignored:
 
 - The block is a fully aged, harvestable crop (Carrot, Potato, Wheat, etc).
-- The block has the `#minecraft:flowers` block tag.
 - The block has the [`#vanillaplus:scythe_harvestable`](../mechanics/tags.md#vanillaplus-scythe_harvestable) block tag.
 
 ## Obtaining
