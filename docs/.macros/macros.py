@@ -69,9 +69,9 @@ def define_env(env):
             strings.append(f'{get_slot_html(recipe.get(f"slot{num}"), items, num)}')
         
         strings.extend([
-            '<img src="/VanillaPlus/assets/img/recipes/arrow.png" class="arrow" alt="" draggable="false">',
+            '<img src="/assets/img/recipes/arrow.png" class="arrow" alt="" draggable="false">',
             '<span class="shapeless" data-minetip-title="This recipe is shapeless">' if "shapeless" in recipe and recipe["shapeless"] else '',
-            '<img src="/VanillaPlus/assets/img/recipes/shapeless.png" alt="" draggable="false">' if "shapeless" in recipe and recipe["shapeless"] else '',
+            '<img src="/assets/img/recipes/shapeless.png" alt="" draggable="false">' if "shapeless" in recipe and recipe["shapeless"] else '',
             '</span>' if "shapeless" in recipe and recipe["shapeless"] else '',
             '</div>',
             '</td>',
@@ -128,9 +128,9 @@ def define_env(env):
             '<div class="furnace tooltips">'
             f'{get_slot_html(recipe["result"], items, 0)}',
             f'{get_slot_html(recipe["ingredient"], items, 1)}',
-            '<img src="/VanillaPlus/assets/img/recipes/fire.gif" alt="" class="fire" draggable="false">',
+            '<img src="/assets/img/recipes/fire.gif" alt="" class="fire" draggable="false">',
             f'{get_slot_html("fuel", items, 2)}',
-            '<img src="/VanillaPlus/assets/img/recipes/arrow.gif" class="arrow" draggable="false">',
+            '<img src="/assets/img/recipes/arrow.gif" class="arrow" draggable="false">',
             f'<span class="exp">Exp: {recipe.get("exp", "0.0")}</span>',
             '</div>',
             '</td>',
@@ -194,7 +194,7 @@ def define_env(env):
             f'{get_slot_html(recipe["base"], items, 1)}',
             f'{get_slot_html(recipe["template"], items, 2)}',
             f'{get_slot_html(recipe["addition"], items, 3)}',
-            '<img src="/VanillaPlus/assets/img/recipes/arrow.png" alt="" class="arrow" draggable="false">',
+            '<img src="/assets/img/recipes/arrow.png" alt="" class="arrow" draggable="false">',
             '</div>',
             '</td>',
             '</tr>'
@@ -215,7 +215,7 @@ def define_env(env):
         if not "link" in item:
             return item["title"]
         
-        return f'<a href="/VanillaPlus/wiki/{item["link"]}">{item["title"]}</a>'
+        return f'<a href="/wiki/{item["link"]}">{item["title"]}</a>'
     
     def get_slot_html(item: str, json_data, slot: int, quantity: int = 1):
         if not item:
@@ -230,8 +230,8 @@ def define_env(env):
             item_data["title"] if "title" in item_data else "Unknown Item",
             '"',
             f' data-minetip-text="{item_data["lore"]}">' if "lore" in item_data else '>',
-            f'<a href="/VanillaPlus/wiki/{item_data["link"]}">' if "link" in item_data and slot > 0 else '',
-            '<img src="/VanillaPlus/assets/img/',
+            f'<a href="/wiki/{item_data["link"]}">' if "link" in item_data and slot > 0 else '',
+            '<img src="/assets/img/',
             item_data["img"] if "img" in item_data else "blocks/unknown.png",
             '" class="no-glight" alt="">',
             '</a>' if "link" in item_data and slot > 0 else '',
