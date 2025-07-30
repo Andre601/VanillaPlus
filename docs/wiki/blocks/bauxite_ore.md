@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Bauxite Ore</td>
+      <th style="text-align: center;" colspan="2">Bauxite Ore</th>
     </tr>
   </thead>
   <tbody>

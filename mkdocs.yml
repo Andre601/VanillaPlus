@@ -104,6 +104,7 @@ nav:
       - wiki/armor/copper_helmet.md
       - wiki/armor/copper_leggings.md
     - Blocks:
+      - wiki/blocks/index.md
       - wiki/blocks/aluminum_block.md
       - wiki/blocks/bauxite_ore.md
       - wiki/blocks/raw_bauxite_block.md
@@ -122,6 +123,7 @@ nav:
     - Mechanics:
       - wiki/mechanics/index.md
       - wiki/mechanics/claims.md
+      - wiki/mechanics/tags.md
       - wiki/mechanics/waila.md
     - Tools:
       - wiki/tools/index.md

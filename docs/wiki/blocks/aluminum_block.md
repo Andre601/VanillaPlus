@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Block of Aluminum</td>
+      <th style="text-align: center;" colspan="2">Block of Aluminum</th>
     </tr>
   </thead>
   <tbody>

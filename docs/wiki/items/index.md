@@ -7,7 +7,7 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
 /// html | div.grid.cards
 -   ### [Aluminum Hammer](aluminum_hammer.md)
     
-    Aluminum Hammer is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or Budding Amethyst Blocks.
+    Aluminum Hammer is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or for converting blocks into their "cracked" variant.
     
 -   ### [Aluminum Ingot](aluminum_ingot.md)
     

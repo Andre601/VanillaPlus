@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Block of raw Bauxite</td>
+      <th style="text-align: center;" colspan="2">Block of raw Bauxite</th>
     </tr>
   </thead>
   <tbody>

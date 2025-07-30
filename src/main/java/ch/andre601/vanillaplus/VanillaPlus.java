@@ -1,6 +1,7 @@
 package ch.andre601.vanillaplus;
 
 import ch.andre601.vanillaplus.command.ClaimCommand;
+import ch.andre601.vanillaplus.listener.CauldronListener;
 import ch.andre601.vanillaplus.listener.InventoryListener;
 import ch.andre601.vanillaplus.listener.PlayerListener;
 import ch.andre601.vanillaplus.papi.PAPIPlaceholders;
@@ -61,6 +62,7 @@ public final class VanillaPlus extends JavaPlugin {
             getSLF4JLogger().warn("Encountered issues while loading claims.json file!");
         }
         
+        getServer().getPluginManager().registerEvents(new CauldronListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
         getServer().getPluginManager().registerEvents(new InventoryListener(), this);
         loadCommands();

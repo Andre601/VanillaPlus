@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Copper Chestplate</td>
+      <th style="text-align: center;" colspan="2">Copper Chestplate</th>
     </tr>
   </thead>
   <tbody>

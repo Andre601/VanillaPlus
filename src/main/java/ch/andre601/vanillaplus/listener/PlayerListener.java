@@ -7,9 +7,15 @@ import dev.lone.itemsadder.api.CustomFurniture;
 import dev.lone.itemsadder.api.CustomStack;
 import io.papermc.paper.datacomponent.DataComponentTypes;
 import io.papermc.paper.datacomponent.item.ItemLore;
+import io.papermc.paper.registry.RegistryAccess;
+import io.papermc.paper.registry.RegistryKey;
+import io.papermc.paper.registry.keys.tags.BlockTypeTagKeys;
+import io.papermc.paper.registry.tag.TagKey;
+import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
 import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockType;
 import org.bukkit.block.data.Ageable;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.entity.Player;
@@ -25,6 +31,7 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class PlayerListener implements Listener{
@@ -94,16 +101,19 @@ public class PlayerListener implements Listener{
             return;
         
         int x = event.getBlock().getX();
+        int y = event.getBlock().getY();
         int z = event.getBlock().getZ();
         World world = event.getBlock().getWorld();
         
-        for(int ix = x - 1; ix <= x + 1; ix++){
-            for(int iz = z - 1; iz <= z + 1; iz++){
-                Block block = world.getBlockAt(ix, event.getBlock().getY(), iz);
-                if(block.getType().isAir())
-                    continue;
-                
-                handleHarvestableCrops(block, stack);
+        for(int iy = y - 1; iy <= y + 1; iy++){
+            for(int ix = x - 1; ix <= x + 1; ix++){
+                for(int iz = z - 1; iz <= z + 1; iz++){
+                    Block block = world.getBlockAt(ix, iy, iz);
+                    if(block.getType().isAir())
+                        continue;
+                    
+                    handleHarvestableBlocks(block, stack);
+                }
             }
         }
         
@@ -247,14 +257,25 @@ public class PlayerListener implements Listener{
         return lore;
     }
     
-    private void handleHarvestableCrops(Block block, ItemStack item){
+    private void handleHarvestableBlocks(Block block, ItemStack item){
         BlockData data = block.getBlockData();
-        if(!(data instanceof Ageable ageable))
-            return;
-        
-        if(ageable.getAge() != ageable.getMaximumAge())
-            return;
-        
-        block.breakNaturally(item);
+        if(data instanceof Ageable ageable){
+            if(ageable.getAge() != ageable.getMaximumAge())
+                return;
+            
+            block.breakNaturally(item);
+        }else{
+            Registry<BlockType> blockTypeRegistry = RegistryAccess.registryAccess()
+                .getRegistry(RegistryKey.BLOCK);
+            
+            Collection<BlockType> harvestable = blockTypeRegistry.getTagValues(
+                TagKey.create(RegistryKey.BLOCK, Key.key("vanillaplus:scythe_harvestable"))
+            );
+            
+            if(!harvestable.contains(block.getType().asBlockType()))
+                return;
+            
+            block.breakNaturally(item);
+        }
     }
 }

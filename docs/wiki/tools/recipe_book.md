@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Recipe Book</td>
+      <th style="text-align: center;" colspan="2">Recipe Book</th>
     </tr>
   </thead>
   <tbody>

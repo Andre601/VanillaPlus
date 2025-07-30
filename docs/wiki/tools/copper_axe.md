@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Copper Axe</td>
+      <th style="text-align: center;" colspan="2">Copper Axe</th>
     </tr>
   </thead>
   <tbody>

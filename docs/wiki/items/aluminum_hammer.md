@@ -23,7 +23,7 @@
 </table>
 ///
 
-**Aluminum Hammer** is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or Budding Amethyst Blocks.
+**Aluminum Hammer** is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or for converting blocks into their "cracked" variant.
 
 ## Usage
 
