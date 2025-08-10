@@ -14,24 +14,15 @@
   }
 ) }}
 
-**Scythe** is a tool that allows you to harvest multiple crops simultaneously.
+**Scythe** is a tool that allows you to harvest multiple crops and plants simultaneously.
 
 ## Usage
 
-Harvesting any crops (Wheat, Carrots, Potatoes, etc.) with the Scythe will also harvest any mature crop in the surrounding 8 blocks of the harvested crop, allowing the player to farm a `3x3` area with a single use of the Scythe.
+Breaking a block with the Scythe will break a 3x3x3 area with the broken block as the center.  
+Only blocks that match one of the following criteria will be broken, with non-matching blocks being ignored:
 
-### List of Harvestable Blocks
-
-| Block          | Notes                            |
-|----------------|----------------------------------|
-| Beetroot       | Only harvested once fully grown. |
-| Brown Mushroom |                                  |
-| Carrot         | Only harvested once fully grown. |
-| Potato         | Only harvested once fully grown. |
-| Red Mushroom   |                                  |
-| Short Grass    |                                  |
-| Tall Grass     |                                  |
-| Wheat          | Only harvested once fully grown. |
+- The block is a fully aged, harvestable crop (Carrot, Potato, Wheat, etc).
+- The block has the [`#vanillaplus:scythe_harvestable`](../mechanics/tags.md#vanillaplus-scythe_harvestable) block tag.
 
 ## Obtaining
 

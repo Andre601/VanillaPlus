@@ -4,18 +4,38 @@
 
 ## Usage
 
-Having a Claim Certificate in their Inventory, the player can use the `/claim` command in the Server's main world to try and claim an area as their own.  
-Should no other Claim or the Spawn area intersect with the wanted area will the claim be confirmed and a region be created with the Player as the owner.
+Having a Claim Certificate in their Inventory, the player can execute `/claim` in the main world to try and claim an area.  
+The claim will succeed if the Player hasn't reached their Claim limit yet (See [Limits](#limits)) and the wanted area is not intersecting with other Claim regions nor the Spawn area itself.
 
-A normal player can only have one area as their claim. Donators will be able to have one additional claim made.  
-Claims cannot be removed by a normal player. Only admins are able to do this.
+Claims cannot be undone by the Player and only by the Server Owner.
+
+## Limits
+
+Players have a limit of 1 claim, where Donators can have 2 claims.
 
 ## Commands
 
-| Command                      | Description                                                                                                                                                |
-|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `/claim`                     | Claims a `3x3` area with the chunk of the player as the center.<br>Only works if the Player has a Claim Permit in their inventory and no other claims yet. |
-| `/claim info [player]`       | Lists all claims a Player has.<br>Not providing a Player will use the command executor instead.                                                            |
-| `/claim remove <world> <id>` | Removes the Claim with ID `<id>`.<br>Only executable by Admins.                                                                                            |
-| `/claim title <id> [title]`  | Sets the Title to display when a player enters the claim.<br>Uses the MiniMessage text formatting. Leaving the title empty resets it to the default.       |
-| `/claim help [command]`      | Lists all claim commands or provides additional info about a specific one if a command name is provided.                                                   |
+### `/claim`
+
+Claims a `3x3` area with the player's chunk as the center, if they have a Claim Certificate, didn't use up their [Claim limit](#limit) and the wanted area doesn't intersect with another claim region or the Spawn area.
+
+### `/claim help [command]`
+
+Provides info about a specific command, or lists all available commands, if no `[command]` was specified.
+
+### `/claim info [player]`
+
+Lists all claims a Player has.  
+Not specifying any `[player]` will show the Command Executor's own info.
+
+### `/claim remove <world> <id>`
+
+Removes a Claim with the provided ID from the database.  
+Can only be executed by server admins.
+
+### `/claim title <id> [title]`
+
+Sets the Title shown when entering the Claim with the specified ID.  
+Not providing a `[title]` resets it back to the default (`<id>`).
+
+Note that the subtitle cannot be changed.

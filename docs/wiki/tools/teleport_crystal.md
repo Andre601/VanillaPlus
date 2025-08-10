@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;" colspan="2">Teleport Crystal</td>
+      <th style="text-align: center;" colspan="2">Teleport Crystal</th>
     </tr>
   </thead>
   <tbody>

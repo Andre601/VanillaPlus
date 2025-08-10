@@ -1,11 +1,12 @@
 name: VanillaPlus
 version: '${project.version}'
-api-version: '1.21'
+api-version: '1.21.8'
 
+bootstrapper: ch.andre601.vanillaplus.bootstrap.VanillaPlusBootstrap
 main: ch.andre601.vanillaplus.VanillaPlus
 
-dependencies: 
-  server: 
+dependencies:
+  server:
     ItemsAdder:
       load: BEFORE
       required: false

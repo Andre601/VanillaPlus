@@ -184,11 +184,10 @@ public class ClaimHandler{
             return true;
         
         List<Claim> chunkAreas = claims.get(player.getUniqueId().toString());
-        if(player.hasPermission("vanillaplus.claims.extra")){
-            return chunkAreas.size() < 2;
-        }else{
-            return chunkAreas.isEmpty();
-        }
+        if(chunkAreas.isEmpty())
+            return true;
+        
+        return player.hasPermission("vanillaplus.claims.limit." + (chunkAreas.size() + 1));
     }
     
     private Map<Flag<?>, Object> getFlags(Claim claim, Player player){

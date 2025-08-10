@@ -7,9 +7,15 @@ import dev.lone.itemsadder.api.CustomFurniture;
 import dev.lone.itemsadder.api.CustomStack;
 import io.papermc.paper.datacomponent.DataComponentTypes;
 import io.papermc.paper.datacomponent.item.ItemLore;
+import io.papermc.paper.registry.RegistryAccess;
+import io.papermc.paper.registry.RegistryKey;
+import io.papermc.paper.registry.keys.tags.BlockTypeTagKeys;
+import io.papermc.paper.registry.tag.TagKey;
+import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
 import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockType;
 import org.bukkit.block.data.Ageable;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.entity.Player;
@@ -25,6 +31,7 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class PlayerListener implements Listener{
@@ -36,11 +43,122 @@ public class PlayerListener implements Listener{
     }
     
     @EventHandler
-    @SuppressWarnings("UnstableApiUsage")
     public void onPlayerInteract(PlayerInteractEvent event){
-        if(event.getAction() != Action.RIGHT_CLICK_BLOCK && event.getAction() != Action.RIGHT_CLICK_AIR)
+        if(event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.RIGHT_CLICK_AIR){
+            handleRightClick(event);
+        }else{
+            handleLeftClick(event);
+        }
+    }
+    
+    @EventHandler
+    public void onPlayerResourcePackStatus(PlayerJoinEvent event){
+        Player player = event.getPlayer();
+        
+        player.sendMessage(VanillaPlus.MM.deserialize("<!shadow><font:vanillaplus:logo>a</font>"));
+        if(player.hasPlayedBefore()){
+            player.sendMessage(Component.empty());
+            player.sendMessage(VanillaPlus.MM.deserialize(String.format(
+                "<font:waila:offset>\uF009\uF00A</font> <grey>Welcome back <aqua>%s</aqua>!",
+                player.getName()
+            )));
+            player.sendMessage(VanillaPlus.MM.deserialize(
+                "<font:waila:offset>\uF009\uF00A</font> <grey>Glad to see you again."
+            ));
+            player.sendMessage(Component.empty());
+            player.sendMessage(Component.empty());
+        }else{
+            player.sendMessage(VanillaPlus.MM.deserialize(String.format(
+                "<font:waila:offset>\uF009\uF00A</font> <grey>Welcome to <bold><gold>Vanilla<green>+</green></gold></bold> <aqua>%s</aqua>!",
+                player.getName()
+            )));
+            player.sendMessage(VanillaPlus.MM.deserialize(
+                "<font:waila:offset>\uF009\uF00A</font> <grey>Please make yourself familiar with our"
+            ));
+            player.sendMessage(VanillaPlus.MM.deserialize(
+                "<font:waila:offset>\uF009\uF00A</font> <aqua><click:run_command:/rules>" +
+                    "<hover:show_text:\"<grey>Click to see them!\">/rules</hover></click></aqua> to avoid any issues."
+            ));
+            player.sendMessage(VanillaPlus.MM.deserialize(
+                "<font:waila:offset>\uF009\uF00A</font> <aqua>Interact with NPCs <grey>for more info and help."
+            ));
+            player.sendMessage(Component.empty());
+            player.sendMessage(VanillaPlus.MM.deserialize("<font:waila:offset>\uF009\uF00A</font> <grey>Enjoy your stay!"));
+        }
+    }
+    
+    @EventHandler
+    public void onBlockBreak(BlockBreakEvent event){
+        if(event.isCancelled())
             return;
         
+        ItemStack stack = event.getPlayer().getInventory().getItemInMainHand();
+        if(stack.getType().isAir())
+            return;
+        
+        CustomStack item = CustomStack.byItemStack(stack);
+        if(item == null || !item.getId().endsWith("_scythe"))
+            return;
+        
+        int x = event.getBlock().getX();
+        int y = event.getBlock().getY();
+        int z = event.getBlock().getZ();
+        World world = event.getBlock().getWorld();
+        
+        for(int iy = y - 1; iy <= y + 1; iy++){
+            for(int ix = x - 1; ix <= x + 1; ix++){
+                for(int iz = z - 1; iz <= z + 1; iz++){
+                    Block block = world.getBlockAt(ix, iy, iz);
+                    if(block.getType().isAir())
+                        continue;
+                    
+                    handleHarvestableBlocks(block, stack);
+                }
+            }
+        }
+        
+        stack.damage(1, event.getPlayer());
+    }
+    
+    private void handleLeftClick(PlayerInteractEvent event){
+        if(!event.hasItem() || event.getHand() != EquipmentSlot.HAND)
+            return;
+        
+        ItemStack stack = event.getItem();
+        if(!stack.hasData(DataComponentTypes.MAX_DAMAGE))
+            return;
+        
+        CustomStack item = CustomStack.byItemStack(stack);
+        if(item == null)
+            return;
+        
+        if(!item.getNamespacedID().equals("vanillaplus:aluminum_hammer"))
+            return;
+        
+        Block block = event.getClickedBlock();
+        if(block == null || block.getType().isAir())
+            return;
+        
+        switch(block.getType()){
+            case AMETHYST_BLOCK -> block.setType(Material.BUDDING_AMETHYST);
+            case DEEPSLATE_BRICKS -> block.setType(Material.CRACKED_DEEPSLATE_BRICKS);
+            case DEEPSLATE_TILES -> block.setType(Material.CRACKED_DEEPSLATE_TILES);
+            case NETHER_BRICKS -> block.setType(Material.CRACKED_NETHER_BRICKS);
+            case POLISHED_BLACKSTONE_BRICKS -> block.setType(Material.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+            case STONE -> block.setType(Material.COBBLESTONE);
+            case STONE_BRICKS -> block.setType(Material.CRACKED_STONE_BRICKS);
+            default -> {
+                return;
+            }
+        }
+        
+        event.getPlayer().playSound(block.getLocation(), Sound.ITEM_MACE_SMASH_GROUND, 0.5f, 1.0f);
+        event.getPlayer().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getBlockData());
+        
+        stack.damage(1, event.getPlayer());
+    }
+    
+    private void handleRightClick(PlayerInteractEvent event){
         Block block = event.getClickedBlock();
         if(block != null && !block.getType().isAir()){
             CustomFurniture furniture = CustomFurniture.byAlreadySpawned(block);
@@ -109,72 +227,6 @@ public class PlayerListener implements Listener{
         }
     }
     
-    @EventHandler
-    public void onPlayerResourcePackStatus(PlayerJoinEvent event){
-        Player player = event.getPlayer();
-        
-        player.sendMessage(VanillaPlus.MM.deserialize("<!shadow><font:vanillaplus:logo>a</font>"));
-        if(player.hasPlayedBefore()){
-            player.sendMessage(Component.empty());
-            player.sendMessage(VanillaPlus.MM.deserialize(String.format(
-                "<font:waila:offset>\uF009\uF00A</font> <grey>Welcome back <aqua>%s</aqua>!",
-                player.getName()
-            )));
-            player.sendMessage(VanillaPlus.MM.deserialize(
-                "<font:waila:offset>\uF009\uF00A</font> <grey>Glad to see you again."
-            ));
-            player.sendMessage(Component.empty());
-            player.sendMessage(Component.empty());
-        }else{
-            player.sendMessage(VanillaPlus.MM.deserialize(String.format(
-                "<font:waila:offset>\uF009\uF00A</font> <grey>Welcome to <bold><gold>Vanilla<green>+</green></gold></bold> <aqua>%s</aqua>!",
-                player.getName()
-            )));
-            player.sendMessage(VanillaPlus.MM.deserialize(
-                "<font:waila:offset>\uF009\uF00A</font> <grey>Please make yourself familiar with our"
-            ));
-            player.sendMessage(VanillaPlus.MM.deserialize(
-                "<font:waila:offset>\uF009\uF00A</font> <aqua><click:run_command:/rules>" +
-                    "<hover:show_text:\"<grey>Click to see them!\">/rules</hover></click></aqua> to avoid any issues."
-            ));
-            player.sendMessage(VanillaPlus.MM.deserialize(
-                "<font:waila:offset>\uF009\uF00A</font> <aqua>Interact with NPCs <grey>for more info and help."
-            ));
-            player.sendMessage(Component.empty());
-            player.sendMessage(VanillaPlus.MM.deserialize("<font:waila:offset>\uF009\uF00A</font> <grey>Enjoy your stay!"));
-        }
-    }
-    
-    @EventHandler
-    public void onBlockBreak(BlockBreakEvent event){
-        if(event.isCancelled())
-            return;
-        
-        ItemStack stack = event.getPlayer().getInventory().getItemInMainHand();
-        if(stack.getType().isAir())
-            return;
-        
-        CustomStack item = CustomStack.byItemStack(stack);
-        if(item == null || !item.getId().endsWith("_scythe"))
-            return;
-        
-        int x = event.getBlock().getX();
-        int z = event.getBlock().getZ();
-        World world = event.getBlock().getWorld();
-        
-        for(int ix = x - 1; ix <= x + 1; ix++){
-            for(int iz = z - 1; iz <= z + 1; iz++){
-                Block block = world.getBlockAt(ix, event.getBlock().getY(), iz);
-                if(block.getType().isAir())
-                    continue;
-                
-                handleHarvestableCrops(block, stack);
-            }
-        }
-        
-        stack.damage(1, event.getPlayer());
-    }
-    
     private List<Component> getTPLore(Location location){
         List<Component> lore = new ArrayList<>();
         
@@ -205,14 +257,25 @@ public class PlayerListener implements Listener{
         return lore;
     }
     
-    private void handleHarvestableCrops(Block block, ItemStack item){
+    private void handleHarvestableBlocks(Block block, ItemStack item){
         BlockData data = block.getBlockData();
-        if(!(data instanceof Ageable ageable))
-            return;
-        
-        if(ageable.getAge() != ageable.getMaximumAge())
-            return;
-        
-        block.breakNaturally(item);
+        if(data instanceof Ageable ageable){
+            if(ageable.getAge() != ageable.getMaximumAge())
+                return;
+            
+            block.breakNaturally(item);
+        }else{
+            Registry<BlockType> blockTypeRegistry = RegistryAccess.registryAccess()
+                .getRegistry(RegistryKey.BLOCK);
+            
+            Collection<BlockType> harvestable = blockTypeRegistry.getTagValues(
+                TagKey.create(RegistryKey.BLOCK, Key.key("vanillaplus:scythe_harvestable"))
+            );
+            
+            if(!harvestable.contains(block.getType().asBlockType()))
+                return;
+            
+            block.breakNaturally(item);
+        }
     }
 }

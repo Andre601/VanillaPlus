@@ -56,7 +56,7 @@ public class TranslatorUtil{
     
     public String getTranslation(String lang, String key){
         plugin.getSLF4JLogger().warn("Lang: {}; Key: {}", lang, key);
-        Map<String, String> translations = languages.get(lang);
+        Map<String, String> translations = languages.get(lang.toLowerCase(Locale.ROOT));
         if(translations == null)
             return null;
         
