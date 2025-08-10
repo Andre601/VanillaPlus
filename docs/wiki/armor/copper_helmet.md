@@ -1,31 +1,10 @@
 # Copper Helmet
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2">Copper Helmet</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/items/copper_helmet.png" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Durability</td>
-      <td>105</td>
-    </tr>
-    <tr>
-      <td>Armor</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "copper_helmet",
+  durability = 105,
+  armor = 2
+) }}
 
 **Copper Helmet** is a piece of armor that can be equipped by the player for extra protection.
 

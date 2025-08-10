@@ -1,23 +1,11 @@
 # Office Table
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2"><h2>Office Table</h2></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/furniture/office_table.gif" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>Yes (64)</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "office_table",
+  category = "furniture",
+  img = "office_table.gif",
+  stack_size = 64
+) }}
 
 **Office Table** is a furniture that can be placed in the world to be used as a decorative piece.
 

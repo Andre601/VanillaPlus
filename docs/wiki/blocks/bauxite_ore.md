@@ -1,39 +1,13 @@
 # Bauxite Ore
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2">Bauxite Ore</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/blocks/bauxite_ore.png" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Renewable</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>Yes (64)</td>
-    </tr>
-    <tr>
-      <td>Tool</td>
-      <td>Iron Pickaxe</td>
-    </tr>
-    <tr>
-      <td>Blast resistance</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Hardness</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "bauxite_ore",
+  category = "blocks",
+  stack_size = 64,
+  tool = "Iron Pickaxe",
+  blast_resistance = 3,
+  hardness = 3
+) }}
 
 **Bauxite Ore** is a mineral block typically found underground. It is a source of [Raw Bauxite](../items/raw_bauxite.md), which can be smelted into [Aluminum Ingots](../items/aluminum_ingot.md).
 

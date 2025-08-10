@@ -1,31 +1,10 @@
 # Copper Chestplate
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2">Copper Chestplate</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/items/copper_chestplate.png" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Durability</td>
-      <td>180</td>
-    </tr>
-    <tr>
-      <td>Armor</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "copper_chestplate",
+  durability = 180,
+  armor = 6
+) }}
 
 **Copper Chestplate** is a piece of armor that can be equipped by the player for extra protection.
 

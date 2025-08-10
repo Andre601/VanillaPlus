@@ -1,27 +1,18 @@
 # Scythe
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2">Scythe</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/items/scythe.gif" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Durability</td>
-      <td>Wood: 59<br>Stone: 131<br>Gold: 32<br>Copper: 190<br>Iron: 250<br>Diamond: 1561<br>Netherite: 2031</td>
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "scythe",
+  img = "scythe.gif",
+  durability = {
+    "Wood": 59,
+    "Stone": 131,
+    "Gold": 32,
+    "Copper": 190,
+    "Iron": 250,
+    "Diamond": 1561,
+    "Netherite": 2031
+  }
+) }}
 
 **Scythe** is a tool that allows you to harvest multiple crops simultaneously.
 

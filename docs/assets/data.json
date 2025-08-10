@@ -439,6 +439,14 @@
             "title": "Amethyst Shard",
             "img": "items/amethyst_shard.png"
         },
+        "apple": {
+            "title": "Apple",
+            "img": "items/apple.png"
+        },
+        "baked_apple": {
+            "title": "Baked Apple",
+            "img": "items/baked_apple.png"
+        },
         "bamboo_chair": {
             "title": "Bamboo Chair",
             "img": "furniture/bamboo_chair.gif"
@@ -897,6 +905,10 @@
             "ingredient": "raw_bauxite_block",
             "result": "aluminum_ingot",
             "exp": 0.8
+        },
+        "baked_apple": {
+            "ingredient": "apple",
+            "result": "baked_apple"
         }
     },
     "smithing": {

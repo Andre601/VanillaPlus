@@ -1,7 +1,7 @@
 site_name: "VanillaPlus"
 site_description: "Website and Wiki of the VanillaPlus Minecraft Server."
 site_author: "Andre601"
-site_url: "https://docs.andre601.ch/VanillaPlus"
+site_url: "https://www.mcvanilla.org"
 
 copyright: |-
   VanillaPlus &copy; 2025 by <a href="https://andre601.ch" target="_blank" rel="nofollow">Andre601</a> and all
@@ -116,6 +116,7 @@ nav:
       - wiki/items/index.md
       - wiki/items/aluminum_hammer.md
       - wiki/items/aluminum_ingot.md
+      - wiki/items/baked_apple.md
       - wiki/items/crushed_ender_pearl.md
       - wiki/items/iron_rod.md
       - wiki/items/raw_bauxite.md

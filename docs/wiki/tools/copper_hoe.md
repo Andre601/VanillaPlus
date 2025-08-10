@@ -1,27 +1,9 @@
 # Copper Hoe
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2">Copper Hoe</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/items/copper_hoe.png" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Durability</td>
-      <td>190</td>
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "copper_hoe",
+  durability = 190
+) }}
 
 **Copper Hoe** is a tool that has the same features as other hoes of different materials.
 

@@ -1,23 +1,11 @@
 # Chair
 
-/// html | div[style="float: right; margin-left: .75rem;"]
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center;" colspan="2"><h2>Chair</h2></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="2"><img src="../../../assets/img/furniture/chair.gif" style="max-width: 250px;">
-    </tr>
-    <tr>
-      <td>Stackable</td>
-      <td>Yes (64)</td>
-    </tr>
-  </tbody>
-</table>
-///
+{{ infobox(
+  "chair",
+  category = "furniture",
+  img = "chair.gif",
+  stack_size = 64
+) }}
 
 **Chair** is a furniture that can be placed and allow players to sit on it.
 

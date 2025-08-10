@@ -12,6 +12,10 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
 -   ### [Aluminum Ingot](aluminum_ingot.md)
     
     Aluminum Ingot is an item used in various crafting recipes such as the [Aluminum Hammer](aluminum_hammer.md) or the [Trashcan](../furniture/trashcan.md).
+
+-   ### [Baked Apple](baked_apple.md)
+    
+    Baked Apple is a food item that can be obtained by cooking an Apple in the Furnace or Smoker.
     
 -   ### [Crushed Ender Pearl](crushed_ender_pearl.md)
     
