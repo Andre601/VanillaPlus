@@ -908,7 +908,8 @@
         },
         "baked_apple": {
             "ingredient": "apple",
-            "result": "baked_apple"
+            "result": "baked_apple",
+            "exp": 0.2
         }
     },
     "smithing": {
