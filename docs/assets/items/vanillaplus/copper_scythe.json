@@ -1,0 +1,23 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "copper_ingot",
+            "3": "copper_ingot",
+            "4": "copper_ingot",
+            "6": "stick",
+            "9": "stick"
+        }
+    },
+    "name": "Copper Scythe",
+    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<green>1 Attack Damage\n<green>3 Attack Speed",
+    "icon": "scythe.gif",
+    "durability": {
+        "Wood": 59,
+        "Stone": 131,
+        "Gold": 32,
+        "Copper": 190,
+        "Iron": 250,
+        "Diamond": 1561,
+        "Netherite": 2031
+    }
+}

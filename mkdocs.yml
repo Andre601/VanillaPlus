@@ -97,12 +97,6 @@ nav:
     - about/index.md
   - Wiki:
     - wiki/index.md
-    - Armor:
-      - wiki/armor/index.md
-      - wiki/armor/copper_boots.md
-      - wiki/armor/copper_chestplate.md
-      - wiki/armor/copper_helmet.md
-      - wiki/armor/copper_leggings.md
     - Blocks:
       - wiki/blocks/index.md
       - wiki/blocks/aluminum_block.md
@@ -110,7 +104,9 @@ nav:
       - wiki/blocks/raw_bauxite_block.md
     - Furniture:
       - wiki/furniture/index.md
+      - wiki/furniture/bench.md
       - wiki/furniture/chair.md
+      - wiki/furniture/couch.md
       - wiki/furniture/office_table.md
       - wiki/furniture/trashcan.md
     - Items:
@@ -128,15 +124,11 @@ nav:
       - wiki/mechanics/waila.md
     - Tools:
       - wiki/tools/index.md
-      - wiki/tools/copper_axe.md
-      - wiki/tools/copper_hoe.md
-      - wiki/tools/copper_pickaxe.md
-      - wiki/tools/copper_shovel.md
+      - wiki/tools/iron_fishing_rod.md
       - wiki/tools/recipe_book.md
       - wiki/tools/scythe.md
       - wiki/tools/teleport_crystal.md
     - Weapons:
       - wiki/weapons/index.md
-      - wiki/weapons/copper_sword.md
       - wiki/weapons/iron_bow.md
       

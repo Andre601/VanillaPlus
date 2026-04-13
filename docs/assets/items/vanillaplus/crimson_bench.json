@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "crimson_fence_gate",
+            "4": "crimson_fence",
+            "5": "crimson_slab",
+            "6": "crimson_fence"
+        }
+    },
+    "name": "Crimson Bench",
+    "stack_size": 64
+}

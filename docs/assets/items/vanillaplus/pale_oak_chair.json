@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "pale_oak_fence_gate",
+            "2": "any_carpet",
+            "4": "pale_oak_fence",
+            "5": "pale_oak_slab",
+            "6": "pale_oak_fence"
+        }
+    },
+    "name": "Pale Oak Chair",
+    "gif": true
+}

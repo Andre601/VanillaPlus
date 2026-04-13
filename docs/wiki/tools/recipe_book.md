@@ -1,9 +1,6 @@
 # Recipe Book
 
-{{ infobox(
-  "recipe_book",
-  stack_size = 64 
-) }}
+{{ infobox("vanillaplus:recipe_book") }}
 
 **Recipe Book** is an item that opens the recipes GUI.
 
@@ -15,7 +12,7 @@ Right-clicking with the Item in hand will open the Recipes GUI, which lists all 
 
 ### Crafting
 
-{{ crafting("recipe_book") }}
+{{ crafting_recipe("vanillaplus:recipe_book") }}
 
 ## Data Values
 

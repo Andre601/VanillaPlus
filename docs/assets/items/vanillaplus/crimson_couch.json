@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_wool",
+            "3": "any_wool",
+            "4": "any_wool",
+            "5": "any_wool",
+            "6": "any_wool",
+            "7": "crimson_slab",
+            "8": "crimson_slab",
+            "9": "crimson_slab"
+        }
+    },
+    "name": "Crimson Couch",
+    "gif": true,
+    "stack_size": 64
+}

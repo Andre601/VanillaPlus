@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:crushed_ender_pearl",
+            "2": "amethyst_shard"
+        },
+        "shapeless": true
+    },
+    "name": "Teleport Crsytal",
+    "lore": "<gray>Teleports you to a\n<gray>previously saved location.\n\n<gray>Requires <aqua>1 XP Level <gray>to\n<gray>save your location.\n\n<aqua>1st Right Click: <gray>Save Location.\n<aqua>2nd Right Click: <gray>Teleport.",
+    "durability": 10
+}

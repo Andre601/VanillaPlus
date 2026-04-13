@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "cherry_fence_gate",
+            "2": "any_carpet",
+            "4": "cherry_fence",
+            "5": "cherry_slab",
+            "6": "cherry_fence"
+        }
+    },
+    "name": "Cherry Chair",
+    "gif": true
+}

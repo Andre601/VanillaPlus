@@ -2,14 +2,11 @@ package ch.andre601.vanillaplus.listener;
 
 import ch.andre601.vanillaplus.VanillaPlus;
 import ch.andre601.vanillaplus.util.StringUtil;
-import ch.andre601.vanillaplus.util.TrashcanInventory;
-import dev.lone.itemsadder.api.CustomFurniture;
 import dev.lone.itemsadder.api.CustomStack;
 import io.papermc.paper.datacomponent.DataComponentTypes;
 import io.papermc.paper.datacomponent.item.ItemLore;
 import io.papermc.paper.registry.RegistryAccess;
 import io.papermc.paper.registry.RegistryKey;
-import io.papermc.paper.registry.keys.tags.BlockTypeTagKeys;
 import io.papermc.paper.registry.tag.TagKey;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
@@ -145,6 +142,8 @@ public class PlayerListener implements Listener{
             case DEEPSLATE_TILES -> block.setType(Material.CRACKED_DEEPSLATE_TILES);
             case NETHER_BRICKS -> block.setType(Material.CRACKED_NETHER_BRICKS);
             case POLISHED_BLACKSTONE_BRICKS -> block.setType(Material.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+            case RED_SANDSTONE -> block.setType(Material.RED_SAND);
+            case SANDSTONE -> block.setType(Material.SAND);
             case STONE -> block.setType(Material.COBBLESTONE);
             case STONE_BRICKS -> block.setType(Material.CRACKED_STONE_BRICKS);
             default -> {
@@ -159,16 +158,6 @@ public class PlayerListener implements Listener{
     }
     
     private void handleRightClick(PlayerInteractEvent event){
-        Block block = event.getClickedBlock();
-        if(block != null && !block.getType().isAir()){
-            CustomFurniture furniture = CustomFurniture.byAlreadySpawned(block);
-            if(furniture != null && furniture.getNamespacedID().equals("vanillaplus:trashcan")){
-                event.setCancelled(true);
-                event.getPlayer().openInventory(new TrashcanInventory(block.getLocation()).getInventory());
-                return;
-            }
-        }
-        
         if(!event.hasItem() || event.getHand() != EquipmentSlot.HAND)
             return;
         
@@ -177,7 +166,18 @@ public class PlayerListener implements Listener{
             return;
         
         if(item.getId().endsWith("_scythe")){
-            event.setCancelled(true);
+            // Handle blocks with the custom vanillaplus:convertable_to_farmland block tag.
+            // Allows us to cancel right-clicks that would create farmland.
+            Registry<BlockType> blockTypeRegistry = RegistryAccess.registryAccess()
+                    .getRegistry(RegistryKey.BLOCK);
+            
+            Collection<BlockType> convertableToFarmland = blockTypeRegistry.getTagValues(
+                TagKey.create(RegistryKey.BLOCK, Key.key("vanillaplus:convertable_to_farmland"))
+            );
+            
+            if(convertableToFarmland.contains(event.getClickedBlock().getType().asBlockType()))
+                event.setCancelled(true);
+            
             return;
         }
         

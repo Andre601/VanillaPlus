@@ -1,9 +1,6 @@
 # Raw Bauxite
 
-{{ infobox(
-  "raw_bauxite",
-  stack_size = 64
-) }}
+{{ infobox("vanillaplus:raw_bauxite") }}
 
 **Raw Bauxite** is an item obtained from Bauxite Ore that can be smelted into [Aluminun Ingots](aluminum_ingot.md).
 
@@ -11,7 +8,7 @@
 
 ### Crafting
 
-{{ crafting("raw_bauxite") }}
+{{ crafting_recipe("vanillaplus:raw_bauxite") }}
 
 ### Mining
 

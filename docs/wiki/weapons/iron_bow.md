@@ -1,9 +1,6 @@
 # Iron Bow
 
-{{ infobox(
-  "iron_bow",
-  durability = 450
-) }}
+{{ infobox("vanillaplus:iron_bow") }}
 
 **Iron Bow** is a Weapon that has the same features as the normal bow, but increased durability.
 
@@ -11,7 +8,7 @@
 
 ### Crafting
 
-{{ crafting("iron_bow") }}
+{{ crafting_recipe("vanillaplus:iron_bow") }}
 
 ## Data Values
 

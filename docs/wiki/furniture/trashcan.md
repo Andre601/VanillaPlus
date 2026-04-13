@@ -1,9 +1,6 @@
 # Trashcan
 
-{{ infobox(
-  "trashcan",
-  category = "furniture"
-) }}
+{{ infobox("vanillaplus:trashcan") }}
 
 **Trashcan** is a furniture that allows a player to open an inventory to dispose of items they no longer need.
 
@@ -17,7 +14,7 @@ Interacting with the furniture through right-clicking it will open an inventory.
 
 ### Crafting
 
-{{ crafting("trashcan") }}
+{{ crafting_recipe("vanillaplus:trashcan") }}
 
 ### Dyeing
 

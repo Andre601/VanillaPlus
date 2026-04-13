@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "jungle_fence_gate",
+            "4": "jungle_fence",
+            "5": "jungle_slab",
+            "6": "jungle_fence"
+        }
+    },
+    "name": "Jungle Bench",
+    "stack_size": 64
+}

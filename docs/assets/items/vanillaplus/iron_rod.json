@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "vanillaplus:iron_rod",
+            "5": "vanillaplus:iron_rod"
+        },
+        "amount": 4
+    },
+    "name": "Iron Rod",
+    "stack_size": 64
+}

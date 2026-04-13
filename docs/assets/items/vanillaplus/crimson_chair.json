@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "crimson_fence_gate",
+            "2": "any_carpet",
+            "4": "crimson_fence",
+            "5": "crimson_slab",
+            "6": "crimson_fence"
+        }
+    },
+    "name": "Crimson Chair",
+    "gif": true
+}

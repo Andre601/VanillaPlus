@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "bamboo_fence_gate",
+            "4": "bamboo_fence",
+            "5": "bamboo_slab",
+            "6": "bamboo_fence"
+        }
+    },
+    "name": "Bamboo Bench",
+    "stack_size": 64
+}

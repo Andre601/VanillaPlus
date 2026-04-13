@@ -1,0 +1,10 @@
+{
+    "smelting": {
+        "item": "apple",
+        "exp": 0.2
+    },
+    "name": "Baked Apple",
+    "stack_size": 64,
+    "hunger": 8,
+    "saturation": 2
+}

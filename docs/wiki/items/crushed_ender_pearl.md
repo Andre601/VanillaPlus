@@ -1,9 +1,6 @@
 # Crushed Ender Pearl
 
-{{ infobox(
-  "crushed_ender_pearl",
-  stack_size = 64
-) }}
+{{ infobox("vanillaplus:crushed_ender_pearl") }}
 
 **Crushed Ender Pearl** is an item used to craft the [Teleport Crystal](../tools/teleport_crystal.md).
 
@@ -14,7 +11,7 @@
 /// info | Will use 1 durability from the Aluminum Hammer
 ///
 
-{{ crafting("crushed_ender_pearl") }}
+{{ crafting_recipe("vanillaplus:crushed_ender_pearl") }}
 
 ## Data Values
 

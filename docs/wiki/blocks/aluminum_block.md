@@ -1,14 +1,6 @@
 # Block of Aluminum
 
-{{ infobox(
-  "aluminum_block",
-  title = "Block of Aluminum",
-  category = "blocks",
-  stack_size = 64,
-  tool = "Iron Pickaxe",
-  blast_resistance = 5,
-  hardness = 4
-) }}
+{{ infobox("vanillaplus:aluminum_block") }}
 
 **Block of Aluminum** is a block crafted from [Aluminum Ingots](../items/aluminum_ingot.md).
 
@@ -18,7 +10,7 @@ The block can be placed at 3 orientations similar to Logs.
 
 ### Crafting
 
-{{ crafting("aluminum_block") }}
+{{ crafting_recipe("vanillaplus:aluminum_block") }}
 
 ## Data Values
 

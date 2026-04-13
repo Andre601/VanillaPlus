@@ -1,25 +1,13 @@
 # Tools
 
-VanillaPlus provides a Set of tools, such as Copper-tier tools or the [Scythe](scythe.md).
+VanillaPlus provides a Set of tools, such as the [Scythe](scythe.md).
 
 ## Pages
 
 /// html | div.grid.cards
--   ### [Copper Axe](copper_axe.md)
+-   ### [Iron Fishing Rod](iron_fishing_rod.md)
     
-    Copper Axe is a tool that has the same features as other axes of different materials.
-
--   ### [Copper Hoe](copper_hoe.md)
-    
-    Copper Hoe is a tool that has the same features as other hoes of different materials.
-
--   ### [Copper Pickaxe](copper_pickaxe.md)
-    
-    Copper Pickaxe is a tool that has the same features as other pickaxes of different materials.
-
--   ### [Copper Shovel](copper_shovel.md)
-    
-    Copper Shovel is a tool that has the same features as other shovels of different materials.
+    Iron Fishing Rod is an upgraded variant of the normal Fishing Rod, providing higher durability.
 
 -   ### [Recipe Book](recipe_book.md)
     

@@ -16,14 +16,15 @@ import org.bukkit.block.BlockType;
 
 import java.util.List;
 
+@SuppressWarnings("UnstableApiUsage")
 public class VanillaPlusBootstrap implements PluginBootstrap{
     
     @Override
     public void bootstrap(BootstrapContext context){
         final LifecycleEventManager<BootstrapContext> manager = context.getLifecycleManager();
-        PrioritizedLifecycleEventHandlerConfiguration<BootstrapContext> config = LifecycleEvents.TAGS.preFlatten(RegistryKey.BLOCK).newHandler(event -> {
-            final PreFlattenTagRegistrar<BlockType> registrar = event.registrar();
-            registrar.setTag(
+        PrioritizedLifecycleEventHandlerConfiguration<BootstrapContext> blockTagConfig = LifecycleEvents.TAGS.preFlatten(RegistryKey.BLOCK).newHandler(event -> {
+            final PreFlattenTagRegistrar<BlockType> blockTagRegistrar = event.registrar();
+            blockTagRegistrar.setTag(
                 TagKey.create(RegistryKey.BLOCK, Key.key("vanillaplus:scythe_harvestable")),
                 List.of(
                     // Blocks
@@ -31,15 +32,26 @@ public class VanillaPlusBootstrap implements PluginBootstrap{
                     TagEntry.valueEntry(BlockTypeKeys.TALL_GRASS),
                     TagEntry.valueEntry(BlockTypeKeys.SHORT_DRY_GRASS),
                     TagEntry.valueEntry(BlockTypeKeys.TALL_DRY_GRASS),
-                    TagEntry.valueEntry(BlockTypeKeys.BROWN_MUSHROOM),
-                    TagEntry.valueEntry(BlockTypeKeys.RED_MUSHROOM),
+                    TagEntry.valueEntry(BlockTypeKeys.SEAGRASS),
+                    TagEntry.valueEntry(BlockTypeKeys.TALL_SEAGRASS),
+                    TagEntry.valueEntry(BlockTypeKeys.FERN),
+                    TagEntry.valueEntry(BlockTypeKeys.LARGE_FERN),
+                    TagEntry.valueEntry(BlockTypeKeys.DEAD_BUSH),
                     // Block Tags
                     TagEntry.tagEntry(BlockTypeTagKeys.FLOWERS),
                     TagEntry.tagEntry(BlockTypeTagKeys.LEAVES)
                 )
             );
+            blockTagRegistrar.setTag(
+                TagKey.create(RegistryKey.BLOCK, Key.key("vanillaplus:convertable_to_farmland")),
+                List.of(
+                    TagEntry.valueEntry(BlockTypeKeys.DIRT),
+                    TagEntry.valueEntry(BlockTypeKeys.DIRT_PATH),
+                    TagEntry.valueEntry(BlockTypeKeys.GRASS_BLOCK)
+                )
+            );
         });
         
-        manager.registerEventHandler(config);
+        manager.registerEventHandler(blockTagConfig);
     }
 }

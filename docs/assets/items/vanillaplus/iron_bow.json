@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "vanillaplus:iron_rod",
+            "3": "string",
+            "4": "vanillaplus:iron_rod",
+            "6": "string",
+            "8": "vanillaplus:iron_rod",
+            "9": "string"
+        }
+    },
+    "name": "Iron Bow",
+    "durability": 450
+}

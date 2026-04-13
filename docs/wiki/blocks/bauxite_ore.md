@@ -1,13 +1,6 @@
 # Bauxite Ore
 
-{{ infobox(
-  "bauxite_ore",
-  category = "blocks",
-  stack_size = 64,
-  tool = "Iron Pickaxe",
-  blast_resistance = 3,
-  hardness = 3
-) }}
+{{ infobox("vanillaplus:bauxite_ore") }}
 
 **Bauxite Ore** is a mineral block typically found underground. It is a source of [Raw Bauxite](../items/raw_bauxite.md), which can be smelted into [Aluminum Ingots](../items/aluminum_ingot.md).
 

@@ -1,14 +1,6 @@
 # Block of raw Bauxite
 
-{{ infobox(
-  "raw_bauxite_block",
-  title = "Block of raw Bauxite",
-  category = "blocks",
-  stack_size = 64,
-  tool = "Iron Pickaxe",
-  blast_resistance = 5,
-  hardness = 4
-) }}
+{{ infobox("vanillaplus:raw_bauxite_block") }}
 
 **Block of raw Bauxite** is a block crafted from [Raw Bauxite](../items/raw_bauxite.md).
 
@@ -16,7 +8,7 @@
 
 ### Crafting
 
-{{ crafting("raw_bauxite_block") }}
+{{ crafting_recipe("vanillaplus:raw_bauxite_block") }}
 
 ## Data Values
 

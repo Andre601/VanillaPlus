@@ -5,10 +5,6 @@ This Wiki aims to help you understand the individual features this server has, s
 ## Pages
 
 /// html | div.grid.cards
--   ### [Armor](armor/index.md)
-    
-    VanillaPlus provides its own set of custom armor that can be crafted and used.
-
 -   ### [Furniture](furniture/index.md)
     
     VanillaPlus offers furniture which are placable Items that can provide custom functionality.

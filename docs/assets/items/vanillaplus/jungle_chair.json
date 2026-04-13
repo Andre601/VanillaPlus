@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "jungle_fence_gate",
+            "2": "any_carpet",
+            "4": "jungle_fence",
+            "5": "jungle_slab",
+            "6": "jungle_fence"
+        }
+    },
+    "name": "Jungle Chair",
+    "gif": true
+}

@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "warped_slab",
+            "2": "warped_slab",
+            "3": "warped_slab",
+            "4": "stripped_warped_stem",
+            "6": "stripped_warped_stem"
+        }
+    },
+    "name": "Warped Office Table"
+}

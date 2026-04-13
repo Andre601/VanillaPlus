@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "jungle_slab",
+            "2": "jungle_slab",
+            "3": "jungle_slab",
+            "4": "stripped_jungle_log",
+            "6": "stripped_jungle_log"
+        }
+    },
+    "name": "Jungle Office Table"
+}

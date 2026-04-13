@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "oak_fence_gate",
+            "4": "oak_fence",
+            "5": "oak_slab",
+            "6": "oak_fence"
+        }
+    },
+    "name": "Oak Bench",
+    "stack_size": 64
+}

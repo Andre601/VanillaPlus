@@ -1,11 +1,6 @@
 # Office Table
 
-{{ infobox(
-  "office_table",
-  category = "furniture",
-  img = "office_table.gif",
-  stack_size = 64
-) }}
+{{ infobox("vanillaplus:acacia_office_table") }}
 
 **Office Table** is a furniture that can be placed in the world to be used as a decorative piece.
 
@@ -20,18 +15,18 @@ A free area of at least `1x3x1` (`LxWxH`) is required for the item to be placabl
 
 ### Crafting
 
-{{ crafting("acacia_office_table", footer=False) }}
-{{ crafting("bamboo_office_table", header=False, footer=False) }}
-{{ crafting("birch_office_table", header=False, footer=False) }}
-{{ crafting("cherry_office_table", header=False, footer=False) }}
-{{ crafting("crimson_office_table", header=False, footer=False) }}
-{{ crafting("dark_oak_office_table", header=False, footer=False) }}
-{{ crafting("jungle_office_table", header=False, footer=False) }}
-{{ crafting("mangrove_office_table", header=False, footer=False) }}
-{{ crafting("oak_office_table", header=False, footer=False) }}
-{{ crafting("pale_oak_office_table", header=False, footer=False) }}
-{{ crafting("spruce_office_table", header=False, footer=False) }}
-{{ crafting("warped_office_table", header=False) }}
+{{ crafting_recipe("vanillaplus:acacia_office_table", footer=False) }}
+{{ crafting_recipe("vanillaplus:bamboo_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:birch_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:cherry_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:crimson_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:dark_oak_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:jungle_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:mangrove_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:oak_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:pale_oak_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:spruce_office_table", header=False, footer=False) }}
+{{ crafting_recipe("vanillaplus:warped_office_table", header=False) }}
 
 ## Data Values
 

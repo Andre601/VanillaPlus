@@ -1,0 +1,18 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_wool",
+            "3": "any_wool",
+            "4": "any_wool",
+            "5": "any_wool",
+            "6": "any_wool",
+            "7": "acacia_slab",
+            "8": "acacia_slab",
+            "9": "acacia_slab"
+        }
+    },
+    "name": "Acacia Couch",
+    "gif": true,
+    "icon": "couch.gif",
+    "stack_size": 64
+}

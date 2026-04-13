@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_wool",
+            "3": "any_wool",
+            "4": "any_wool",
+            "5": "any_wool",
+            "6": "any_wool",
+            "7": "mangrove_slab",
+            "8": "mangrove_slab",
+            "9": "mangrove_slab"
+        }
+    },
+    "name": "Mangrove Couch",
+    "gif": true,
+    "stack_size": 64
+}

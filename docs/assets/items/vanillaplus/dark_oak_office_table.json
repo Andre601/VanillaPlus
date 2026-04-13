@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "dark_oak_slab",
+            "2": "dark_oak_slab",
+            "3": "dark_oak_slab",
+            "4": "stripped_dark_oak_log",
+            "6": "stripped_dark_oak_log"
+        }
+    },
+    "name": "Dark Oak Office Table"
+}

@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "crimson_slab",
+            "2": "crimson_slab",
+            "3": "crimson_slab",
+            "4": "stripped_crimson_stem",
+            "6": "stripped_crimson_stem"
+        }
+    },
+    "name": "Crimson Office Table"
+}

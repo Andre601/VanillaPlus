@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "birch_slab",
+            "2": "birch_slab",
+            "3": "birch_slab",
+            "4": "stripped_birch_log",
+            "6": "stripped_birch_log"
+        }
+    },
+    "name": "Birch Office Table"
+}

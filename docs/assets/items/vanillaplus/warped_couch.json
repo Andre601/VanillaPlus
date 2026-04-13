@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_wool",
+            "3": "any_wool",
+            "4": "any_wool",
+            "5": "any_wool",
+            "6": "any_wool",
+            "7": "warped_slab",
+            "8": "warped_slab",
+            "9": "warped_slab"
+        }
+    },
+    "name": "Warped Couch",
+    "gif": true,
+    "stack_size": 64
+}

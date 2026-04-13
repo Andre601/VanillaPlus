@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "mangrove_slab",
+            "2": "mangrove_slab",
+            "3": "mangrove_slab",
+            "4": "stripped_mangrove_log",
+            "6": "stripped_mangrove_log"
+        }
+    },
+    "name": "Mangrove Office Table"
+}

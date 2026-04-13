@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "mangrove_fence_gate",
+            "4": "mangrove_fence",
+            "5": "mangrove_slab",
+            "6": "mangrove_fence"
+        }
+    },
+    "name": "Mangrove Bench",
+    "stack_size": 64
+}

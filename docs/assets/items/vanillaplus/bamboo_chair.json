@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "bamboo_fence_gate",
+            "2": "any_carpet",
+            "4": "bamboo_fence",
+            "5": "bamboo_slab",
+            "6": "bamboo_fence"
+        }
+    },
+    "name": "Bamboo Chair",
+    "gif": true
+}

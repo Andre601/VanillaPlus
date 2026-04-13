@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:aluminum_ingot",
+            "3": "vanillaplus:aluminum_ingot",
+            "4": "vanillaplus:aluminum_ingot",
+            "6": "vanillaplus:aluminum_ingot",
+            "7": "vanillaplus:aluminum_ingot",
+            "8": "vanillaplus:aluminum_ingot",
+            "9": "vanillaplus:aluminum_ingot"
+        }
+    },
+    "name": "Trashcan"
+}

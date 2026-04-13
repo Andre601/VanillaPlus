@@ -1,9 +1,6 @@
 # Iron Rod
 
-{{ infobox(
-  "iron_rod",
-  stack_size = 64
-) }}
+{{ infobox("vanillaplus:iron_rod") }}
 
 **Iron Rod** is an item that can be crafted from 2 Iron Ingots.
 
@@ -15,7 +12,7 @@ Iron Rods are used in crafting recipes for weapons such as the [Iron Bow](../wea
 
 ### Crafting
 
-{{ crafting("iron_rod") }}
+{{ crafting_recipe("vanillaplus:iron_rod") }}
 
 ## Data Values
 

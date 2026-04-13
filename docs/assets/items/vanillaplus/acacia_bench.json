@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "acacia_fence_gate",
+            "4": "acacia_fence",
+            "5": "acacia_slab",
+            "6": "acacia_fence"
+        }
+    },
+    "name": "Acacia Bench",
+    "icon": "bench.gif",
+    "stack_size": 64
+}

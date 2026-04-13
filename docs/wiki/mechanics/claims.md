@@ -11,13 +11,13 @@ Claims cannot be undone by the Player and only by the Server Owner.
 
 ## Limits
 
-Players have a limit of 1 claim, where Donators can have 2 claims.
+Normal players can claim a single 3x3 chunk region where Donators can claim a second region.
 
 ## Commands
 
 ### `/claim`
 
-Claims a `3x3` area with the player's chunk as the center, if they have a Claim Certificate, didn't use up their [Claim limit](#limit) and the wanted area doesn't intersect with another claim region or the Spawn area.
+Claims a `3x3` area with the player's chunk as the center, if they have a Claim Certificate, didn't use up their [Claim limit](#limits) and the wanted area doesn't intersect with another claim region or the Spawn area.
 
 ### `/claim help [command]`
 

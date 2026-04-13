@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "acacia_slab",
+            "2": "acacia_slab",
+            "3": "acacia_slab",
+            "4": "stripped_acacia_log",
+            "6": "stripped_acacia_log"
+        }
+    },
+    "name": "Acacia Office Table",
+    "icon": "office_table.gif",
+    "stack_size": 64
+}

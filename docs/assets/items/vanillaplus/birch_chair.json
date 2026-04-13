@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "birch_fence_gate",
+            "2": "any_carpet",
+            "4": "birch_fence",
+            "5": "birch_slab",
+            "6": "birch_fence"
+        }
+    },
+    "name": "Birch Chair",
+    "gif": true
+}

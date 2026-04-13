@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "warped_fence_gate",
+            "2": "any_carpet",
+            "4": "warped_fence",
+            "5": "warped_slab",
+            "6": "warped_fence"
+        }
+    },
+    "name": "Warped Chair",
+    "gif": true
+}

@@ -1,0 +1,20 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:raw_bauxite",
+            "2": "vanillaplus:raw_bauxite",
+            "3": "vanillaplus:raw_bauxite",
+            "4": "vanillaplus:raw_bauxite",
+            "5": "vanillaplus:raw_bauxite",
+            "6": "vanillaplus:raw_bauxite",
+            "7": "vanillaplus:raw_bauxite",
+            "8": "vanillaplus:raw_bauxite",
+            "9": "vanillaplus:raw_bauxite"
+        }
+    },
+    "name": "Block of raw Bauxite",
+    "stack_size": 64,
+    "tool": "Iron Pickaxe",
+    "blast_resistance": 5,
+    "hardness": 4
+}

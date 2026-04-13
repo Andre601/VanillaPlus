@@ -14,12 +14,17 @@ Blocks containing this block tag can be harvested by the [Scythe's](../tools/scy
     
     Any blocks in this list are harvestable by the Scythe:
     
-    - `minecraft:short_grass`
-    - `minecraft:tall_grass`
-    - `minecraft:short_dry_grass`
-    - `minecraft:tall_dry_grass`
     - `minecraft:brown_mushroom`
+    - `minecraft:dead_bush`
+    - `minecraft:fern`
+    - `minecraft:large_fern`
     - `minecraft:red_mushroom`
+    - `minecraft:seagrass`
+    - `minecraft:short_dry_grass`
+    - `minecraft:short_grass`
+    - `minecraft:tall_dry_grass`
+    - `minecraft:tall_grass`
+    - `minecraft:tall_seagrass`
 
 -   #### Block Tags
     
@@ -27,3 +32,19 @@ Blocks containing this block tag can be harvested by the [Scythe's](../tools/scy
     
     - `#minecraft:flowers`
     - `#minecraft:leaves`
+///
+
+### `#vanillaplus:convertable_to_farmland`
+
+Blocks containing this block tag are considered to be convertable to farmland.  
+The main usage is for the Scythe to not convert these blocks to farmland when right-clicked.
+
+/// html | div.grid.cards
+-   #### Blocks
+    
+    Any blocks in this list are convertable to farmland:
+
+    - `minecraft:dirt`
+    - `minecraft:dirt_path`
+    - `minecraft:grass_block`
+///

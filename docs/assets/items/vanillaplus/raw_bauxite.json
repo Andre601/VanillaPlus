@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:raw_bauxite_block"
+        },
+        "shapeless": true,
+        "amount": 9
+    },
+    "name": "Raw Bauxite",
+    "stack_size": 64
+}

@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "birch_fence_gate",
+            "4": "birch_fence",
+            "5": "birch_slab",
+            "6": "birch_fence"
+        }
+    },
+    "name": "Birch Bench",
+    "stack_size": 64
+}

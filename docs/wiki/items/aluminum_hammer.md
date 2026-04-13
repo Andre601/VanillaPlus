@@ -1,9 +1,6 @@
 # Aluminum Hammer
 
-{{ infobox(
-  "aluminum_hammer",
-  durability = 10
-) }}
+{{ infobox("vanillaplus:aluminum_hammer") }}
 
 **Aluminum Hammer** is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or for converting blocks into their "cracked" variant.
 
@@ -26,6 +23,8 @@ Only specific blocks are supported:
 | Deepslate Tiles            | Cracked Deepslate Tiles            |
 | Nether Bricks              | Cracked Nether Bricks              |
 | Polished Blackstone Bricks | Cracked Polished Blackstone Bricks |
+| Red Sandstone              | Red Sand                           |
+| Sandstone                  | Sandstone                          |
 | Stone                      | Cobblestone                        |
 | Stone Bricks               | Cracked Stone Bricks               |
 
@@ -35,7 +34,7 @@ Each successful conversion of a block consumes one durability from the Aluminum 
 
 ### Crafting
 
-{{ crafting("aluminum_hammer") }}
+{{ crafting_recipe("vanillaplus:aluminum_hammer") }}
 
 ## Data Values
 

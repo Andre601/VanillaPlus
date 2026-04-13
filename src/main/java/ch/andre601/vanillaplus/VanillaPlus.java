@@ -2,7 +2,6 @@ package ch.andre601.vanillaplus;
 
 import ch.andre601.vanillaplus.command.ClaimCommand;
 import ch.andre601.vanillaplus.listener.CauldronListener;
-import ch.andre601.vanillaplus.listener.InventoryListener;
 import ch.andre601.vanillaplus.listener.PlayerListener;
 import ch.andre601.vanillaplus.papi.PAPIPlaceholders;
 import ch.andre601.vanillaplus.util.Claim;
@@ -64,7 +63,6 @@ public final class VanillaPlus extends JavaPlugin {
         
         getServer().getPluginManager().registerEvents(new CauldronListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
-        getServer().getPluginManager().registerEvents(new InventoryListener(), this);
         loadCommands();
         
         setupScheduler();
@@ -89,7 +87,6 @@ public final class VanillaPlus extends JavaPlugin {
         return translatorUtil;
     }
     
-    @SuppressWarnings("UnstableApiUsage")
     private void loadCommands(){
         PaperCommandManager<CommandSourceStack> manager = PaperCommandManager.builder()
             .executionCoordinator(ExecutionCoordinator.asyncCoordinator())

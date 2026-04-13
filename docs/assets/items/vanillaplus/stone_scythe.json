@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "cobblestone",
+            "3": "cobblestone",
+            "4": "cobblestone",
+            "6": "stick",
+            "9": "stick"
+        }
+    },
+    "name": "Stone Scythe",
+    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<green>1 Attack Damage\n<green>2 Attack Speed"
+}

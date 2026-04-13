@@ -1,0 +1,15 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "acacia_fence_gate",
+            "2": "any_carpet",
+            "4": "acacia_fence",
+            "5": "acacia_slab",
+            "6": "acacia_fence"
+        }
+    },
+    "name": "Acacia Chair",
+    "gif": true,
+    "icon": "chair.gif",
+    "stack_size": 64
+}

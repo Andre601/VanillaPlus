@@ -1,11 +1,6 @@
 # Baked Apple
 
-{{ infobox(
-    "baked_apple",
-    hunger= 8,
-    saturation = 2,
-    stack_size = 64
-) }}
+{{ infobox("vanillaplus:baked_apple") }}
 
 **Baked Apple** is a food item that can be obtained by cooking a Apple in the Furnace or Smoker.
 
@@ -13,7 +8,7 @@
 
 ### Smelting
 
-{{ smelting("baked_apple") }}
+{{ smelting_recipe("vanillaplus:baked_apple") }}
 
 ## Data Values
 

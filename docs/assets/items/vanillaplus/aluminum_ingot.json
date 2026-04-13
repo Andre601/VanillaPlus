@@ -1,0 +1,15 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:aluminum_block",
+            "shapeless": true,
+            "amount": 9
+        }
+    },
+    "smelting": {
+        "item": "vanillaplus:raw_bauxite",
+        "exp": 0.8
+    },
+    "name": "Aluminum Ingot",
+    "stack_size": 64
+}

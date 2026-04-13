@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "oak_slab",
+            "2": "oak_slab",
+            "3": "oak_slab",
+            "4": "stripped_oak_log",
+            "6": "stripped_oak_log"
+        }
+    },
+    "name": "Oak Office Table"
+}

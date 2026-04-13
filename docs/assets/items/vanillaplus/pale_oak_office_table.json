@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "pale_oak_slab",
+            "2": "pale_oak_slab",
+            "3": "pale_oak_slab",
+            "4": "stripped_pale_oak_log",
+            "6": "stripped_pale_oak_log"
+        }
+    },
+    "name": "Pale Oak Office Table"
+}

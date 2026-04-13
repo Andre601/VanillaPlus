@@ -1,0 +1,9 @@
+{
+    "smithing": {
+        "template": "netherite_upgrade_smithing_template",
+        "item": "vanillaplus:diamond_scythe",
+        "material": "netherite_ingot"
+    },
+    "name": "Netherite Scythe",
+    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<green>1 Attack Damage\n<green>4 Attack Speed"
+}

@@ -1,9 +1,6 @@
 # Teleport Crystal
 
-{{ infobox(
-  "teleport_crystal",
-  durability = 10
-) }}
+{{ infobox("vanillaplus:teleport_crystal") }}
 
 **Teleport Crystal** is an item that allows you to save a location to later teleport back to.
 
@@ -16,7 +13,7 @@ The saving will only work if the player has at least 1 XP level available, while
 
 ### Crafting
 
-{{ crafting("teleport_crystal") }}
+{{ crafting_recipe("vanillaplus:teleport_crystal") }}
 
 ## Data Values
 

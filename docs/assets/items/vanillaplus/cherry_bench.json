@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "cherry_fence_gate",
+            "4": "cherry_fence",
+            "5": "cherry_slab",
+            "6": "cherry_fence"
+        }
+    },
+    "name": "Cherry Bench",
+    "stack_size": 64
+}

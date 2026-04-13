@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "spruce_slab",
+            "2": "spruce_slab",
+            "3": "spruce_slab",
+            "4": "stripped_spruce_log",
+            "6": "stripped_spruce_log"
+        }
+    },
+    "name": "Spruce Office Table"
+}

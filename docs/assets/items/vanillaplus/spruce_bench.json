@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "spruce_fence_gate",
+            "4": "spruce_fence",
+            "5": "spruce_slab",
+            "6": "spruce_fence"
+        }
+    },
+    "name": "Spruce Bench",
+    "stack_size": 64
+}

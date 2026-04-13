@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "bamboo_slab",
+            "2": "bamboo_slab",
+            "3": "bamboo_slab",
+            "4": "stripped_bamboo_block",
+            "6": "stripped_bamboo_block"
+        }
+    },
+    "name": "Bamboo Office Table"
+}

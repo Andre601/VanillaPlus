@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "3": "vanillaplus:iron_rod",
+            "5": "vanillaplus:iron_rod",
+            "6": "string",
+            "7": "vanillaplus:iron_rod",
+            "9": "string"
+        }
+    },
+    "name": "Iron Fishing Rod",
+    "durability": 130
+}

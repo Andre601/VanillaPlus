@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "mangrove_fence_gate",
+            "2": "any_carpet",
+            "4": "mangrove_fence",
+            "5": "mangrove_slab",
+            "6": "mangrove_fence"
+        }
+    },
+    "name": "Mangrove Chair",
+    "gif": true
+}

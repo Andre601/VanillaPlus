@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "gold_ingot",
+            "3": "gold_ingot",
+            "4": "gold_ingot",
+            "6": "stick",
+            "9": "stick"
+        }
+    },
+    "name": "Golden Scythe",
+    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<green>1 Attack Damage\n<green>1 Attack Speed"
+}

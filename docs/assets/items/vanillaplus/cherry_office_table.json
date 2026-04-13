@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "cherry_slab",
+            "2": "cherry_slab",
+            "3": "cherry_slab",
+            "4": "stripped_cherry_log",
+            "6": "stripped_cherry_log"
+        }
+    },
+    "name": "Cherry Office Table"
+}

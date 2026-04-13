@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_wool",
+            "3": "any_wool",
+            "4": "any_wool",
+            "5": "any_wool",
+            "6": "any_wool",
+            "7": "bamboo_slab",
+            "8": "bamboo_slab",
+            "9": "bamboo_slab"
+        }
+    },
+    "name": "Bamboo Couch",
+    "gif": true,
+    "stack_size": 64
+}

@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "vanillaplus:aluminum_ingot",
+            "5": "stick",
+            "6": "vanillaplus:aluminum_ingot",
+            "7": "stick"
+        }
+    },
+    "name": "Aluminum Hammer",
+    "durability": 10
+}
