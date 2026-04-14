@@ -2,7 +2,8 @@
 
 {{ infobox("vanillaplus:acacia_office_table") }}
 
-**Office Table** is a furniture that can be placed in the world to be used as a decorative piece.
+**Office Table** is a furniture that can be placed in the world to be used as a decorative piece.  
+It also provides 9 slots of Storage.
 
 The Item exists in all 12 wood types.
 

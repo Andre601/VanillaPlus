@@ -2,14 +2,9 @@
 
 {{ infobox("vanillaplus:acacia_table") }}
 
-**Table** is a furniture that can be placed and allow players to sit on it.
+**Table** is a furniture that can be placed as a decorative piece.
 
 The Item exists in all 12 wood types and all 16 wool color variants, allowing over 192 individual Table variants to be crafted.
-
-## Usage
-
-After placing the item on the floor can a player sit on it by right-clicking it.  
-Holding the sneak button will dismount the player from the Table.
 
 ## Obtaining
 
