@@ -9,5 +9,23 @@
         }
     },
     "name": "Warped Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_warped_chair",
+        "vanillaplus:blue_warped_chair",
+        "vanillaplus:brown_warped_chair",
+        "vanillaplus:cyan_warped_chair",
+        "vanillaplus:gray_warped_chair",
+        "vanillaplus:green_warped_chair",
+        "vanillaplus:light_blue_warped_chair",
+        "vanillaplus:light_gray_warped_chair",
+        "vanillaplus:lime_warped_chair",
+        "vanillaplus:magenta_warped_chair",
+        "vanillaplus:orange_warped_chair",
+        "vanillaplus:pink_warped_chair",
+        "vanillaplus:purple_warped_chair",
+        "vanillaplus:red_warped_chair",
+        "vanillaplus:white_warped_chair",
+        "vanillaplus:yellow_warped_chair"
+    ]
 }

@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "warped_slab",
+            "5": "warped_slab",
+            "6": "warped_slab",
+            "7": "warped_fence",
+            "9": "warped_fence"
+        }
+    },
+    "name": "Warped Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_warped_table",
+        "vanillaplus:blue_warped_table",
+        "vanillaplus:brown_warped_table",
+        "vanillaplus:cyan_warped_table",
+        "vanillaplus:gray_warped_table",
+        "vanillaplus:green_warped_table",
+        "vanillaplus:light_blue_warped_table",
+        "vanillaplus:light_gray_warped_table",
+        "vanillaplus:lime_warped_table",
+        "vanillaplus:magenta_warped_table",
+        "vanillaplus:orange_warped_table",
+        "vanillaplus:pink_warped_table",
+        "vanillaplus:purple_warped_table",
+        "vanillaplus:red_warped_table",
+        "vanillaplus:white_warped_table",
+        "vanillaplus:yellow_warped_table"
+    ]
+}

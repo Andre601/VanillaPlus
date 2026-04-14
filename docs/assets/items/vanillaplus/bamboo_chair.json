@@ -9,5 +9,23 @@
         }
     },
     "name": "Bamboo Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_bamboo_chair",
+        "vanillaplus:blue_bamboo_chair",
+        "vanillaplus:brown_bamboo_chair",
+        "vanillaplus:cyan_bamboo_chair",
+        "vanillaplus:gray_bamboo_chair",
+        "vanillaplus:green_bamboo_chair",
+        "vanillaplus:light_blue_bamboo_chair",
+        "vanillaplus:light_gray_bamboo_chair",
+        "vanillaplus:lime_bamboo_chair",
+        "vanillaplus:magenta_bamboo_chair",
+        "vanillaplus:orange_bamboo_chair",
+        "vanillaplus:pink_bamboo_chair",
+        "vanillaplus:purple_bamboo_chair",
+        "vanillaplus:red_bamboo_chair",
+        "vanillaplus:white_bamboo_chair",
+        "vanillaplus:yellow_bamboo_chair"
+    ]
 }

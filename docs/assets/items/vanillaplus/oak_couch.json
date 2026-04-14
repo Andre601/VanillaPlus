@@ -12,6 +12,23 @@
         }
     },
     "name": "Oak Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_oak_couch",
+        "vanillaplus:blue_oak_couch",
+        "vanillaplus:brown_oak_couch",
+        "vanillaplus:cyan_oak_couch",
+        "vanillaplus:gray_oak_couch",
+        "vanillaplus:green_oak_couch",
+        "vanillaplus:light_blue_oak_couch",
+        "vanillaplus:light_gray_oak_couch",
+        "vanillaplus:lime_oak_couch",
+        "vanillaplus:magenta_oak_couch",
+        "vanillaplus:orange_oak_couch",
+        "vanillaplus:pink_oak_couch",
+        "vanillaplus:purple_oak_couch",
+        "vanillaplus:red_oak_couch",
+        "vanillaplus:white_oak_couch",
+        "vanillaplus:yellow_oak_couch"
+    ]
 }

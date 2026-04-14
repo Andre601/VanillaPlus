@@ -9,5 +9,23 @@
         }
     },
     "name": "Crimson Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_crimson_chair",
+        "vanillaplus:blue_crimson_chair",
+        "vanillaplus:brown_crimson_chair",
+        "vanillaplus:cyan_crimson_chair",
+        "vanillaplus:gray_crimson_chair",
+        "vanillaplus:green_crimson_chair",
+        "vanillaplus:light_blue_crimson_chair",
+        "vanillaplus:light_gray_crimson_chair",
+        "vanillaplus:lime_crimson_chair",
+        "vanillaplus:magenta_crimson_chair",
+        "vanillaplus:orange_crimson_chair",
+        "vanillaplus:pink_crimson_chair",
+        "vanillaplus:purple_crimson_chair",
+        "vanillaplus:red_crimson_chair",
+        "vanillaplus:white_crimson_chair",
+        "vanillaplus:yellow_crimson_chair"
+    ]
 }

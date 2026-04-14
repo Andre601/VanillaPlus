@@ -9,5 +9,23 @@
         }
     },
     "name": "Birch Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_birch_chair",
+        "vanillaplus:blue_birch_chair",
+        "vanillaplus:brown_birch_chair",
+        "vanillaplus:cyan_birch_chair",
+        "vanillaplus:gray_birch_chair",
+        "vanillaplus:green_birch_chair",
+        "vanillaplus:light_blue_birch_chair",
+        "vanillaplus:light_gray_birch_chair",
+        "vanillaplus:lime_birch_chair",
+        "vanillaplus:magenta_birch_chair",
+        "vanillaplus:orange_birch_chair",
+        "vanillaplus:pink_birch_chair",
+        "vanillaplus:purple_birch_chair",
+        "vanillaplus:red_birch_chair",
+        "vanillaplus:white_birch_chair",
+        "vanillaplus:yellow_birch_chair"
+    ]
 }

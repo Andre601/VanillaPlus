@@ -22,6 +22,62 @@
 
 		if (!contentText) return;
 
+		/*
+		 * Animated Icons.
+		 * Original Source: https://minecraft.wiki/w/MediaWiki:Gadget-site.js?oldid=3480362#L-424--L-471
+		 */
+
+		const advanceFrame = (parentElem, selector) => {
+			console.log("Advancing a frame...")
+			const curFrame = parentElem.querySelector(selector + ' > .animated-active');
+
+			console.log(curFrame)
+
+			if (curFrame) {
+				curFrame.classList.remove('animated-active');
+			}
+
+			const nextFrame = curFrame?.nextElementSibling || parentElem.firstElementChild;
+
+			console.log(nextFrame)
+
+			if (nextFrame) {
+				nextFrame.classList.add('animated-active');
+			}
+
+			return nextFrame;
+		}
+
+		let hidden;
+		if (typeof document.hidden !== 'undefined') {
+			hidden = 'hidden';
+		} else if (typeof document.msHidden !== 'undefined') {
+			hidden = 'msHidden';
+		} else if (typeof document.webkitHidden !== 'undefined') {
+			hidden = 'webkitHidden';
+		}
+
+		setInterval(() => {
+			if (hidden && document[hidden]) return;
+
+			document.querySelectorAll('.animated').forEach((el) => {
+				if (el.classList.contains('animated-paused')) return;
+
+				console.log("No pause detected.")
+
+				const nextFrame = advanceFrame(el, '.animated');
+
+				if (nextFrame?.classList.contains('animated-subframe')) {
+					console.log("Animated subframe detected")
+					advanceFrame(nextFrame, '.animated-subframe')
+				}
+			});
+		}, 1500);
+
+		/*
+		 * End of Animated Icon Code
+		 */
+
 		const escapeHTML = (str) =>
 				str.replace(/[&<>"]/g, (m) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[m]));
 

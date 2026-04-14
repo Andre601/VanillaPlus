@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "cherry_slab",
+            "5": "cherry_slab",
+            "6": "cherry_slab",
+            "7": "cherry_fence",
+            "9": "cherry_fence"
+        }
+    },
+    "name": "Cherry Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_cherry_table",
+        "vanillaplus:blue_cherry_table",
+        "vanillaplus:brown_cherry_table",
+        "vanillaplus:cyan_cherry_table",
+        "vanillaplus:gray_cherry_table",
+        "vanillaplus:green_cherry_table",
+        "vanillaplus:light_blue_cherry_table",
+        "vanillaplus:light_gray_cherry_table",
+        "vanillaplus:lime_cherry_table",
+        "vanillaplus:magenta_cherry_table",
+        "vanillaplus:orange_cherry_table",
+        "vanillaplus:pink_cherry_table",
+        "vanillaplus:purple_cherry_table",
+        "vanillaplus:red_cherry_table",
+        "vanillaplus:white_cherry_table",
+        "vanillaplus:yellow_cherry_table"
+    ]
+}

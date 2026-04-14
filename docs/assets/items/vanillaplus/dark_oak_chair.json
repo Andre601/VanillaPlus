@@ -9,5 +9,23 @@
         }
     },
     "name": "Dark Oak Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_dark_oak_chair",
+        "vanillaplus:blue_dark_oak_chair",
+        "vanillaplus:brown_dark_oak_chair",
+        "vanillaplus:cyan_dark_oak_chair",
+        "vanillaplus:gray_dark_oak_chair",
+        "vanillaplus:green_dark_oak_chair",
+        "vanillaplus:light_blue_dark_oak_chair",
+        "vanillaplus:light_gray_dark_oak_chair",
+        "vanillaplus:lime_dark_oak_chair",
+        "vanillaplus:magenta_dark_oak_chair",
+        "vanillaplus:orange_dark_oak_chair",
+        "vanillaplus:pink_dark_oak_chair",
+        "vanillaplus:purple_dark_oak_chair",
+        "vanillaplus:red_dark_oak_chair",
+        "vanillaplus:white_dark_oak_chair",
+        "vanillaplus:yellow_dark_oak_chair"
+    ]
 }

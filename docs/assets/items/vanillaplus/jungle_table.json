@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "jungle_slab",
+            "5": "jungle_slab",
+            "6": "jungle_slab",
+            "7": "jungle_fence",
+            "9": "jungle_fence"
+        }
+    },
+    "name": "Jungle Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_jungle_table",
+        "vanillaplus:blue_jungle_table",
+        "vanillaplus:brown_jungle_table",
+        "vanillaplus:cyan_jungle_table",
+        "vanillaplus:gray_jungle_table",
+        "vanillaplus:green_jungle_table",
+        "vanillaplus:light_blue_jungle_table",
+        "vanillaplus:light_gray_jungle_table",
+        "vanillaplus:lime_jungle_table",
+        "vanillaplus:magenta_jungle_table",
+        "vanillaplus:orange_jungle_table",
+        "vanillaplus:pink_jungle_table",
+        "vanillaplus:purple_jungle_table",
+        "vanillaplus:red_jungle_table",
+        "vanillaplus:white_jungle_table",
+        "vanillaplus:yellow_jungle_table"
+    ]
+}

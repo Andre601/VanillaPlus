@@ -12,6 +12,23 @@
         }
     },
     "name": "Dark Oak Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_dark_oak_couch",
+        "vanillaplus:blue_dark_oak_couch",
+        "vanillaplus:brown_dark_oak_couch",
+        "vanillaplus:cyan_dark_oak_couch",
+        "vanillaplus:gray_dark_oak_couch",
+        "vanillaplus:green_dark_oak_couch",
+        "vanillaplus:light_blue_dark_oak_couch",
+        "vanillaplus:light_gray_dark_oak_couch",
+        "vanillaplus:lime_dark_oak_couch",
+        "vanillaplus:magenta_dark_oak_couch",
+        "vanillaplus:orange_dark_oak_couch",
+        "vanillaplus:pink_dark_oak_couch",
+        "vanillaplus:purple_dark_oak_couch",
+        "vanillaplus:red_dark_oak_couch",
+        "vanillaplus:white_dark_oak_couch",
+        "vanillaplus:yellow_dark_oak_couch"
+    ]
 }

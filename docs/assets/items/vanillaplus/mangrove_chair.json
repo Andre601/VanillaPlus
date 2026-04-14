@@ -9,5 +9,23 @@
         }
     },
     "name": "Mangrove Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_mangrove_chair",
+        "vanillaplus:blue_mangrove_chair",
+        "vanillaplus:brown_mangrove_chair",
+        "vanillaplus:cyan_mangrove_chair",
+        "vanillaplus:gray_mangrove_chair",
+        "vanillaplus:green_mangrove_chair",
+        "vanillaplus:light_blue_mangrove_chair",
+        "vanillaplus:light_gray_mangrove_chair",
+        "vanillaplus:lime_mangrove_chair",
+        "vanillaplus:magenta_mangrove_chair",
+        "vanillaplus:orange_mangrove_chair",
+        "vanillaplus:pink_mangrove_chair",
+        "vanillaplus:purple_mangrove_chair",
+        "vanillaplus:red_mangrove_chair",
+        "vanillaplus:white_mangrove_chair",
+        "vanillaplus:yellow_mangrove_chair"
+    ]
 }

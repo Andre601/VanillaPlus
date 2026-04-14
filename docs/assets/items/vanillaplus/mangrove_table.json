@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "mangrove_slab",
+            "5": "mangrove_slab",
+            "6": "mangrove_slab",
+            "7": "mangrove_fence",
+            "9": "mangrove_fence"
+        }
+    },
+    "name": "Mangrove Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_mangrove_table",
+        "vanillaplus:blue_mangrove_table",
+        "vanillaplus:brown_mangrove_table",
+        "vanillaplus:cyan_mangrove_table",
+        "vanillaplus:gray_mangrove_table",
+        "vanillaplus:green_mangrove_table",
+        "vanillaplus:light_blue_mangrove_table",
+        "vanillaplus:light_gray_mangrove_table",
+        "vanillaplus:lime_mangrove_table",
+        "vanillaplus:magenta_mangrove_table",
+        "vanillaplus:orange_mangrove_table",
+        "vanillaplus:pink_mangrove_table",
+        "vanillaplus:purple_mangrove_table",
+        "vanillaplus:red_mangrove_table",
+        "vanillaplus:white_mangrove_table",
+        "vanillaplus:yellow_mangrove_table"
+    ]
+}

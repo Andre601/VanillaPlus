@@ -12,6 +12,23 @@
         }
     },
     "name": "Birch Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_birch_couch",
+        "vanillaplus:blue_birch_couch",
+        "vanillaplus:brown_birch_couch",
+        "vanillaplus:cyan_birch_couch",
+        "vanillaplus:gray_birch_couch",
+        "vanillaplus:green_birch_couch",
+        "vanillaplus:light_blue_birch_couch",
+        "vanillaplus:light_gray_birch_couch",
+        "vanillaplus:lime_birch_couch",
+        "vanillaplus:magenta_birch_couch",
+        "vanillaplus:orange_birch_couch",
+        "vanillaplus:pink_birch_couch",
+        "vanillaplus:purple_birch_couch",
+        "vanillaplus:red_birch_couch",
+        "vanillaplus:white_birch_couch",
+        "vanillaplus:yellow_birch_couch"
+    ]
 }

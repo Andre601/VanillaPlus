@@ -12,6 +12,23 @@
         }
     },
     "name": "Mangrove Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_mangrove_couch",
+        "vanillaplus:blue_mangrove_couch",
+        "vanillaplus:brown_mangrove_couch",
+        "vanillaplus:cyan_mangrove_couch",
+        "vanillaplus:gray_mangrove_couch",
+        "vanillaplus:green_mangrove_couch",
+        "vanillaplus:light_blue_mangrove_couch",
+        "vanillaplus:light_gray_mangrove_couch",
+        "vanillaplus:lime_mangrove_couch",
+        "vanillaplus:magenta_mangrove_couch",
+        "vanillaplus:orange_mangrove_couch",
+        "vanillaplus:pink_mangrove_couch",
+        "vanillaplus:purple_mangrove_couch",
+        "vanillaplus:red_mangrove_couch",
+        "vanillaplus:white_mangrove_couch",
+        "vanillaplus:yellow_mangrove_couch"
+    ]
 }

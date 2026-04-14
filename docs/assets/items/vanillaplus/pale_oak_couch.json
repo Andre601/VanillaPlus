@@ -12,6 +12,23 @@
         }
     },
     "name": "Pale Oak Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_pale_oak_couch",
+        "vanillaplus:blue_pale_oak_couch",
+        "vanillaplus:brown_pale_oak_couch",
+        "vanillaplus:cyan_pale_oak_couch",
+        "vanillaplus:gray_pale_oak_couch",
+        "vanillaplus:green_pale_oak_couch",
+        "vanillaplus:light_blue_pale_oak_couch",
+        "vanillaplus:light_gray_pale_oak_couch",
+        "vanillaplus:lime_pale_oak_couch",
+        "vanillaplus:magenta_pale_oak_couch",
+        "vanillaplus:orange_pale_oak_couch",
+        "vanillaplus:pink_pale_oak_couch",
+        "vanillaplus:purple_pale_oak_couch",
+        "vanillaplus:red_pale_oak_couch",
+        "vanillaplus:white_pale_oak_couch",
+        "vanillaplus:yellow_pale_oak_couch"
+    ]
 }

@@ -9,5 +9,23 @@
         }
     },
     "name": "Spruce Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_spruce_chair",
+        "vanillaplus:blue_spruce_chair",
+        "vanillaplus:brown_spruce_chair",
+        "vanillaplus:cyan_spruce_chair",
+        "vanillaplus:gray_spruce_chair",
+        "vanillaplus:green_spruce_chair",
+        "vanillaplus:light_blue_spruce_chair",
+        "vanillaplus:light_gray_spruce_chair",
+        "vanillaplus:lime_spruce_chair",
+        "vanillaplus:magenta_spruce_chair",
+        "vanillaplus:orange_spruce_chair",
+        "vanillaplus:pink_spruce_chair",
+        "vanillaplus:purple_spruce_chair",
+        "vanillaplus:red_spruce_chair",
+        "vanillaplus:white_spruce_chair",
+        "vanillaplus:yellow_spruce_chair"
+    ]
 }

@@ -12,6 +12,23 @@
         }
     },
     "name": "Warped Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_warped_couch",
+        "vanillaplus:blue_warped_couch",
+        "vanillaplus:brown_warped_couch",
+        "vanillaplus:cyan_warped_couch",
+        "vanillaplus:gray_warped_couch",
+        "vanillaplus:green_warped_couch",
+        "vanillaplus:light_blue_warped_couch",
+        "vanillaplus:light_gray_warped_couch",
+        "vanillaplus:lime_warped_couch",
+        "vanillaplus:magenta_warped_couch",
+        "vanillaplus:orange_warped_couch",
+        "vanillaplus:pink_warped_couch",
+        "vanillaplus:purple_warped_couch",
+        "vanillaplus:red_warped_couch",
+        "vanillaplus:white_warped_couch",
+        "vanillaplus:yellow_warped_couch"
+    ]
 }

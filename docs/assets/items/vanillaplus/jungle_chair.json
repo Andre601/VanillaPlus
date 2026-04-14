@@ -9,5 +9,23 @@
         }
     },
     "name": "Jungle Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_jungle_chair",
+        "vanillaplus:blue_jungle_chair",
+        "vanillaplus:brown_jungle_chair",
+        "vanillaplus:cyan_jungle_chair",
+        "vanillaplus:gray_jungle_chair",
+        "vanillaplus:green_jungle_chair",
+        "vanillaplus:light_blue_jungle_chair",
+        "vanillaplus:light_gray_jungle_chair",
+        "vanillaplus:lime_jungle_chair",
+        "vanillaplus:magenta_jungle_chair",
+        "vanillaplus:orange_jungle_chair",
+        "vanillaplus:pink_jungle_chair",
+        "vanillaplus:purple_jungle_chair",
+        "vanillaplus:red_jungle_chair",
+        "vanillaplus:white_jungle_chair",
+        "vanillaplus:yellow_jungle_chair"
+    ]
 }

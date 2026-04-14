@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "oak_slab",
+            "5": "oak_slab",
+            "6": "oak_slab",
+            "7": "oak_fence",
+            "9": "oak_fence"
+        }
+    },
+    "name": "Oak Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_oak_table",
+        "vanillaplus:blue_oak_table",
+        "vanillaplus:brown_oak_table",
+        "vanillaplus:cyan_oak_table",
+        "vanillaplus:gray_oak_table",
+        "vanillaplus:green_oak_table",
+        "vanillaplus:light_blue_oak_table",
+        "vanillaplus:light_gray_oak_table",
+        "vanillaplus:lime_oak_table",
+        "vanillaplus:magenta_oak_table",
+        "vanillaplus:orange_oak_table",
+        "vanillaplus:pink_oak_table",
+        "vanillaplus:purple_oak_table",
+        "vanillaplus:red_oak_table",
+        "vanillaplus:white_oak_table",
+        "vanillaplus:yellow_oak_table"
+    ]
+}

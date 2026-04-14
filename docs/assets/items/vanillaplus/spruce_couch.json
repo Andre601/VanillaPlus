@@ -12,6 +12,23 @@
         }
     },
     "name": "Spruce Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_spruce_couch",
+        "vanillaplus:blue_spruce_couch",
+        "vanillaplus:brown_spruce_couch",
+        "vanillaplus:cyan_spruce_couch",
+        "vanillaplus:gray_spruce_couch",
+        "vanillaplus:green_spruce_couch",
+        "vanillaplus:light_blue_spruce_couch",
+        "vanillaplus:light_gray_spruce_couch",
+        "vanillaplus:lime_spruce_couch",
+        "vanillaplus:magenta_spruce_couch",
+        "vanillaplus:orange_spruce_couch",
+        "vanillaplus:pink_spruce_couch",
+        "vanillaplus:purple_spruce_couch",
+        "vanillaplus:red_spruce_couch",
+        "vanillaplus:white_spruce_couch",
+        "vanillaplus:yellow_spruce_couch"
+    ]
 }

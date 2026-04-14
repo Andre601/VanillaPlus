@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "crimson_slab",
+            "5": "crimson_slab",
+            "6": "crimson_slab",
+            "7": "crimson_fence",
+            "9": "crimson_fence"
+        }
+    },
+    "name": "Crimson Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_crimson_table",
+        "vanillaplus:blue_crimson_table",
+        "vanillaplus:brown_crimson_table",
+        "vanillaplus:cyan_crimson_table",
+        "vanillaplus:gray_crimson_table",
+        "vanillaplus:green_crimson_table",
+        "vanillaplus:light_blue_crimson_table",
+        "vanillaplus:light_gray_crimson_table",
+        "vanillaplus:lime_crimson_table",
+        "vanillaplus:magenta_crimson_table",
+        "vanillaplus:orange_crimson_table",
+        "vanillaplus:pink_crimson_table",
+        "vanillaplus:purple_crimson_table",
+        "vanillaplus:red_crimson_table",
+        "vanillaplus:white_crimson_table",
+        "vanillaplus:yellow_crimson_table"
+    ]
+}

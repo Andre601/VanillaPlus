@@ -9,7 +9,24 @@
         }
     },
     "name": "Acacia Chair",
-    "gif": true,
     "icon": "chair.gif",
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_acacia_chair",
+        "vanillaplus:blue_acacia_chair",
+        "vanillaplus:brown_acacia_chair",
+        "vanillaplus:cyan_acacia_chair",
+        "vanillaplus:gray_acacia_chair",
+        "vanillaplus:green_acacia_chair",
+        "vanillaplus:light_blue_acacia_chair",
+        "vanillaplus:light_gray_acacia_chair",
+        "vanillaplus:lime_acacia_chair",
+        "vanillaplus:magenta_acacia_chair",
+        "vanillaplus:orange_acacia_chair",
+        "vanillaplus:pink_acacia_chair",
+        "vanillaplus:purple_acacia_chair",
+        "vanillaplus:red_acacia_chair",
+        "vanillaplus:white_acacia_chair",
+        "vanillaplus:yellow_acacia_chair"
+    ]
 }

@@ -12,6 +12,23 @@
         }
     },
     "name": "Jungle Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_jungle_couch",
+        "vanillaplus:blue_jungle_couch",
+        "vanillaplus:brown_jungle_couch",
+        "vanillaplus:cyan_jungle_couch",
+        "vanillaplus:gray_jungle_couch",
+        "vanillaplus:green_jungle_couch",
+        "vanillaplus:light_blue_jungle_couch",
+        "vanillaplus:light_gray_jungle_couch",
+        "vanillaplus:lime_jungle_couch",
+        "vanillaplus:magenta_jungle_couch",
+        "vanillaplus:orange_jungle_couch",
+        "vanillaplus:pink_jungle_couch",
+        "vanillaplus:purple_jungle_couch",
+        "vanillaplus:red_jungle_couch",
+        "vanillaplus:white_jungle_couch",
+        "vanillaplus:yellow_jungle_couch"
+    ]
 }

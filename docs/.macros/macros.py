@@ -78,9 +78,9 @@ def define_env(env):
         ingredients_names.sort()
 
         strings.extend([" + ".join(ingredients_names), "</td>", "<td>"])
-        strings.append(f'<div class="crafting-table {"create" if create_recipe else ""} tooltips">')
+        strings.append(f'<div class="crafting-table tooltips">')
 
-        for num in range(1, (13 if create_recipe else 10)):
+        for num in range(1, 10):
             ingredient_id = ingredients.get(f"{num}")
             if not ingredient_id or not unique_ingredients.get(ingredient_id):
                 strings.append(f'<span class="invslot-item slot{num}"></span>')
@@ -91,24 +91,40 @@ def define_env(env):
 
 
             item_slot = [
-                f'<span class="invslot-item slot{num}" data-minetip-title="',
-                ingredient_data["name"] if "name" in ingredient_data else ingredient_id,
+                f'<span class="{"animated " if isinstance(ingredient_data.get("variants"), list) else ""}invslot-item slot{num}" data-minetip-title="',
+                ingredient_data.get("name", ingredient_id.replace("_", " ").title()),
                 '"',
-                f' data-minetip-text="{ingredient_data["lore"]}">' if "lore" in ingredient_data else ">",
-                f'<img src="/assets/img/items/{item_path}.{"gif" if "gif" in ingredient_data and ingredient_data["gif"] else "png"}" class="no-glight" loading="lazy" alt="{ingredient_id}">',
-                "</span>"
+                f' data-minetip-text="{ingredient_data["lore"]}">' if "lore" in ingredient_data else ">"
             ]
+
+            if isinstance(ingredient_data.get("variants"), list):
+                for i, variant in enumerate(ingredient_data["variants"]):
+                    item_slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="lazy" alt="{ingredient_id}">')
+            else:
+                item_slot.append(f'<img src="/assets/img/items/{item_path}.{"gif" if "gif" in ingredient_data and ingredient_data["gif"] else "png"}" class="no-glight" loading="lazy" alt="{ingredient_id}">')
+            
+            item_slot.append('</span>')
+
             strings.append(''.join(item_slot))
         
         result_slot = [
-            f'<span class="invslot-item slot0" data-minetip-title="',
+            f'<span class="{"animated " if isinstance(json_data.get("variants"), list) else ""}invslot-item slot0" data-minetip-title="',
             json_data["name"] if "name" in json_data else id,
             '"',
-            f' data-minetip-text="{json_data["lore"]}">' if "lore" in json_data else ">",
-            f'<img src="/assets/img/items/{item}.{"gif" if json_data.get("gif", False) else "png"}" class="no-glight" loading="lazy" alt="{id}">',
-            f'<div class="quantity">{crafting["amount"]}</div>' if "amount" in crafting and crafting["amount"] > 1 else "",
-            "</span>"
+            f' data-minetip-text="{json_data["lore"]}">' if "lore" in json_data else ">"
         ]
+
+        if isinstance(json_data.get("variants"), list):
+            for i, variant in enumerate(json_data["variants"]):
+                result_slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="lazy" alt="{id}">')
+        else:
+            result_slot.append(f'<img src="/assets/img/items/{item}.{"gif" if json_data.get("gif", False) else "png"}" class="no-glight" loading="lazy" alt="{id}">')
+        
+        result_slot.extend([
+            f'<div class="quantity">{crafting["amount"]}</div>' if "amount" in crafting and crafting["amount"] > 1 else "",
+            '</span>'
+        ])
+
         strings.append(''.join(result_slot))
 
         if create_recipe:

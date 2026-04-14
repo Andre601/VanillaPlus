@@ -12,6 +12,23 @@
         }
     },
     "name": "Cherry Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_cherry_couch",
+        "vanillaplus:blue_cherry_couch",
+        "vanillaplus:brown_cherry_couch",
+        "vanillaplus:cyan_cherry_couch",
+        "vanillaplus:gray_cherry_couch",
+        "vanillaplus:green_cherry_couch",
+        "vanillaplus:light_blue_cherry_couch",
+        "vanillaplus:light_gray_cherry_couch",
+        "vanillaplus:lime_cherry_couch",
+        "vanillaplus:magenta_cherry_couch",
+        "vanillaplus:orange_cherry_couch",
+        "vanillaplus:pink_cherry_couch",
+        "vanillaplus:purple_cherry_couch",
+        "vanillaplus:red_cherry_couch",
+        "vanillaplus:white_cherry_couch",
+        "vanillaplus:yellow_cherry_couch"
+    ]
 }

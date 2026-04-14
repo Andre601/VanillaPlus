@@ -12,6 +12,23 @@
         }
     },
     "name": "Crimson Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_crimson_couch",
+        "vanillaplus:blue_crimson_couch",
+        "vanillaplus:brown_crimson_couch",
+        "vanillaplus:cyan_crimson_couch",
+        "vanillaplus:gray_crimson_couch",
+        "vanillaplus:green_crimson_couch",
+        "vanillaplus:light_blue_crimson_couch",
+        "vanillaplus:light_gray_crimson_couch",
+        "vanillaplus:lime_crimson_couch",
+        "vanillaplus:magenta_crimson_couch",
+        "vanillaplus:orange_crimson_couch",
+        "vanillaplus:pink_crimson_couch",
+        "vanillaplus:purple_crimson_couch",
+        "vanillaplus:red_crimson_couch",
+        "vanillaplus:white_crimson_couch",
+        "vanillaplus:yellow_crimson_couch"
+    ]
 }

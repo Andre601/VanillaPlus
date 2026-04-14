@@ -9,5 +9,23 @@
         }
     },
     "name": "Pale Oak Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_pale_oak_chair",
+        "vanillaplus:blue_pale_oak_chair",
+        "vanillaplus:brown_pale_oak_chair",
+        "vanillaplus:cyan_pale_oak_chair",
+        "vanillaplus:gray_pale_oak_chair",
+        "vanillaplus:green_pale_oak_chair",
+        "vanillaplus:light_blue_pale_oak_chair",
+        "vanillaplus:light_gray_pale_oak_chair",
+        "vanillaplus:lime_pale_oak_chair",
+        "vanillaplus:magenta_pale_oak_chair",
+        "vanillaplus:orange_pale_oak_chair",
+        "vanillaplus:pink_pale_oak_chair",
+        "vanillaplus:purple_pale_oak_chair",
+        "vanillaplus:red_pale_oak_chair",
+        "vanillaplus:white_pale_oak_chair",
+        "vanillaplus:yellow_pale_oak_chair"
+    ]
 }

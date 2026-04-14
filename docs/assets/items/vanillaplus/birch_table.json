@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "birch_slab",
+            "5": "birch_slab",
+            "6": "birch_slab",
+            "7": "birch_fence",
+            "9": "birch_fence"
+        }
+    },
+    "name": "Birch Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_birch_table",
+        "vanillaplus:blue_birch_table",
+        "vanillaplus:brown_birch_table",
+        "vanillaplus:cyan_birch_table",
+        "vanillaplus:gray_birch_table",
+        "vanillaplus:green_birch_table",
+        "vanillaplus:light_blue_birch_table",
+        "vanillaplus:light_gray_birch_table",
+        "vanillaplus:lime_birch_table",
+        "vanillaplus:magenta_birch_table",
+        "vanillaplus:orange_birch_table",
+        "vanillaplus:pink_birch_table",
+        "vanillaplus:purple_birch_table",
+        "vanillaplus:red_birch_table",
+        "vanillaplus:white_birch_table",
+        "vanillaplus:yellow_birch_table"
+    ]
+}

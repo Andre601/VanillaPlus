@@ -12,6 +12,23 @@
         }
     },
     "name": "Bamboo Couch",
-    "gif": true,
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_bamboo_couch",
+        "vanillaplus:blue_bamboo_couch",
+        "vanillaplus:brown_bamboo_couch",
+        "vanillaplus:cyan_bamboo_couch",
+        "vanillaplus:gray_bamboo_couch",
+        "vanillaplus:green_bamboo_couch",
+        "vanillaplus:light_blue_bamboo_couch",
+        "vanillaplus:light_gray_bamboo_couch",
+        "vanillaplus:lime_bamboo_couch",
+        "vanillaplus:magenta_bamboo_couch",
+        "vanillaplus:orange_bamboo_couch",
+        "vanillaplus:pink_bamboo_couch",
+        "vanillaplus:purple_bamboo_couch",
+        "vanillaplus:red_bamboo_couch",
+        "vanillaplus:white_bamboo_couch",
+        "vanillaplus:yellow_bamboo_couch"
+    ]
 }

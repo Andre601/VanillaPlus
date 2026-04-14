@@ -9,5 +9,23 @@
         }
     },
     "name": "Cherry Chair",
-    "gif": true
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_cherry_chair",
+        "vanillaplus:blue_cherry_chair",
+        "vanillaplus:brown_cherry_chair",
+        "vanillaplus:cyan_cherry_chair",
+        "vanillaplus:gray_cherry_chair",
+        "vanillaplus:green_cherry_chair",
+        "vanillaplus:light_blue_cherry_chair",
+        "vanillaplus:light_gray_cherry_chair",
+        "vanillaplus:lime_cherry_chair",
+        "vanillaplus:magenta_cherry_chair",
+        "vanillaplus:orange_cherry_chair",
+        "vanillaplus:pink_cherry_chair",
+        "vanillaplus:purple_cherry_chair",
+        "vanillaplus:red_cherry_chair",
+        "vanillaplus:white_cherry_chair",
+        "vanillaplus:yellow_cherry_chair"
+    ]
 }

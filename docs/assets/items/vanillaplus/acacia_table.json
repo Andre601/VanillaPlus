@@ -1,0 +1,35 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "acacia_slab",
+            "5": "acacia_slab",
+            "6": "acacia_slab",
+            "7": "acacia_fence",
+            "9": "acacia_fence"
+        }
+    },
+    "name": "Acacia Table",
+    "icon": "table.gif",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_acacia_table",
+        "vanillaplus:blue_acacia_table",
+        "vanillaplus:brown_acacia_table",
+        "vanillaplus:cyan_acacia_table",
+        "vanillaplus:gray_acacia_table",
+        "vanillaplus:green_acacia_table",
+        "vanillaplus:light_blue_acacia_table",
+        "vanillaplus:light_gray_acacia_table",
+        "vanillaplus:lime_acacia_table",
+        "vanillaplus:magenta_acacia_table",
+        "vanillaplus:orange_acacia_table",
+        "vanillaplus:pink_acacia_table",
+        "vanillaplus:purple_acacia_table",
+        "vanillaplus:red_acacia_table",
+        "vanillaplus:white_acacia_table",
+        "vanillaplus:yellow_acacia_table"
+    ]
+}

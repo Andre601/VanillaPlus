@@ -12,7 +12,24 @@
         }
     },
     "name": "Acacia Couch",
-    "gif": true,
     "icon": "couch.gif",
-    "stack_size": 64
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_acacia_couch",
+        "vanillaplus:blue_acacia_couch",
+        "vanillaplus:brown_acacia_couch",
+        "vanillaplus:cyan_acacia_couch",
+        "vanillaplus:gray_acacia_couch",
+        "vanillaplus:green_acacia_couch",
+        "vanillaplus:light_blue_acacia_couch",
+        "vanillaplus:light_gray_acacia_couch",
+        "vanillaplus:lime_acacia_couch",
+        "vanillaplus:magenta_acacia_couch",
+        "vanillaplus:orange_acacia_couch",
+        "vanillaplus:pink_acacia_couch",
+        "vanillaplus:purple_acacia_couch",
+        "vanillaplus:red_acacia_couch",
+        "vanillaplus:white_acacia_couch",
+        "vanillaplus:yellow_acacia_couch"
+    ]
 }

@@ -1,0 +1,34 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "any_carpet",
+            "2": "any_carpet",
+            "3": "any_carpet",
+            "4": "bamboo_slab",
+            "5": "bamboo_slab",
+            "6": "bamboo_slab",
+            "7": "bamboo_fence",
+            "9": "bamboo_fence"
+        }
+    },
+    "name": "Bamboo Table",
+    "stack_size": 64,
+    "variants": [
+        "vanillaplus:black_bamboo_table",
+        "vanillaplus:blue_bamboo_table",
+        "vanillaplus:brown_bamboo_table",
+        "vanillaplus:cyan_bamboo_table",
+        "vanillaplus:gray_bamboo_table",
+        "vanillaplus:green_bamboo_table",
+        "vanillaplus:light_blue_bamboo_table",
+        "vanillaplus:light_gray_bamboo_table",
+        "vanillaplus:lime_bamboo_table",
+        "vanillaplus:magenta_bamboo_table",
+        "vanillaplus:orange_bamboo_table",
+        "vanillaplus:pink_bamboo_table",
+        "vanillaplus:purple_bamboo_table",
+        "vanillaplus:red_bamboo_table",
+        "vanillaplus:white_bamboo_table",
+        "vanillaplus:yellow_bamboo_table"
+    ]
+}
