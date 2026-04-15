@@ -9,5 +9,8 @@
         }
     },
     "name": "Iron Fishing Rod",
-    "durability": 130
+    "attributes": {
+        "stack_size": 1,
+        "durability": 130
+    }
 }

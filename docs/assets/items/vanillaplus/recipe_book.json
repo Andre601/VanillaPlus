@@ -8,5 +8,7 @@
     },
     "name": "Recipe Book",
     "lore": "<gray>Shows <aqua>all custom\n<aqua>recipes <gray>on this server.\n\n<aqua>Right Click: <gray>Show recipes",
-    "stack_size": 64
+    "attributes": {
+        "stack_size": 64
+    }
 }

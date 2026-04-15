@@ -1,0 +1,12 @@
+{
+    "name": "Chair",
+    "icon": "chair.gif",
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        }
+    }
+}

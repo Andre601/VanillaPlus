@@ -11,5 +11,7 @@
         "exp": 0.8
     },
     "name": "Aluminum Ingot",
-    "stack_size": 64
+    "attributes": {
+        "stack_size": 64
+    }
 }

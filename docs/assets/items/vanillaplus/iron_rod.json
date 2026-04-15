@@ -7,5 +7,7 @@
         "amount": 4
     },
     "name": "Iron Rod",
-    "stack_size": 64
+    "attributes": {
+        "stack_size": 64
+    }
 }

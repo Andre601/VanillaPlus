@@ -1,6 +1,6 @@
 # Bench
 
-{{ infobox("vanillaplus:acacia_bench") }}
+{{ infobox("vanillaplus:bench") }}
 
 **Bench** is a furniture that can be placed and allow players to sit on it.  
 When placed next to each other will the benches of the same type connect similar to Stairs in Minecraft.

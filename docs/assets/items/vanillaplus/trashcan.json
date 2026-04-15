@@ -10,5 +10,14 @@
             "9": "vanillaplus:aluminum_ingot"
         }
     },
-    "name": "Trashcan"
+    "name": "Trashcan",
+    "attributes": {
+        "stack_size": 1,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "dyable": "Yes"
+    }
 }

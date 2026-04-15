@@ -1,0 +1,13 @@
+{
+    "name": "Couch",
+    "icon": "couch.gif",
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "connectable": "Yes"
+    }
+}

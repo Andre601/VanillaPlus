@@ -1,0 +1,16 @@
+{
+    "name": "Scythe",
+    "icon": "scythe.gif",
+    "attributes": {
+        "stack_size": 64,
+        "durability": {
+            "Wood": 59,
+            "Stone": 131,
+            "Gold": 32,
+            "Copper": 190,
+            "Iron": 250,
+            "Diamond": 1561,
+            "Netherite": 2031
+        }
+    }
+}

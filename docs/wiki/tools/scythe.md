@@ -1,6 +1,6 @@
 # Scythe
 
-{{ infobox("vanillaplus:copper_scythe") }}
+{{ infobox("vanillaplus:scythe") }}
 
 **Scythe** is a tool that allows you to harvest multiple crops and plants simultaneously.
 

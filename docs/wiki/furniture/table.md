@@ -1,6 +1,6 @@
 # Table
 
-{{ infobox("vanillaplus:acacia_table") }}
+{{ infobox("vanillaplus:table") }}
 
 **Table** is a furniture that can be placed as a decorative piece.
 

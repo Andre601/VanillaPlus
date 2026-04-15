@@ -13,8 +13,10 @@
         }
     },
     "name": "Block of Aluminum",
-    "stack_size": 64,
-    "tool": "Iron Pickaxe",
-    "blast_resistance": 5,
-    "hardness": 4
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Iron Pickaxe",
+        "blast_resistance": 5,
+        "hardness": 4
+    }
 }

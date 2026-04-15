@@ -1,0 +1,13 @@
+{
+    "name": "Office Table",
+    "icon": "office_table.gif",
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 3,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "storage_space": "9 Slots"
+    }
+}

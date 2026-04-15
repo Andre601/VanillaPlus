@@ -22,24 +22,24 @@ def define_env(env):
         
         """
         if not id:
-            return "<div class=\"admonition warning\"><p class=\"admonition-title\">No id specified!</p></div>"
+            return admo_warn("No ID specified.")
         
         item = get_item_path(id)
 
         if not item:
-            return "<div class=\"admonition warning\"><p class=\"admonition-title\">No item found!</p></div>"
+            return admo_warn("No Item found!")
 
         json_data = read_json(f"docs/assets/items/{item}.json")
         if not json_data:
-            return f"<div class=\"admonition warning\"><p class=\"admonition-title\">Couldn't find <code>{item}.json</code> in <code>assets/items/</code>!</p></div>"
+            return admo_warn(f"ouldn't find <code>{item}.json</code> in <code>assets/items/</code>!")
 
         crafting = json_data.get("crafting")
         if not crafting:
-            return "<div class=\"admonition warning\"><p class=\"admonition-title\">No crafting recipe found!</p></div>"
+            return admo_warn("No Crafting recipe found!")
         
         ingredients = crafting.get("ingredients")
         if not ingredients:
-            return '<div class="admonition warning"><p class="admonition-title">No ingredients specified!</p></div>'
+            return admo_warn("No ingredients specified!")
 
         strings = [
             '<table>',
@@ -57,11 +57,10 @@ def define_env(env):
             '<td>'
         ]
         
-        create_recipe = crafting.get("create_recipe", False)
         unique_ingredients = {}
         ingredients_names = []
 
-        for num in range(1, (13 if create_recipe else 10)):
+        for num in range(1, 10):
             ingredient_id = ingredients.get(f"{num}")
             if not ingredient_id or unique_ingredients.get(ingredient_id):
                 continue
@@ -77,8 +76,12 @@ def define_env(env):
         
         ingredients_names.sort()
 
-        strings.extend([" + ".join(ingredients_names), "</td>", "<td>"])
-        strings.append(f'<div class="crafting-table tooltips">')
+        strings.extend([
+            " + ".join(ingredients_names),
+            "</td>",
+            "<td>",
+            '<div class="crafting-table tooltips">'
+        ])
 
         for num in range(1, 10):
             ingredient_id = ingredients.get(f"{num}")
@@ -127,16 +130,8 @@ def define_env(env):
 
         strings.append(''.join(result_slot))
 
-        if create_recipe:
-            strings.append(''.join([
-                '<span class="invslot-item slot-crafter" data-minetip-title="Requires 12 Mechanical Crafters">',
-                '<img src="/assets/img/items/create/mechanical_crafter.png" class="no-glight" loading="lazy" alt="" draggable="false">',
-                '<div class="quantity">12</div>',
-                '</span>'
-            ]))
-
         strings.extend([
-            f'<img src="/assets/img/recipes/{"create-arrow" if create_recipe else "arrow"}.png" class="arrow" alt="" draggable="false">',
+            f'<img src="/assets/img/recipes/arrow.png" class="arrow" alt="" draggable="false">',
             '<span class="shapeless" data-minetip-title="This recipe is shapeless">' if "shapeless" in crafting and crafting["shapeless"] else "",
             '<img src="/assets/img/recipes/shapeless.png" class="no-glight" alt="" draggable="false">' if "shapeless" in crafting and crafting["shapeless"] else "",
             "</span>" if "shapeless" in crafting and crafting["shapeless"] else "",
@@ -169,29 +164,29 @@ def define_env(env):
         
         """
         if not id:
-            return '<div class="admonition warning"><p class="admonition-title">No id specified!</p></div>'
+            return admo_warn("No ID specified!")
         
         result = get_item_path(id)
 
         if not result:
-            return '<div class="admonition warning"><p class="admonition-title">No result item found!</p></div>'
+            return admo_warn("No Item found!")
         
         json_data = read_json(f"docs/assets/items/{result}.json")
         if not json_data:
-            return f'<div class="admonition warning"><p class="admonition-title">Couldn\'t find <code>{result}.json</code> in <code>assets/items/</code>!</p></div>'
+            return admo_warn(f"Couldn't find <code>{result}.json</code> in <code>assets/items/</code>!")
         
         smithing = json_data.get("smithing")
         if not smithing:
-            return '<div class="admonition warning"><p class="admonition-title">No smithing recipe found!</p></div>'
+            return admo_warn("No Smithing recipe found!")
         
         if not smithing.get("template"):
-            return '<div class="admonition warning"><p class="admonition-title">No template specified!</p></div>'
+            return admo_warn("No Template specified!")
         
         if not smithing.get("item"):
-            return '<div class="admonition warning"><p class="admonition-title">No item specified!</p></div>'
+            return admo_warn("No Item specified!")
         
         if not smithing.get("material"):
-            return '<div class="admonition warning"><p class="admonition-title">No material specified!</p></div>'
+            return admo_warn("No Material specified!")
 
         template_path = get_item_path(smithing["template"])
         item_path = get_item_path(smithing["item"])
@@ -202,13 +197,13 @@ def define_env(env):
         material = read_json(f"docs/assets/items/{material_path}.json")
 
         if not template:
-            return f'<div class="admonition warning"><p class="admonition-title">No template item <code>{template_path}</code> found in <code>/assets/items/</code>!</p></div>'
+            return admo_warn(f"No template item <code>{template_path}</code> found in <code>/assets/items/</code>!")
         
         if not item:
-            return f'<div class="admonition warning"><p class="admonition-title">No template item <code>{item_path}</code> found in <code>/assets/items/</code>!</p></div>'
+            return admo_warn(f"No item <code>{item_path}</code> found in <code>/assets/items/</code>!")
         
         if not material:
-            return f'<div class="admonition warning"><p class="admonition-title">No template item <code>{material_path}</code> found in <code>/assets/items/</code>!</p></div>'
+            return admo_warn(f"No material <code>{material_path}</code> found in <code>/assets/items/</code>!")
 
         strings = [
             '<table>',
@@ -292,27 +287,27 @@ def define_env(env):
         
         """
         if not id:
-            return '<div class="admonition warning"><p class="admonition-title">No id specified!</p></div>'
+            return admo_warn("No ID specified!")
         
         result = get_item_path(id)
 
         if not result:
-            return '<div class="admonition warning"><p class="admonition-title">No result item found!</p></div>'
+            return admo_warn("No result Item found!")
         
         json_data = read_json(f"docs/assets/items/{result}.json")
         if not json_data:
-            return f'<div class="admonition warning"><p class="admonition-title">Couldn\'t find <code>{result}.json</code> in <code>assets/items/</code>!</p></div>'
+            return admo_warn(f"Couldn't find <code>{result}.json</code> in <code>assets/items/</code>!")
         
         smelting = json_data.get("smelting")
         if not smelting:
-            return '<div class="admonition warning"><p class="admonition-title">No smelting recipe found!</p></div>'
+            return admo_warn("No Smelting recipe found!")
         
         item_path = get_item_path(smelting["item"])
 
         item = read_json(f"docs/assets/items/{item_path}.json")
 
         if not item:
-            return f'<div class="admonition warning"><p class="admonition-title">No item <code>{template_path}</code> found in <code>/assets/items/</code>!</p></div>'
+            return admo_warn(f"No item <code>{template_path}</code> found in <code>/assets/items/</code>!")
 
         strings = [
             '<table>',
@@ -368,100 +363,54 @@ def define_env(env):
     @env.macro
     def infobox(id: str):
         if not id:
-            return '<div class="admonition warning"><p class="admonition-title">No id specified!</p></div>'
+            return admo_warn("No ID specified!")
         
         result = get_item_path(id)
 
         if not result:
-            return '<div class="admonition warning"><p class="admonition-title">No result item found!</p></div>'
+            return admo_warn("No result item found!")
         
         json_data = read_json(f"docs/assets/items/{result}.json")
         if not json_data:
-            return f'<div class="admonition warning"><p class="admonition-title">Couldn\'t find <code>{result}.json</code> in <code>assets/items/</code>!</p></div>'
-        
-        icon = result + (".gif" if json_data.get("gif", False) else ".png")
-        
-        if json_data.get("icon", None):
-            icon = f"icon/{json_data["icon"]}"
+            return admo_warn(f"Couldn't find <code>{result}.json</code> in <code>assets/items/</code>!")
 
         strings = [
             '<div style="float: right; margin-left: .75rem;">',
             '<table>',
             '<thead>',
             '<tr>',
-            f'<th style="text-align: center;" colspan="2">{json_data["name"] if json_data["name"] else id.replace("_", " ").title()}</th>',
+            f'<th style="text-align: center;" colspan="2">{json_data["name"] if "name" in json_data else env.get("page", {}).get("title", "")}</th>',
             '</tr>',
             '</thead>',
             '<tbody>',
             '<tr>',
             '<td colspan="2">',
-            f'<img src="/assets/img/items/{icon}" style="max-width: 250px;">',
+            f'<img src="/assets/img/items/{f"icons/{json_data["icon"]}" if "icon" in json_data else f"{result}.png"}" style="max-width: 250px;">',
             '</td>',
             '</tr>'
         ]
 
-        if isinstance(json_data.get("durability"), (dict, int)):
-            strings.extend([
-                '<tr>',
-                '<td><b>Durability</b></td>'
-            ])
-            durability = json_data["durability"]
-            if isinstance(durability, dict):
-                values = []
-                for key, value in durability.items():
-                    values.append(f"{key}: {value}")
-
-                strings.append(f'<td>{"<br>".join(values)}')
-            else:
-                strings.append(f'<td>{durability}</td>')
-            
-            strings.append('</tr>')
-        
-        strings.extend([
-            '<tr>',
-            '<td><b>Stackable</b></td>'
-        ])
-
-        if isinstance(json_data.get("stack_size"), int) and json_data["stack_size"] > 1:
-            strings.append(f'<td>Yes ({json_data["stack_size"]})</td>')
-        else:
-            strings.append('<td>No</td>')
-        
-        strings.append('</tr>')
-
-        if json_data.get("tool"):
-            strings.extend([
-                '<tr>',
-                '<td><b>Tool</b></td>',
-                f'<td>{json_data["tool"]}</td>',
-                '</tr>'
-            ])
-
-        if json_data.get("blast_resistance"):
-            strings.extend([
-                '<tr>',
-                '<td><b>Blast resistance</b></td>',
-                f'<td>{json_data["blast_resistance"]}</td>',
-                '</tr>'
-            ])
-
-        if json_data.get("hardness"):
-            strings.extend([
-                '<tr>',
-                '<td><b>Hardness</b></td>',
-                f'<td>{json_data["hardness"]}</td>',
-                '</tr>'
-            ])
-
-        if (isinstance(json_data.get("hunger"), int) and json_data.get("hunger", 0) > 0) or (isinstance(json_data.get("saturation"), int) and json_data.get("saturation", 0) > 0):
-            hunger = json_data["hunger"] or 0
-            saturation = json_data["saturation"] or 0
-            strings.extend([
-                '<tr>',
-                '<td><b>Restores</b></td>',
-                f'<td>Hunger: {hunger}<br>Saturation: {saturation}</td>',
-                '</tr>'
-            ])
+        if isinstance(json_data.get("attributes"), dict):
+            for key, value in json_data["attributes"].items():
+                strings.append('<tr>')
+                if key.lower() == "stack_size":
+                    strings.append('<td><b>Stackable</b></td>')
+                else:
+                    strings.append(f'<td><b>{key.replace("_", " ").title()}</b></td>')
+                
+                if isinstance(value, dict):
+                    values = []
+                    for vKey, vValue in value.items():
+                        values.append(f"{vKey}: {vValue}")
+                    
+                    strings.append(f'<td>{"<br>".join(values)}')
+                elif isinstance(value, list):
+                    strings.append(f'<td>{"<br>".join(value)}')
+                else:
+                    if key.lower() == "stack_size" and isinstance(value, int):
+                        strings.append(f'<td>{f"Yes ({value})" if value > 1 else "No"}')
+                    else:
+                        strings.append(f'<td>{value}</td>')
         
         strings.extend([
             '</tbody>',
@@ -499,3 +448,6 @@ def define_env(env):
                 return json.load(file)
         except FileNotFoundError:
             return None
+    
+    def admo_warn(text: str):
+        return f'<div class="admonition warning"><p class="admonition-title">{text}</p></div>'

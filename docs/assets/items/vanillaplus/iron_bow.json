@@ -10,5 +10,8 @@
         }
     },
     "name": "Iron Bow",
-    "durability": 450
+    "attributes": {
+        "stack_size": 1,
+        "durability": 450
+    }
 }

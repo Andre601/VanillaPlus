@@ -8,5 +8,8 @@
         }
     },
     "name": "Aluminum Hammer",
-    "durability": 10
+    "attributes": {
+        "stack_size": 1,
+        "durability": 10
+    }
 }

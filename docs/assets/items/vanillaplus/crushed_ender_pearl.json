@@ -8,5 +8,7 @@
         }
     },
     "name": "Crushed Ender Pearl",
-    "stack_size": 64
+    "attributes": {
+        "stack_size": 64
+    }
 }

@@ -1,7 +1,9 @@
 {
     "name": "Bauxite Ore",
-    "stack_size": 64,
-    "tool": "Iron Pickaxe",
-    "blast_resistance": 3,
-    "hardness": 3
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Iron Pickaxe",
+        "blast_resistance": 3,
+        "hardness": 3
+    }
 }

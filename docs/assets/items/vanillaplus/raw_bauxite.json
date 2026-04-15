@@ -7,5 +7,7 @@
         "amount": 9
     },
     "name": "Raw Bauxite",
-    "stack_size": 64
+    "attributes": {
+        "stack_size": 64
+    }
 }
