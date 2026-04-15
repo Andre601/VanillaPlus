@@ -21,6 +21,10 @@ VanillaPlus offers furniture which are placable Items that can provide custom fu
     
     Office Table is a furniture that can be placed in the world to be used as a decorative piece.
 
+-   ### [Table](table.md)
+
+    Table is a furniture that can be placed as a decorative piece.
+
 -   ### [Trashcan](trashcan.md)
     
     Trashcan is a furniture that allows a player to open an inventory to dispose of items they no longer need.
