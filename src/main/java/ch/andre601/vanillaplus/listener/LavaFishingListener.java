@@ -77,7 +77,7 @@ public class LavaFishingListener implements Listener{
         // decrease max wait time by 1 sec per lure-level.
         // Source: https://minecraft.wiki/w/Lure#Usage
         int lureLevel = stack.getEnchantmentLevel(Enchantment.LURE);
-        int reduction = Math.min(0, lureLevel * 20 * 5);
+        int reduction = Math.min(3, lureLevel * 20 * 5);
         
         hook.setMaxWaitTime(hook.getMaxWaitTime() - reduction);
         LavaBobberState state = new LavaBobberState(hook);
