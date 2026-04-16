@@ -179,7 +179,7 @@ public class LavaBobberTask extends BukkitRunnable{
         approachStep = 1.0 / 22;
         
         state.setState(LavaBobberState.State.NIBBLE);
-        player.playSound(hookLocation, Sound.BLOCK_LAVA_POP, 0.8f, 1.0f);
+        player.playSound(hookLocation, Sound.BLOCK_LAVA_POP, 0.8f, 0.8f);
     }
     
     private boolean isLava(Location location){

@@ -11,6 +11,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.FishHook;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -73,8 +74,12 @@ public class LavaFishingListener implements Listener{
         PersistentDataContainer pdc = hook.getPersistentDataContainer();
         pdc.set(VanillaPlus.IRON_FISHING_HOOK_BOBBER, PersistentDataType.BOOLEAN, true);
         
-        hook.setWaitTime(Integer.MAX_VALUE, Integer.MAX_VALUE);
+        // decrease max wait time by 1 sec per lure-level.
+        // Source: https://minecraft.wiki/w/Lure#Usage
+        int lureLevel = stack.getEnchantmentLevel(Enchantment.LURE);
+        int reduction = Math.min(0, lureLevel * 20 * 5);
         
+        hook.setMaxWaitTime(hook.getMaxWaitTime() - reduction);
         LavaBobberState state = new LavaBobberState(hook);
         activeSessions.put(player.getUniqueId(), state);
         
