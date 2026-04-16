@@ -2,6 +2,7 @@ package ch.andre601.vanillaplus;
 
 import ch.andre601.vanillaplus.command.ClaimCommand;
 import ch.andre601.vanillaplus.listener.CauldronListener;
+import ch.andre601.vanillaplus.listener.LavaFishingListener;
 import ch.andre601.vanillaplus.listener.PlayerListener;
 import ch.andre601.vanillaplus.papi.PAPIPlaceholders;
 import ch.andre601.vanillaplus.util.Claim;
@@ -13,6 +14,7 @@ import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion;
 import dev.lone.itemsadder.api.CustomStack;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,10 +24,18 @@ import org.incendo.cloud.injection.ParameterInjector;
 import org.incendo.cloud.paper.PaperCommandManager;
 
 public final class VanillaPlus extends JavaPlugin {
-    public static final MiniMessage MM = MiniMessage.miniMessage();
+    public static final MiniMessage MM;
+    public static final NamespacedKey IRON_FISHING_HOOK_BOBBER;
     
     private final ClaimHandler claimHandler = new ClaimHandler(this);
     private final TranslatorUtil translatorUtil = new TranslatorUtil(this);
+    
+    private LavaFishingListener lavaFishingListener;
+    
+    static {
+        MM = MiniMessage.miniMessage();
+        IRON_FISHING_HOOK_BOBBER = NamespacedKey.fromString("vanillaplus:iron_fishing_rod_bobber");
+    }
     
     @Override
     public void onEnable(){
@@ -63,6 +73,7 @@ public final class VanillaPlus extends JavaPlugin {
         
         getServer().getPluginManager().registerEvents(new CauldronListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
+        lavaFishingListener = new LavaFishingListener(this);
         loadCommands();
         
         setupScheduler();
@@ -85,6 +96,10 @@ public final class VanillaPlus extends JavaPlugin {
     
     public TranslatorUtil getTranslatorUtil(){
         return translatorUtil;
+    }
+    
+    public LavaFishingListener getLavaFishingListener(){
+        return lavaFishingListener;
     }
     
     private void loadCommands(){
