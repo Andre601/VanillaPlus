@@ -1,0 +1,11 @@
+{
+    "name": "Lava Carp",
+    "attributes": {
+        "stack_size": 64,
+        "restores": {
+            "Hunger": 6,
+            "Saturation": 4
+        },
+        "fire_resistant": "Yes"
+    }
+}

@@ -25,6 +25,14 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
     
     Iron Rod is an item that can be crafted from 2 Iron Ingots.
 
+-   ### [Lava Carp](lava_carp.md)
+    
+    Lava Carp is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [Iron Fishing Rod](../tools/iron_fishing_rod.md).
+
+-   ### [Magma Jelly](magma_jelly.md)
+    
+    Magma Jelly is an item that can be obtained when fishing in Lava Lakes in the Nether using the [Iron Fishing Rod](../tools/iron_fishing_rod.md).
+
 -   ### [Raw Bauxite](raw_bauxite.md)
     
     Raw Bauxite is an item obtained from Bauxite Ore that can be smelted into [Aluminun Ingots](aluminum_ingot.md).

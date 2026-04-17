@@ -385,7 +385,7 @@ def define_env(env):
             '<tbody>',
             '<tr>',
             '<td colspan="2">',
-            f'<img src="/assets/img/items/{f"icons/{json_data["icon"]}" if "icon" in json_data else f"{result}.png"}" style="max-width: 250px;">',
+            f'<img src="/assets/img/items/{f"icons/{json_data["icon"]}" if "icon" in json_data else f"{result}.{"gif" if "gif" in json_data and json_data["gif"] else "png"}"}" style="max-width: 250px;">',
             '</td>',
             '</tr>'
         ]
