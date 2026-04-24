@@ -46,6 +46,9 @@ extra_css:
 extra_javascript:
   - assets/javascript/tooltip.js
 
+extra:
+  mc_version: 1.21.11
+
 plugins: 
   - search
   - glightbox:
