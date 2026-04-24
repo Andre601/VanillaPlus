@@ -1,21 +1,20 @@
 package ch.andre601.vanillaplus;
 
 import ch.andre601.vanillaplus.command.ClaimCommand;
+import ch.andre601.vanillaplus.command.VanillaPlusCommand;
 import ch.andre601.vanillaplus.listener.CauldronListener;
 import ch.andre601.vanillaplus.listener.LavaFishingListener;
 import ch.andre601.vanillaplus.listener.PlayerListener;
+import ch.andre601.vanillaplus.object.WeightedList;
 import ch.andre601.vanillaplus.papi.PAPIPlaceholders;
-import ch.andre601.vanillaplus.util.Claim;
-import ch.andre601.vanillaplus.util.ClaimHandler;
-import ch.andre601.vanillaplus.util.TranslatorUtil;
-import ch.andre601.vanillaplus.util.WorldGuardHandler;
+import ch.andre601.vanillaplus.util.*;
 import com.sk89q.worldguard.protection.managers.RegionManager;
 import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion;
 import dev.lone.itemsadder.api.CustomStack;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import net.kyori.adventure.text.minimessage.MiniMessage;
-import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.incendo.cloud.annotations.AnnotationParser;
@@ -23,18 +22,21 @@ import org.incendo.cloud.execution.ExecutionCoordinator;
 import org.incendo.cloud.injection.ParameterInjector;
 import org.incendo.cloud.paper.PaperCommandManager;
 
+import java.util.List;
+
 public final class VanillaPlus extends JavaPlugin {
     public static final MiniMessage MM;
-    public static final NamespacedKey IRON_FISHING_HOOK_BOBBER;
     
     private final ClaimHandler claimHandler = new ClaimHandler(this);
     private final TranslatorUtil translatorUtil = new TranslatorUtil(this);
+    private final ConfigUtil configUtil = new ConfigUtil(this);
+    
+    private WeightedList<ItemStack> fishingLoot;
     
     private LavaFishingListener lavaFishingListener;
     
     static {
         MM = MiniMessage.miniMessage();
-        IRON_FISHING_HOOK_BOBBER = NamespacedKey.fromString("vanillaplus:iron_fishing_rod_bobber");
     }
     
     @Override
@@ -63,7 +65,15 @@ public final class VanillaPlus extends JavaPlugin {
             getSLF4JLogger().info("Loaded PlaceholderAPI Expansion!");
         }
         
-        
+        if(configUtil.loadConfig()){
+            List<WeightedList.Weighted<ItemStack>> items = configUtil.getWeightedItems("loot", "fishing");
+            if(!items.isEmpty())
+                fishingLoot = WeightedList.create(items);
+        }else{
+            getSLF4JLogger().warn("Error while loading config! Disabling plugin...");
+            manager.disablePlugin(this);
+            return;
+        }
         
         if(claimHandler.load()){
             getSLF4JLogger().info("Claims loaded!");
@@ -102,6 +112,18 @@ public final class VanillaPlus extends JavaPlugin {
         return lavaFishingListener;
     }
     
+    public ConfigUtil getConfigUtil(){
+        return configUtil;
+    }
+    
+    public WeightedList<ItemStack> getFishingLoot(){
+        return fishingLoot;
+    }
+    
+    public void setFishingLoot(WeightedList<ItemStack> fishingLoot){
+        this.fishingLoot = fishingLoot;
+    }
+    
     private void loadCommands(){
         PaperCommandManager<CommandSourceStack> manager = PaperCommandManager.builder()
             .executionCoordinator(ExecutionCoordinator.asyncCoordinator())
@@ -109,7 +131,10 @@ public final class VanillaPlus extends JavaPlugin {
         manager.parameterInjectorRegistry().registerInjector(VanillaPlus.class, ParameterInjector.constantInjector(this));
         
         AnnotationParser<CommandSourceStack> parser = new AnnotationParser<>(manager, CommandSourceStack.class);
-        parser.parse(new ClaimCommand());
+        parser.parse(
+            new ClaimCommand(),
+            new VanillaPlusCommand()
+        );
     }
     
     private void setupScheduler(){

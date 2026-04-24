@@ -18,8 +18,13 @@ public class LavaBobberState{
     private int reelWindowTimer = -1;
     private boolean hasCatch = false;
     
-    public LavaBobberState(FishHook hook){
+    private final int minTicks;
+    private final int maxTicks;
+    
+    public LavaBobberState(FishHook hook, int minTicks, int maxTicks){
         this.hook = hook;
+        this.minTicks = minTicks;
+        this.maxTicks = maxTicks;
     }
     
     public FishHook getHook(){
@@ -39,11 +44,11 @@ public class LavaBobberState{
     }
     
     public int getMinBiteTicks(){
-        return hook.getMinWaitTime();
+        return minTicks;
     }
     
     public int getMaxBiteTicks(){
-        return hook.getMaxWaitTime();
+        return maxTicks;
     }
     
     public boolean hasCatch(){

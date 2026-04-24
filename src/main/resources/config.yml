@@ -1,0 +1,4 @@
+loot:
+  fishing:
+    - id: "minecraft:stone"
+      weight: 1

@@ -179,7 +179,7 @@ public class LavaBobberTask extends BukkitRunnable{
         approachStep = 1.0 / 22;
         
         state.setState(LavaBobberState.State.NIBBLE);
-        player.playSound(hookLocation, Sound.BLOCK_LAVA_POP, 0.8f, 0.8f);
+        player.playSound(hookLocation, Sound.ITEM_BUCKET_EMPTY_LAVA, 0.8f, 0.8f);
     }
     
     private boolean isLava(Location location){
@@ -201,7 +201,7 @@ public class LavaBobberTask extends BukkitRunnable{
         
         double x = center.getX() + Math.cos(angle) * distance;
         double y = center.getY() + (random.nextDouble() * 0.14) - 0.04;
-        double z = center.getY() + Math.sin(angle) * distance;
+        double z = center.getZ() + Math.sin(angle) * distance;
         
         return new Location(center.getWorld(), x, y, z);
     }
