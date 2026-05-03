@@ -2,10 +2,10 @@
     "crafting": {
         "ingredients": {
             "1": "ender_pearl",
-            "2": "vanillaplus:aluminum_hammer",
-            "shapeless": true,
-            "amount": 2
-        }
+            "2": "vanillaplus:aluminum_hammer"
+        },
+        "shapeless": true,
+        "amount": 2
     },
     "name": "Crushed Ender Pearl",
     "attributes": {
