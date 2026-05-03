@@ -1,10 +1,10 @@
 {
     "crafting": {
         "ingredients": {
-            "1": "vanillaplus:aluminum_block",
-            "shapeless": true,
-            "amount": 9
-        }
+            "1": "vanillaplus:aluminum_block"
+        },
+        "shapeless": true,
+        "amount": 9
     },
     "smelting": {
         "item": "vanillaplus:raw_bauxite",
