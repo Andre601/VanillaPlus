@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:baked_apple") }}
 
-**Baked Apple** is a food item that can be obtained by cooking a Apple in the Furnace or Smoker.
+**Baked Apple** is a food item that can be obtained by cooking an Apple in the [[mc:Furnace]], [[mc:Smoker]] or on a [[mc:Campfire]].
 
 ## Obtaining
 

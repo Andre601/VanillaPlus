@@ -2,14 +2,14 @@
 
 {{ infobox("vanillaplus:bauxite_ore") }}
 
-**Bauxite Ore** is a mineral block typically found underground. It is a source of [Raw Bauxite](../items/raw_bauxite.md), which can be smelted into [Aluminum Ingots](../items/aluminum_ingot.md).
+**Bauxite Ore** is a mineral block typically found underground. It is a source of [[Raw Bauxite]], which can be smelted into [[Aluminum Ingots]].
 
 ## Obtaining
 
 ### Breaking
 
 Bauxite Ore itself can be obtained by mining it with an Iron Pickaxe or higher enchanted with Silk Touch.  
-When mined without Silk Touch, Bauxite Ore drops between 1 and 2 [Raw Bauxite](../items/raw_bauxite.md).
+When mined without Silk Touch, Bauxite Ore drops between 1 and 2 [[Raw Bauxite]].
 
 ### Natural generation
 

@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:aluminum_ingot") }}
 
-**Aluminum Ingot** is an item used in various crafting recipes such as the [Aluminum Hammer](aluminum_hammer.md) or the [Trashcan](../furniture/trashcan.md).
+**Aluminum Ingot** is an item used in various crafting recipes such as the [[Aluminum Hammer]] or the [[Trashcan]].
 
 ## Obtaining
 

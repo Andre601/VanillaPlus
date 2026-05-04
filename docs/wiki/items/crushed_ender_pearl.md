@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:crushed_ender_pearl") }}
 
-**Crushed Ender Pearl** is an item used to craft the [Teleport Crystal](../tools/teleport_crystal.md).
+**Crushed Ender Pearl** is an item used to craft the [[Teleport Crystal]].
 
 ## Obtaining
 

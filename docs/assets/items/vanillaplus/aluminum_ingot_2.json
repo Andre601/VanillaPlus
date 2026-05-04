@@ -1,6 +1,6 @@
 {
     "smelting": {
-        "item": "vanillaplus:raw_bauxite_block",
+        "item": "vanillaplus:bauxite_ore",
         "exp": 0.8
     },
     "name": "Aluminum Ingot"

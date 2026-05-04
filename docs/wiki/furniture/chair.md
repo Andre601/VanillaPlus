@@ -1,6 +1,6 @@
-# Chair
-
 {{ infobox("vanillaplus:chair") }}
+
+# Chair
 
 **Chair** is a furniture that can be placed and allow players to sit on it.
 

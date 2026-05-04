@@ -7,7 +7,7 @@ This page lists all the currently existing custom tags and the items, blocks, et
 
 ### `#vanillaplus:scythe_harvestable` { #vanillaplus-scythe_harvestable }
 
-Blocks containing this block tag can be harvested by the [Scythe's](../tools/scythe.md) 3x3x3 break area.
+Blocks containing this block tag can be harvested by the [[Scythe|Scythe's]] 3x3x3 break area.
 
 /// html | div.grid.cards
 -   #### Blocks

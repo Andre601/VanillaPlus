@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:aluminum_block") }}
 
-**Block of Aluminum** is a block crafted from [Aluminum Ingots](../items/aluminum_ingot.md).
+**Block of Aluminum** is a block crafted from [[Aluminum Ingots]].
 
 The block can be placed at 3 orientations similar to Logs.
 

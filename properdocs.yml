@@ -48,6 +48,13 @@ extra_javascript:
 
 extra:
   mc_version: 1.21.11
+  interwiki:
+    'mc': 'https://minecraft.wiki/w/{page}'
+  aliases:
+    'Block of Aluminum': 'Aluminum Block'
+    'Aluminum Ingots': 'Aluminum Ingot'
+    'Crushed Ender Pearls': 'Crushed Ender Pearl'
+    'Block of Raw Bauxite': 'Raw Bauxite Block'
 
 plugins: 
   - search
@@ -93,6 +100,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.blocks.html:
   - pymdownx.blocks.caption:
+
+hooks:
+  - docs/.hooks/wikilinks.py
 
 nav:
   - Main Site: index.md

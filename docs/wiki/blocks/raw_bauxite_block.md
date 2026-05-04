@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:raw_bauxite_block") }}
 
-**Block of raw Bauxite** is a block crafted from [Raw Bauxite](../items/raw_bauxite.md).
+**Block of raw Bauxite** is a block crafted from [[Raw Bauxite]].
 
 ## Obtaining
 

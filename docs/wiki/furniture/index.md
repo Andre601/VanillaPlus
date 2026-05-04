@@ -5,27 +5,27 @@ VanillaPlus offers furniture which are placable Items that can provide custom fu
 ## Pages
 
 /// html | div.grid.cards
--   ### [Bench](bench.md)
+-   ### [[Bench]]
     
     Bench is a furniture that can be placed and allow players to sit on it.
 
--   ### [Chair](chair.md)
+-   ### [[Chair]]
     
     Chair is a furniture that can be placed and allow players to sit on it.
 
--   ### [Couch](couch.md)
+-   ### [[Couch]]
     
     Couch is a furnture that can be placed and allow players to sit on it.
 
--   ### [Office Table](office_table.md)
+-   ### [[Office Table]]
     
     Office Table is a furniture that can be placed in the world to be used as a decorative piece.
 
--   ### [Table](table.md)
+-   ### [[Table]]
 
     Table is a furniture that can be placed as a decorative piece.
 
--   ### [Trashcan](trashcan.md)
+-   ### [[Trashcan]]
     
     Trashcan is a furniture that allows a player to open an inventory to dispose of items they no longer need.
 ///

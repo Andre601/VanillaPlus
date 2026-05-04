@@ -9,5 +9,5 @@
         }
     },
     "name": "Diamond Scythe",
-    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<green>1 Attack Damage\n<green>4 Attack Speed"
+    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<dark_green>1 Attack Damage\n<dark_green>4 Attack Speed"
 }

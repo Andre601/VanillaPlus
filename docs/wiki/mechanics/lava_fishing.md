@@ -1,6 +1,6 @@
 # Lava Fishing
 
-**Lava Fishing** is a unique mechanic, allowing you to fish in Lava in the Nether Dimension using a [Iron Fishing Rod](../tools/iron_fishing_rod.md).
+**Lava Fishing** is a unique mechanic, allowing you to fish in Lava in the Nether Dimension using a [[Iron Fishing Rod]].
 
 ## How it Works
 

@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:lava_carp") }}
 
-**Lava Carp** is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [Iron Fishing Rod](../tools/iron_fishing_rod.md).
+**Lava Carp** is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
 
 ## Usage
 

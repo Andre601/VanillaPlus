@@ -2,7 +2,7 @@
 
 {{ infobox("vanillaplus:aluminum_hammer") }}
 
-**Aluminum Hammer** is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or for converting blocks into their "cracked" variant.
+**Aluminum Hammer** is an Item used in crafting recipes for items such as [[Crushed Ender Pearls]] or for converting blocks into their "cracked" variant.
 
 ## Usage
 

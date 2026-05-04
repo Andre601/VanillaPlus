@@ -5,35 +5,35 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
 ## Pages
 
 /// html | div.grid.cards
--   ### [Aluminum Hammer](aluminum_hammer.md)
+-   ### [[Aluminum Hammer]]
     
-    Aluminum Hammer is an Item used in crafting recipes for items such as [Crushed Ender Pearls](crushed_ender_pearl.md) or for converting blocks into their "cracked" variant.
+    Aluminum Hammer is an Item used in crafting recipes for items such as [[Crushed Ender Pearls]] or for converting blocks into their "cracked" variant.
     
--   ### [Aluminum Ingot](aluminum_ingot.md)
+-   ### [[Aluminum Ingot]]
     
-    Aluminum Ingot is an item used in various crafting recipes such as the [Aluminum Hammer](aluminum_hammer.md) or the [Trashcan](../furniture/trashcan.md).
+    Aluminum Ingot is an item used in various crafting recipes such as the [[Aluminum Hammer]] or the [[Trashcan]].
 
--   ### [Baked Apple](baked_apple.md)
+-   ### [[Baked Apple]]
     
     Baked Apple is a food item that can be obtained by cooking an Apple in the Furnace or Smoker.
     
--   ### [Crushed Ender Pearl](crushed_ender_pearl.md)
+-   ### [[Crushed Ender Pearl]]
     
-    Crushed Ender Pearl is an item used to craft the [Teleport Crystal](../tools/teleport_crystal.md).
+    Crushed Ender Pearl is an item used to craft the [[Teleport Crystal]].
 
--   ### [Iron Rod](iron_rod.md)
+-   ### [[Iron Rod]]
     
     Iron Rod is an item that can be crafted from 2 Iron Ingots.
 
--   ### [Lava Carp](lava_carp.md)
+-   ### [[Lava Carp]]
     
-    Lava Carp is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [Iron Fishing Rod](../tools/iron_fishing_rod.md).
+    Lava Carp is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
 
--   ### [Magma Jelly](magma_jelly.md)
+-   ### [[Magma Jelly]]
     
-    Magma Jelly is an item that can be obtained when fishing in Lava Lakes in the Nether using the [Iron Fishing Rod](../tools/iron_fishing_rod.md).
+    Magma Jelly is an item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
 
--   ### [Raw Bauxite](raw_bauxite.md)
+-   ### [[Raw Bauxite]]
     
-    Raw Bauxite is an item obtained from Bauxite Ore that can be smelted into [Aluminun Ingots](aluminum_ingot.md).
+    Raw Bauxite is an item obtained from Bauxite Ore that can be smelted into [[Aluminum Ingots]].
 ///

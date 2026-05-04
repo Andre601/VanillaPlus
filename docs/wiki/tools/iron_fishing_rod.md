@@ -7,7 +7,7 @@
 ## Usage
 
 The Iron Fishing Rod can be used like a normal Fishing Rod by right-clicking with it to cast the fishing bobber into the water.  
-One difference is, that the Iron Fishing Rod can also be used to fish in Lava in the Never Dimension, allowing to obtain the [Lava Carp](../items/lava_carp.md) and [Magma Jelly](../items/magma_jelly.md).
+One difference is, that the Iron Fishing Rod can also be used to fish in Lava in the Never Dimension, allowing to obtain the [[Lava Carp]] and [[Magma Jelly]].
 
 ## Obtaining
 
