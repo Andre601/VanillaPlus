@@ -10,7 +10,6 @@ It currently provides:
 - Custom Items and Furniture functionality:
     - Teleport Crystal's storing of a location and sub-sequent teleportation to it.
     - Scythe's 3x3 harvesting functionality.
-    - Trashcan's Inventory and Item desposing functionality.
 - Item/Block translations through PlaceholderAPI placeholders to bypass some current limitations in DeluxeMenus regarding translatables in lore.
 
 ## Website/Wiki

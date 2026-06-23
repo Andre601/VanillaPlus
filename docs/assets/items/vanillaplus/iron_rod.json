@@ -1,8 +1,8 @@
 {
     "crafting": {
         "ingredients": {
-            "2": "vanillaplus:iron_rod",
-            "5": "vanillaplus:iron_rod"
+            "2": "iron_ingot",
+            "5": "iron_ingot"
         },
         "amount": 4
     },
