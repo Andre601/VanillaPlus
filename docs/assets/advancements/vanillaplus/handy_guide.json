@@ -1,0 +1,6 @@
+{
+    "name": "A handy Guide",
+    "description": "Craft a Recipe Book to see all available recipes.",
+    "requirements": "Obtain a Recipe Book.",
+    "icon": "vanillaplus:recipe_book"
+}

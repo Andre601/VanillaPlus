@@ -420,6 +420,101 @@ def define_env(env):
 
         return "\n".join(strings)
 
+    @env.macro
+    def advancement(id: str, header = True, footer = True):
+        """Generates a table displaying an advancement with its icon, name, description and actual requirement (if provided).
+        
+        This function performs the following checks in order:
+
+        - Looks for docs/assets/advancements/{namespace}/{item}.json with {namespace} and {item} being obtained from the id parameter.
+        - Looks for a "name", "icon" and "description" object.
+        
+        Parameters:  
+            id (str): ID of the item to display in the format namespace:id. Omitting namespace assumes the minecraft namespace.
+            header (bool): Whether to include the <table>, <thead>, header rows and <tbody> tags in the table. (default True)
+            footer (bool): Whether to include the </tbody> and </table> tags in the table. (default True)
+        
+        Returns:  
+            String containing a Admonition warning div if something is missing, or the actual table.
+        
+        """
+        if not id:
+            return admo_warn("No id specified!")
+        
+        advancement_path = get_item_path(id)
+
+        if not advancement_path:
+            return admo_warn("No advancement found!")
+        
+        advancement = read_json(f"docs/assets/advancements/{advancement_path}.json")
+        if not advancement:
+            return admo_warn(f"Couldn't find <code>{advancement_path}</code> in <code>assets/advancements/</code>!")
+        
+        background = advancement.get("type", "normal").lower()
+        if background != "normal" and background != "goal" and background != "challenge":
+            return admo_warn(f"Invalid Advancement type. Need <code>normal</code>, <code>goal</code> or <code>challenge</code> but got <code>{background}</code>!")
+        
+        icon = get_item_path(advancement.get("icon"))
+        if not icon:
+            return admo_warn("No <code>icon</code> set!")
+        
+        name = advancement.get("name")
+        if not name:
+            return admo_warn("No <code>name</code> set!")
+        
+        description = advancement.get("description")
+        if not description:
+            return admo_warn("No <code>description</code> set!")
+        
+        requirements = advancement.get("requirements", "")
+
+        strings = [
+            "<table>",
+            "<thead>",
+            "<tr>",
+            "<th>Icon</th>",
+            "<th>Advancement</th>",
+            "<th>In-game description</th>",
+            "<th>Actual requirements (if different)</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>",
+            "<tr>",
+            "<td>"
+        ] if header else [
+            "<tr>",
+            "<td>"
+        ]
+
+        strings.extend([
+            '<span class="advancement-background">',
+            f'<img src="/assets/img/advancements/{background}.png" class="pixelated no-glight" draggable="false">',
+            '<span class="advancement-icon">',
+            f'<img src="/assets/img/items/{icon}.png" class="no-glight" draggable="false">'
+            "</span>",
+            "</span>",
+            "</td>",
+            "<td>",
+            name,
+            "</td>",
+            "<td>",
+            description,
+            "</td>",
+            "<td>",
+            requirements,
+            "</td>",
+            "</tr>"
+
+        ])
+
+        if footer:
+            strings.extend([
+                "</tbody>",
+                "</table>"
+            ])
+
+        return '\n'.join(strings)
+
     def get_item_path(item: str):
         """Takes the provided item string and converts it from {namespace}:{id} to {namespace}/{id}.  
         Should no colon be present will it assume no namespace and return minecraft/{item} instead.

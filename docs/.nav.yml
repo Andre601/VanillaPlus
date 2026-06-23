@@ -1,0 +1,18 @@
+nav:
+  - Main Site: index.md
+  - About:
+    - about/index.md
+  - Wiki:
+    - wiki/index.md
+    - Blocks:
+      - wiki/blocks/*
+    - Furniture:
+      - wiki/furniture/*
+    - Items:
+      - wiki/items/*
+    - Mechanics:
+      - wiki/mechanics/*
+    - Tools:
+      - wiki/tools/*
+    - Weapons:
+      - wiki/weapons/*

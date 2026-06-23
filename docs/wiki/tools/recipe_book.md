@@ -14,6 +14,10 @@ Right-clicking with the Item in hand will open the Recipes GUI, which lists all 
 
 {{ crafting_recipe("vanillaplus:recipe_book") }}
 
+## Advancements
+
+{{ advancement("vanillaplus:handy_guide") }}
+
 ## Data Values
 
 ### ID

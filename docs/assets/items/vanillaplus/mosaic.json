@@ -1,0 +1,7 @@
+{
+    "name": "Mosaic",
+    "icon": "mosaic.gif",
+    "attributes": {
+        "stack_size": 64
+    }
+}

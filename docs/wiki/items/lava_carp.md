@@ -14,6 +14,12 @@ Lava Carp can be eaten, restoring 6 hunger and 4 saturation.
 
 Using an Iron Fishing Rod, Lava Carp can be obtained by fishing in Lava while in the Nether.
 
+There is a 60% chance of catching a Lava Carp.
+
+## Advancements
+
+{{ advancement("vanillaplus:they_live_here") }}
+
 ## Data Values
 
 ### ID

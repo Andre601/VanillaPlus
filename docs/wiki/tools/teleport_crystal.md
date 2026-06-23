@@ -15,6 +15,10 @@ The saving will only work if the player has at least 1 XP level available, while
 
 {{ crafting_recipe("vanillaplus:teleport_crystal") }}
 
+## Advancements
+
+{{ advancement("vanillaplus:teleportation") }}
+
 ## Data Values
 
 ### ID

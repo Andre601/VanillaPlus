@@ -15,6 +15,10 @@
 {{ smelting_recipe("vanillaplus:aluminum_ingot", footer=False) }}
 {{ smelting_recipe("vanillaplus:aluminum_ingot_2", header=False) }}
 
+## Advancements
+
+{{ advancement("vanillaplus:aluminiminum") }}
+
 ## Data Values
 
 ### ID

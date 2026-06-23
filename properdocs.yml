@@ -42,6 +42,7 @@ extra_css:
   - assets/stylesheet/frontpage.css
   - assets/stylesheet/tooltip.css
   - assets/stylesheet/theme.css
+  - assets/stylesheet/advancements.css
 
 extra_javascript:
   - assets/javascript/tooltip.js
@@ -64,6 +65,7 @@ plugins:
         - shapeless
         - fire
         - no-glight
+  - awesome-nav
   - macros:
       module_name: docs/.macros/macros
 
@@ -103,49 +105,4 @@ markdown_extensions:
 
 hooks:
   - docs/.hooks/wikilinks.py
-
-nav:
-  - Main Site: index.md
-  - About:
-    - about/index.md
-  - Wiki:
-    - wiki/index.md
-    - Blocks:
-      - wiki/blocks/index.md
-      - wiki/blocks/aluminum_block.md
-      - wiki/blocks/bauxite_ore.md
-      - wiki/blocks/raw_bauxite_block.md
-    - Furniture:
-      - wiki/furniture/index.md
-      - wiki/furniture/bench.md
-      - wiki/furniture/chair.md
-      - wiki/furniture/couch.md
-      - wiki/furniture/office_table.md
-      - wiki/furniture/table.md
-      - wiki/furniture/trashcan.md
-    - Items:
-      - wiki/items/index.md
-      - wiki/items/aluminum_hammer.md
-      - wiki/items/aluminum_ingot.md
-      - wiki/items/baked_apple.md
-      - wiki/items/crushed_ender_pearl.md
-      - wiki/items/iron_rod.md
-      - wiki/items/lava_carp.md
-      - wiki/items/magma_jelly.md
-      - wiki/items/raw_bauxite.md
-    - Mechanics:
-      - wiki/mechanics/index.md
-      - wiki/mechanics/claims.md
-      - wiki/mechanics/lava_fishing.md
-      - wiki/mechanics/tags.md
-      - wiki/mechanics/waila.md
-    - Tools:
-      - wiki/tools/index.md
-      - wiki/tools/iron_fishing_rod.md
-      - wiki/tools/recipe_book.md
-      - wiki/tools/scythe.md
-      - wiki/tools/teleport_crystal.md
-    - Weapons:
-      - wiki/weapons/index.md
-      - wiki/weapons/iron_bow.md
       

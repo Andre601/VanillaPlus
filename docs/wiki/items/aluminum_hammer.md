@@ -36,6 +36,11 @@ Each successful conversion of a block consumes one durability from the Aluminum 
 
 {{ crafting_recipe("vanillaplus:aluminum_hammer") }}
 
+## Advancements
+
+{{ advancement("vanillaplus:hammer_time", footer=False) }}
+{{ advancement("vanillaplus:hammer_smash", header=False) }}
+
 ## Data Values
 
 ### ID

@@ -1,0 +1,7 @@
+{
+    "name": "Teleportation",
+    "description": "Craft a Teleport Crystal.",
+    "requirements": "Obtain a Teleport Crystal.",
+    "icon": "vanillaplus:teleport_crystal",
+    "type": "goal"
+}

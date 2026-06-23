@@ -14,6 +14,8 @@ Magma Jelly can be crafted into Magma Cream when put into the Crafting table, gi
 
 Using an Iron Fishing Rod, Magma Jelly can be obtained by fishing in Lava while in the Nether.
 
+There is a 40% chance of catching a Magma Jelly.
+
 ## Data Values
 
 ### ID

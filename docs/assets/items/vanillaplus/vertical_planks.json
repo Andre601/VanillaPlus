@@ -1,0 +1,7 @@
+{
+    "name": "Vertical Planks",
+    "icon": "vertical_planks.gif",
+    "attributes": {
+        "stack_size": 64
+    }
+}

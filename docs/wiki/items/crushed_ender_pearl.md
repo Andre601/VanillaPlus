@@ -13,6 +13,10 @@
 
 {{ crafting_recipe("vanillaplus:crushed_ender_pearl") }}
 
+## Advancements
+
+{{ advancement("vanillaplus:whoops") }}
+
 ## Data Values
 
 ### ID

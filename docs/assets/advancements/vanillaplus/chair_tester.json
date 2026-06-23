@@ -1,0 +1,7 @@
+{
+    "name": "Chair Tester",
+    "description": "Sit on every sittable furniture available on the server.",
+    "requirements": "Sit on every furniture, including any wood and wool variants, at least once.",
+    "icon": "vanillaplus:white_acacia_couch",
+    "type": "challenge"
+}

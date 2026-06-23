@@ -1,0 +1,6 @@
+{
+    "name": "~~Hulk~~ Hammer smash!",
+    "description": "Use the Aluminum Hammer to convert a Block.",
+    "requirements": "Left-click a supported Block with the Aluminum Hammer to convert it.",
+    "icon": "minecraft:cracked_stone_bricks"
+}

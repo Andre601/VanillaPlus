@@ -27,6 +27,11 @@ Only blocks that match one of the following criteria will be broken, with non-ma
 
 {{ smithing_recipe("vanillaplus:netherite_scythe") }}
 
+## Advancements
+
+{{ advancement("vanillaplus:cutting_with_style", footer=False) }}
+{{ advancement("vanillaplus:having_a_problem", header=False) }}
+
 ## Data Values
 
 ### ID

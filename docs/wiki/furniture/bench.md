@@ -29,6 +29,11 @@ Holding the sneak button while sitting will dismount the player from the chair.
 {{ crafting_recipe("vanillaplus:spruce_bench", header=False, footer=False) }}
 {{ crafting_recipe("vanillaplus:warped_bench", header=False) }}
 
+## Advancements
+
+{{ advancement("vanillaplus:have_a_seat", footer=False) }}
+{{ advancement("vanillaplus:chair_tester", header=False) }}
+
 ## Data Values
 
 ### ID

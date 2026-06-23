@@ -5,6 +5,10 @@ VanillaPlus provides a collection of Custom Mechanics to enhance the gameplay ex
 ## Pages
 
 /// html | div.grid.cards
+-   ### [[Advancements]]
+    
+    The Server provides its own sets of custom Advancements which can be unlocked while playing on the game.
+    
 -   ### [[Claims]]
     
     Claims is a Server mechanic allowing a Player to claim a `3x3` chunks area in the main world to build in.
