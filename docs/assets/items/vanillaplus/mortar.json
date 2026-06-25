@@ -1,0 +1,16 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "granite",
+            "5": "stick",
+            "6": "granite",
+            "8": "granite"
+        }
+    },
+    "name": "Mortar",
+    "lore": "<gray>Can be used in crafting recipes\n<gray>for <aqua>making bone meal or specific\n<aqua>dyes <gray>to get <aqua>twice the usual output<gray>.",
+    "attributes": {
+        "stack_size": 1,
+        "durability": 32
+    }
+}
