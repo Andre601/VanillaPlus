@@ -1,0 +1,11 @@
+{
+    "name": "Bauxite Powder",
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:raw_bauxite",
+            "2": "vanillaplus:mortar"
+        },
+        "shapeless": true,
+        "amount": 2
+    }
+}

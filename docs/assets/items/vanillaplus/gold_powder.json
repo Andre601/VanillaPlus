@@ -1,0 +1,11 @@
+{
+    "name": "Gold Powder",
+    "crafting": {
+        "ingredients": {
+            "1": "raw_gold",
+            "2": "vanillaplus:mortar"
+        },
+        "shapeless": true,
+        "amount": 2
+    }
+}

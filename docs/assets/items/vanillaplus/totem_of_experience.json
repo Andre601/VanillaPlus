@@ -1,0 +1,7 @@
+{
+    "name": "Totem of Experience",
+    "icon": "totem_of_experience.gif",
+    "attributes": {
+        "stack_size": 1
+    }
+}

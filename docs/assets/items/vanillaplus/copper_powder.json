@@ -1,0 +1,11 @@
+{
+    "name": "Copper Powder",
+    "crafting": {
+        "ingredients": {
+            "1": "raw_copper",
+            "2": "vanillaplus:mortar"
+        },
+        "shapeless": true,
+        "amount": 2
+    }
+}

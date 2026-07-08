@@ -1,0 +1,7 @@
+{
+    "name": "Powder",
+    "icon": "powder.gif",
+    "attributes": {
+        "stack_size": 64
+    }
+}

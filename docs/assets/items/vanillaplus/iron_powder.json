@@ -1,0 +1,11 @@
+{
+    "name": "Iron Powder",
+    "crafting": {
+        "ingredients": {
+            "1": "raw_iron",
+            "2": "vanillaplus:mortar"
+        },
+        "shapeless": true,
+        "amount": 2
+    }
+}

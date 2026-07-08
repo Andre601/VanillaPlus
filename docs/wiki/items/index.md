@@ -33,6 +33,10 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
     
     Magma Jelly is an item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
 
+-   ### [[Powder]]
+    
+    Powder is an item that exists for Bauxite, Copper, Gold and Iron.
+
 -   ### [[Raw Bauxite]]
     
     Raw Bauxite is an item obtained from Bauxite Ore that can be smelted into [[Aluminum Ingots]].

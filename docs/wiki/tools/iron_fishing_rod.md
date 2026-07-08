@@ -19,6 +19,6 @@ One difference is, that the Iron Fishing Rod can also be used to fish in Lava in
 
 ### ID
 
-| Name        | Identifier                     |
-|-------------|--------------------------------|
-| Recipe Book | `vanillaplus:iron_fishing_rod` |
+| Name             | Identifier                     |
+|------------------|--------------------------------|
+| Iron Fishing Rod | `vanillaplus:iron_fishing_rod` |

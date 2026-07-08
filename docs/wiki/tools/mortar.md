@@ -2,22 +2,29 @@
 
 {{ infobox("vanillaplus:mortar") }}
 
-**Mortar** is an item that can be used to craft [[mc:Bone Meal]] and [[mc:Dyes]] with twice the output they usually yield in their vanilla recipe.
+**Mortar** is an item that can be used to craft [[mc:Bone Meal]], [[mc:Dyes]] and other selective items with twice the output they usually yield in their vanilla recipe.
 
 ## Usage
 
-The Mortar is used in crafting alongside a supported item to craft either Bone Meal or Dyes.  
-Putting it alongside a supported item in the crafting field will yield twice the usual output for that item, while consuming 1 durability from the Mortar itself.
+The Mortar is used in crafting alongside a supported item to craft Bone Meal, Dyes or other (custom) items.  
+Putting it alongside an item with a vanilla recipe (i.e. a flower) will yield twice the normal output from the vanilla recipe. Putting any other supported item will return a specific item.  
+Each crafting consumes 1 durability of the Mortar.
 
 ### Supported Items
 
-Only a selection of items is supported. Namely, only Items that are used in crafting recipes for bone meal or dyes, excluding ones that use other dyes, are supported:
+Below is a complete list of items that are supported with the Mortar:
+
+/// details | Full List of supported Items
+`-` indicates there not being a vanilla recipe.
+
+**Dyes**
 
 | Item               | Output         | Amount Vanilla | Amount w/ Mortar |
 |--------------------|----------------|---------------:|-----------------:|
-| Bone               | Bone Meal      | 3              | 6                |
 | Ink Sac            | Black Dye      | 1              | 2                |
 | Wither Rose        | Black Dye      | 1              | 2                |
+| Coal               | Black Dye      | -              | 1                |
+| Charcoal           | Black Dye      | -              | 1                |
 | Lapis Lazuli       | Blue Dye       | 1              | 2                |
 | Cornflower         | Blue Dye       | 1              | 2                |
 | Cocoa Beans        | Brown Dye      | 1              | 2                |
@@ -45,6 +52,18 @@ Only a selection of items is supported. Namely, only Items that are used in craf
 | Dandelion          | Yellow Dye     | 1              | 2                |
 | Sunflower          | Yellow Dye     | 2              | 4                |
 | Wildflowers        | Yellow Dye     | 1              | 2                |
+
+**Other Items**
+
+| Item        | Output         | Amount Vanilla | Amount w/ Mortar |
+|-------------|----------------|---------------:|-----------------:|
+| Bone        | Bone Meal      | 3              | 6                |
+| Sugar Cane  | Sugar          | 1              | 2                |
+| Raw Bauxite | Bauxite Powder | -              | 2                |
+| Raw Copper  | Copper Powder  | -              | 2                |
+| Raw Gold    | Gold Powder    | -              | 2                |
+| Raw Iron    | Iron Powder    | -              | 2                |
+///
 
 ## Obtaining
 
