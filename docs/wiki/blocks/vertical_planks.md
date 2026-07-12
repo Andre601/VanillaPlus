@@ -28,6 +28,7 @@
 | Name                     | Identifier                             |
 |--------------------------|----------------------------------------|
 | Acacia Vertical Planks   | `vanillaplus:acacia_vertical_planks`   |
+| Bamboo Vertical Planks   | `vanillaplus:bamboo_vertical_planks`   |
 | Birch Vertical Planks    | `vanillaplus:birch_vertical_planks`    |
 | Cherry Vertical Planks   | `vanillaplus:cherry_vertical_planks`   |
 | Crimson Vertical Planks  | `vanillaplus:crimson_vertical_planks`  |
