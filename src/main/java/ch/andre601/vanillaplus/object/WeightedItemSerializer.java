@@ -31,7 +31,7 @@ public class WeightedItemSerializer implements TypeSerializer<WeightedList.Weigh
         if(stack == null)
             return null;
         
-        int weight = node.node("weigth").getInt(-1);
+        int weight = node.node("weight").getInt(-1);
         if(weight <= 0)
             weight = 1;
         

@@ -1,5 +1,6 @@
-package ch.andre601.vanillaplus.ner;
+package ch.andre601.vanillaplus.ner.interaction;
 
+import ch.andre601.vanillaplus.ner.Textures;
 import com.github.darksoulq.ner.layout.RecipeCategory;
 import com.github.darksoulq.ner.model.ParsedRecipeView;
 import org.bukkit.inventory.ItemStack;

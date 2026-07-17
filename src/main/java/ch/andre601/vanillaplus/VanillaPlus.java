@@ -102,7 +102,7 @@ public final class VanillaPlus extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new CustomBlockListener(), this);
         getServer().getPluginManager().registerEvents(new InventoryListener(), this);
         getServer().getPluginManager().registerEvents(new EntityListener(this), this);
-        getServer().getPluginManager().registerEvents(new ItemsAdderListener(), this);
+        getServer().getPluginManager().registerEvents(new ItemsAdderListener(this), this);
         lavaFishingListener = new LavaFishingListener(this);
         loadCommands();
         
