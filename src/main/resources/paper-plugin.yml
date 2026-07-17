@@ -19,3 +19,9 @@ dependencies:
     PlaceholderAPI:
       load: BEFORE
       required: false
+    AbyssalLib:
+      load: BEFORE
+      required: false
+    NeverEnoughRecipes:
+      load: BEFORE
+      required: false

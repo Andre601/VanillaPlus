@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class InteractionCategory extends RecipeCategory<InteractionRecipe>{
     
-    private final int[] slots = {30, 31, 32, 34};
+    private final int[] slots = {20, 21, 22, 24};
     
     @Override
     public Class<InteractionRecipe> getRecipeClass(){
@@ -27,11 +27,11 @@ public class InteractionCategory extends RecipeCategory<InteractionRecipe>{
     
     @Override
     public Set<Integer> getResultSlots(){
-        return Set.of(34);
+        return Set.of(24);
     }
     
     @Override
     public Set<Integer> getIgnoredSlots(){
-        return Set.of();
+        return Set.of(21);
     }
 }

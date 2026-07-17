@@ -64,6 +64,18 @@ public final class VanillaPlus extends JavaPlugin {
             return;
         }
         
+        if(!manager.isPluginEnabled("AbyssalLib")){
+            getSLF4JLogger().error("AbyssalLib is not enabled. It is required.");
+            manager.disablePlugin(this);
+            return;
+        }
+        
+        if(!manager.isPluginEnabled("NeverEnoughRecipes")){
+            getSLF4JLogger().error("NeverEnoughRecipes is not enabled. It is required.");
+            manager.disablePlugin(this);
+            return;
+        }
+        
         if(manager.isPluginEnabled("PlaceholderAPI") && translatorUtil.loadLanguages()){
             new PAPIPlaceholders(this).register();
             getSLF4JLogger().info("Loaded PlaceholderAPI Expansion!");

@@ -13,8 +13,6 @@ public class Textures{
         ResourcePack pack = new ResourcePack(plugin, "vanillaplus");
         Namespace ns = pack.namespace("vanillaplus");
         
-        ns.icon();
-        
         Texture interactionTexture = ns.texture("gui/interaction");
         
         Font font = ns.font("gui", false);
