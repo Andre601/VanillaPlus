@@ -141,7 +141,7 @@
         <dependency>
             <groupId>io.github.darksoulq</groupId>
             <artifactId>AbyssalLib</artifactId>
-            <version>2.4.0-mc.26.1.2-alpha.2</version>
+            <version>2.4.0-mc.26.2-alpha.2</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
