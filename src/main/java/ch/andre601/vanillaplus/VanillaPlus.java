@@ -1,10 +1,10 @@
 package ch.andre601.vanillaplus;
 
 import ch.andre601.vanillaplus.command.ClaimCommand;
+import ch.andre601.vanillaplus.command.SettingsCommand;
 import ch.andre601.vanillaplus.command.VanillaPlusCommand;
-import ch.andre601.vanillaplus.listener.CauldronListener;
-import ch.andre601.vanillaplus.listener.LavaFishingListener;
-import ch.andre601.vanillaplus.listener.PlayerListener;
+import ch.andre601.vanillaplus.listener.*;
+import ch.andre601.vanillaplus.ner.Textures;
 import ch.andre601.vanillaplus.object.WeightedList;
 import ch.andre601.vanillaplus.papi.PAPIPlaceholders;
 import ch.andre601.vanillaplus.util.*;
@@ -13,6 +13,7 @@ import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion;
 import dev.lone.itemsadder.api.CustomStack;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.PluginManager;
@@ -26,6 +27,7 @@ import java.util.List;
 
 public final class VanillaPlus extends JavaPlugin {
     public static final MiniMessage MM;
+    public static NamespacedKey SETTINGS_KEY;
     
     private final ClaimHandler claimHandler = new ClaimHandler(this);
     private final TranslatorUtil translatorUtil = new TranslatorUtil(this);
@@ -41,6 +43,8 @@ public final class VanillaPlus extends JavaPlugin {
     
     @Override
     public void onEnable(){
+        VanillaPlus.SETTINGS_KEY = NamespacedKey.fromString("settings", this);
+        
         PluginManager manager = getServer().getPluginManager();
         if(!manager.isPluginEnabled("ItemsAdder")){
             getSLF4JLogger().error("ItemsAdder is not enabled. It is required.");
@@ -82,9 +86,15 @@ public final class VanillaPlus extends JavaPlugin {
         }
         
         getServer().getPluginManager().registerEvents(new CauldronListener(), this);
-        getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
+        getServer().getPluginManager().registerEvents(new PlayerListener(), this);
+        getServer().getPluginManager().registerEvents(new CustomBlockListener(), this);
+        getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+        getServer().getPluginManager().registerEvents(new EntityListener(this), this);
+        getServer().getPluginManager().registerEvents(new ItemsAdderListener(), this);
         lavaFishingListener = new LavaFishingListener(this);
         loadCommands();
+        
+        Textures.init(this);
         
         setupScheduler();
     }
@@ -133,7 +143,8 @@ public final class VanillaPlus extends JavaPlugin {
         AnnotationParser<CommandSourceStack> parser = new AnnotationParser<>(manager, CommandSourceStack.class);
         parser.parse(
             new ClaimCommand(),
-            new VanillaPlusCommand()
+            new VanillaPlusCommand(),
+            new SettingsCommand()
         );
     }
     

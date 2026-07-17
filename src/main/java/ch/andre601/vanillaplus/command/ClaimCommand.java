@@ -25,7 +25,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-@SuppressWarnings("UnstableApiUsage")
 public class ClaimCommand{
     private final LegacyComponentSerializer legacy = LegacyComponentSerializer.legacySection();
     
