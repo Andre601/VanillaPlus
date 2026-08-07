@@ -4,6 +4,7 @@ import ch.andre601.vanillaplus.command.ClaimCommand;
 import ch.andre601.vanillaplus.command.SettingsCommand;
 import ch.andre601.vanillaplus.command.VanillaPlusCommand;
 import ch.andre601.vanillaplus.listener.*;
+import ch.andre601.vanillaplus.ner.ItemGroupProcessor;
 import ch.andre601.vanillaplus.ner.Textures;
 import ch.andre601.vanillaplus.object.WeightedList;
 import ch.andre601.vanillaplus.papi.PAPIPlaceholders;
@@ -28,10 +29,12 @@ import java.util.List;
 public final class VanillaPlus extends JavaPlugin {
     public static final MiniMessage MM;
     public static NamespacedKey SETTINGS_KEY;
+    public static boolean NER_RECIPES_REGISTERED = false;
     
     private final ClaimHandler claimHandler = new ClaimHandler(this);
     private final TranslatorUtil translatorUtil = new TranslatorUtil(this);
     private final ConfigUtil configUtil = new ConfigUtil(this);
+    private final ItemGroupProcessor itemGroupProcessor = new ItemGroupProcessor(this);
     
     private WeightedList<ItemStack> fishingLoot;
     
@@ -136,6 +139,10 @@ public final class VanillaPlus extends JavaPlugin {
     
     public ConfigUtil getConfigUtil(){
         return configUtil;
+    }
+    
+    public ItemGroupProcessor getItemGroupProcessor(){
+        return itemGroupProcessor;
     }
     
     public WeightedList<ItemStack> getFishingLoot(){

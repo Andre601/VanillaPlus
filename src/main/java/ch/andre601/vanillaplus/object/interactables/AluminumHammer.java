@@ -49,8 +49,9 @@ public class AluminumHammer implements InteractableItem{
             }
         }
         
-        event.getPlayer().playSound(block.getLocation(), Sound.ITEM_MACE_SMASH_GROUND, 0.5f, 1.0f);
-        event.getPlayer().playEffect(block.getLocation(), Effect.DESTROY_BLOCK, block.getBlockData());
+        event.getPlayer().getWorld().playSound(block.getLocation(), Sound.ITEM_MACE_SMASH_GROUND, 0.5f, 1.0f);
+        //noinspection removal -- We run 26.1.2
+        event.getPlayer().getWorld().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getBlockData());
         
         event.getPlayer().getInventory().getItemInMainHand().damage(1, event.getPlayer());
     }

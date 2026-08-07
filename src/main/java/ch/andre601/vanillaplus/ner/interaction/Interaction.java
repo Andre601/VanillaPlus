@@ -70,6 +70,9 @@ public enum Interaction{
     }
     
     public InteractionRecipe recipe(){
+        if(tool == null || result == null)
+            return null;
+        
         return new InteractionRecipe(input, tool, type, result);
     }
 }

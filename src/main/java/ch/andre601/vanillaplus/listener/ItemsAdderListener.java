@@ -17,7 +17,12 @@ public class ItemsAdderListener implements Listener{
     
     @EventHandler
     public void onIAReady(ItemsAdderLoadDataEvent event){
-        NeverEnoughRecipes.registerPlugin(new NERIntegration(plugin));
+        plugin.getLogger().warning("ItemsAdderLoadDataEvent called!");
+        if(!VanillaPlus.NER_RECIPES_REGISTERED){
+            NeverEnoughRecipes.registerPlugin(new NERIntegration(plugin));
+            VanillaPlus.NER_RECIPES_REGISTERED = true;
+        }
+        
         NeverEnoughRecipes.reloadRegistries();
     }
 }

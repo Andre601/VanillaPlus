@@ -133,9 +133,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.darksoulq</groupId>
+            <groupId>io.github.darksoulq</groupId>
             <artifactId>NeverEnoughRecipes</artifactId>
-            <version>v1.2.0-mc.26.1.2</version>
+            <version>1.3.0-mc.26.1.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

@@ -1,5 +1,6 @@
 name: VanillaPlus
 version: '${project.version}'
+author: "Andre_601"
 api-version: '1.21.8'
 
 bootstrapper: ch.andre601.vanillaplus.bootstrap.VanillaPlusBootstrap

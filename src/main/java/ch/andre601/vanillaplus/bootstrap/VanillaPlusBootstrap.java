@@ -14,9 +14,13 @@ import io.papermc.paper.tag.TagEntry;
 import net.kyori.adventure.key.Key;
 import org.bukkit.block.BlockType;
 
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 
-@SuppressWarnings("UnstableApiUsage")
+@SuppressWarnings({"UnstableApiUsage", "unused"})
 public class VanillaPlusBootstrap implements PluginBootstrap{
     
     @Override
@@ -53,5 +57,20 @@ public class VanillaPlusBootstrap implements PluginBootstrap{
         });
         
         manager.registerEventHandler(blockTagConfig);
+        
+        manager.registerEventHandler(LifecycleEvents.DATAPACK_DISCOVERY.newHandler(
+            event -> {
+                try{
+                    URL resource = getClass().getResource("/datapack");
+                    if(resource == null)
+                        return;
+                    
+                    URI uri = resource.toURI();
+                    event.registrar().discoverPack(uri, "vanillaplus");
+                }catch(URISyntaxException | IOException ex){
+                    throw new RuntimeException(ex);
+                }
+            }
+        ));
     }
 }

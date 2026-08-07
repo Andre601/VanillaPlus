@@ -28,7 +28,6 @@ public class FishingCategory extends RecipeCategory<FishingRecipe>{
             return builder.build();
         
         for(WeightedList.Weighted<ItemStack> item : fishingRecipe.loot()){
-            System.out.println(item.weight());
             builder.probability(item.entry(), item.weight());
         }
         
