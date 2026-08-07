@@ -25,6 +25,10 @@ VanillaPlus provides a collection of Custom Mechanics to enhance the gameplay ex
     
     VanillaPlus adds custom tags that are used for various features.
 
+-   ### [[Villagers]]
+    
+    The Server modifies Villager trades to support its emerald-based economy.
+
 -   ### [[WAILA]]
     
     WAILA (What am I looking at) is a Server mechanic displaying information about th block the player is currently looking at.
