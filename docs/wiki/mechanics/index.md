@@ -8,6 +8,10 @@ VanillaPlus provides a collection of Custom Mechanics to enhance the gameplay ex
 -   ### [[Advancements]]
     
     The Server provides its own sets of custom Advancements which can be unlocked while playing on the game.
+
+-   ### [[Chicken]]
+    
+    The Server modifies the loot table of Chicken, allowing them to drop Feathers instead of an egg.
     
 -   ### [[Claims]]
     
