@@ -20,10 +20,8 @@ import org.bukkit.inventory.ItemStack;
 
 import java.io.*;
 import java.lang.reflect.Type;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
 import java.util.*;
 
 public class ClaimHandler{
@@ -35,7 +33,10 @@ public class ClaimHandler{
     private final List<String> iaFlags = List.of(
         "ia-furniture-sit",
         "ia-placed-block-interact",
-        "ia-placed-furniture-interact"
+        "ia-placed-furniture-interact",
+        "iaa-bed-use",
+        "iaa-custom-painting-place",
+        "iaa-storage-open"
     );
     
     private final VanillaPlus plugin;
@@ -71,22 +72,20 @@ public class ClaimHandler{
     }
     
     public boolean save(){
-        try{
-            String json = gson.toJson(claims);
-            InputStream stream = new ByteArrayInputStream(json.getBytes(StandardCharsets.UTF_8));
-            Files.copy(stream, claimsFile, StandardCopyOption.REPLACE_EXISTING);
+        try(Writer writer = new FileWriter(claimsFile.toFile())){
+            gson.toJson(claims, mapType, writer);
             
-            plugin.getSLF4JLogger().info("Saved {} Player(s) to claims.json file.", claims.size());
+            plugin.getSLF4JLogger().info("Saved {} Player(s) to claims.json file", claims.size());
             return true;
         }catch(IOException ex){
-            plugin.getSLF4JLogger().warn("Encountered IOException while saving to claims.json!", ex);
+            plugin.getSLF4JLogger().warn("Encountered IOException while saving claims.json file.", ex);
             return false;
         }
     }
     
     public void claim(Player player){
         if(!hasClaimsLeft(player)){
-            player.sendMessage(VanillaPlus.MM.deserialize("<red>You cannot claim any more chunks!"));
+            player.sendRichMessage("<red>You cannot claim any more chunks!");
             return;
         }
         
@@ -101,14 +100,14 @@ public class ClaimHandler{
         }
         
         if(item == null){
-            player.sendMessage(VanillaPlus.MM.deserialize("<red>You need a <grey>Claim Permit</grey> to claim an Area!"));
-            player.sendMessage(VanillaPlus.MM.deserialize("<red>You can get one from the <grey>Claim Manager</grey>."));
+            player.sendRichMessage("<red>You need a <grey>Claim Permit</grey> to claim an Area!");
+            player.sendRichMessage("<red>You can get one from the <grey>Claim Manager</grey>.");
             return;
         }
         
         RegionManager manager = WorldGuardHandler.getRegionManager(player.getWorld());
         if(manager == null){
-            player.sendMessage(VanillaPlus.MM.deserialize("<red>Couldn't obtain RegionManager. If this issue persists, report it!"));
+            player.sendRichMessage("<red>Couldn't obtain RegionManager. If this issue persists, report it!");
             return;
         }
         
@@ -116,7 +115,7 @@ public class ClaimHandler{
         ProtectedCuboidRegion region = claim.asCuboidRegion(player.getWorld());
         
         if(!WorldGuardHandler.canClaim(manager, region)){
-            player.sendMessage(VanillaPlus.MM.deserialize("<red>Your desired Claim is overlapping with another Region."));
+            player.sendRichMessage("<red>Your desired Claim is overlapping with another Region.");
             return;
         }
         
@@ -137,10 +136,10 @@ public class ClaimHandler{
         
         this.claims.put(player.getUniqueId().toString(), claims);
         
-        player.sendMessage(VanillaPlus.MM.deserialize(String.format(
+        player.sendRichMessage(String.format(
             "<green><hover:show_text:\"%s\">Successfully claimed Region</hover>",
             claim.toMMString()
-        )));
+        ));
         
         item.setAmount(item.getAmount() - 1);
     }

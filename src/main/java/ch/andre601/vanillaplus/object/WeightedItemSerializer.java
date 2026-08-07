@@ -3,6 +3,7 @@ package ch.andre601.vanillaplus.object;
 import dev.lone.itemsadder.api.CustomStack;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;
+import org.jspecify.annotations.NonNull;
 import org.spongepowered.configurate.ConfigurationNode;
 import org.spongepowered.configurate.serialize.SerializationException;
 import org.spongepowered.configurate.serialize.TypeSerializer;
@@ -13,7 +14,7 @@ public class WeightedItemSerializer implements TypeSerializer<WeightedList.Weigh
     public static final WeightedItemSerializer INSTANCE = new WeightedItemSerializer();
     
     @Override
-    public WeightedList.Weighted<ItemStack> deserialize(Type type, ConfigurationNode node) throws SerializationException{
+    public WeightedList.Weighted<ItemStack> deserialize(@NonNull Type type, ConfigurationNode node) throws SerializationException{
         String itemId = node.node("id").getString();
         CustomStack item = CustomStack.getInstance(itemId);
         
@@ -31,7 +32,7 @@ public class WeightedItemSerializer implements TypeSerializer<WeightedList.Weigh
         if(stack == null)
             return null;
         
-        int weight = node.node("weigth").getInt(-1);
+        int weight = node.node("weight").getInt(-1);
         if(weight <= 0)
             weight = 1;
         
@@ -39,7 +40,7 @@ public class WeightedItemSerializer implements TypeSerializer<WeightedList.Weigh
     }
     
     @Override
-    public void serialize(Type type, WeightedList.Weighted<ItemStack> obj, ConfigurationNode node) throws SerializationException{
+    public void serialize(@NonNull Type type, WeightedList.Weighted<ItemStack> obj, @NonNull ConfigurationNode node) throws SerializationException{
         if(obj == null){
             node.set(null);
             return;

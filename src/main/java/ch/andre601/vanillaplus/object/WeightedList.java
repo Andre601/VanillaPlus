@@ -20,8 +20,10 @@ public class WeightedList<E>{
     }
     
     public E getRandom(){
-        int select = random.nextInt(total) + 1;
-        return map.ceilingEntry(select).getValue();
+        synchronized(random){
+            int select = random.nextInt(total) + 1;
+            return map.ceilingEntry(select).getValue();
+        }
     }
     
     private void process(List<Weighted<E>> entries){
