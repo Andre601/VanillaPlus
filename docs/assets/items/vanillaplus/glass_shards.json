@@ -1,0 +1,20 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:glass_shard",
+            "2": "vanillaplus:glass_shard",
+            "3": "vanillaplus:glass_shard",
+            "4": "vanillaplus:glass_shard",
+            "5": "vanillaplus:glass_shard",
+            "6": "vanillaplus:glass_shard",
+            "7": "vanillaplus:glass_shard",
+            "8": "vanillaplus:glass_shard",
+            "9": "vanillaplus:glass_shard"
+        }
+    },
+    "name": "Glass Shards",
+    "icon": "glass_shards.gif",
+    "attributes": {
+        "stack_size": 64
+    }
+}

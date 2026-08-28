@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:brown_glass_shard",
+            "2": "vanillaplus:brown_glass_shard",
+            "3": "vanillaplus:brown_glass_shard",
+            "4": "vanillaplus:brown_glass_shard",
+            "5": "vanillaplus:brown_glass_shard",
+            "6": "vanillaplus:brown_glass_shard",
+            "7": "vanillaplus:brown_glass_shard",
+            "8": "vanillaplus:brown_glass_shard",
+            "9": "vanillaplus:brown_glass_shard"
+        }
+    },
+    "name": "Brown Stained Glass",
+    "stack_size": 64
+}

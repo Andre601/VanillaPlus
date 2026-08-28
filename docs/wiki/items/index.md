@@ -21,6 +21,10 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
     
     Crushed Ender Pearl is an item used to craft the [[Teleport Crystal]].
 
+-   ### [[Glass Shards]]
+    
+    Glass Shards are items that can be dropped from Glass, Glass Pane, Stained Glass or Stained Glass Pane if mined without a Silktouch tool.
+
 -   ### [[Iron Rod]]
     
     Iron Rod is an item that can be crafted from 2 Iron Ingots.

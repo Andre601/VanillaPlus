@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:white_glass_shard",
+            "2": "vanillaplus:white_glass_shard",
+            "3": "vanillaplus:white_glass_shard",
+            "4": "vanillaplus:white_glass_shard",
+            "5": "vanillaplus:white_glass_shard",
+            "6": "vanillaplus:white_glass_shard",
+            "7": "vanillaplus:white_glass_shard",
+            "8": "vanillaplus:white_glass_shard",
+            "9": "vanillaplus:white_glass_shard"
+        }
+    },
+    "name": "White Stained Glass",
+    "stack_size": 64
+}

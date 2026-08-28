@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:cyan_glass_shard",
+            "2": "vanillaplus:cyan_glass_shard",
+            "3": "vanillaplus:cyan_glass_shard",
+            "4": "vanillaplus:cyan_glass_shard",
+            "5": "vanillaplus:cyan_glass_shard",
+            "6": "vanillaplus:cyan_glass_shard",
+            "7": "vanillaplus:cyan_glass_shard",
+            "8": "vanillaplus:cyan_glass_shard",
+            "9": "vanillaplus:cyan_glass_shard"
+        }
+    },
+    "name": "Cyan Stained Glass",
+    "stack_size": 64
+}

@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:orange_glass_shard",
+            "2": "vanillaplus:orange_glass_shard",
+            "3": "vanillaplus:orange_glass_shard",
+            "4": "vanillaplus:orange_glass_shard",
+            "5": "vanillaplus:orange_glass_shard",
+            "6": "vanillaplus:orange_glass_shard",
+            "7": "vanillaplus:orange_glass_shard",
+            "8": "vanillaplus:orange_glass_shard",
+            "9": "vanillaplus:orange_glass_shard"
+        }
+    },
+    "name": "Orange Stained Glass",
+    "stack_size": 64
+}

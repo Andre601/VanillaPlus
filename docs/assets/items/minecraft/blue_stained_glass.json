@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:blue_glass_shard",
+            "2": "vanillaplus:blue_glass_shard",
+            "3": "vanillaplus:blue_glass_shard",
+            "4": "vanillaplus:blue_glass_shard",
+            "5": "vanillaplus:blue_glass_shard",
+            "6": "vanillaplus:blue_glass_shard",
+            "7": "vanillaplus:blue_glass_shard",
+            "8": "vanillaplus:blue_glass_shard",
+            "9": "vanillaplus:blue_glass_shard"
+        }
+    },
+    "name": "Blue Stained Glass",
+    "stack_size": 64
+}

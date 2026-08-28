@@ -9,7 +9,11 @@ VanillaPlus provides a collection of Custom Mechanics to enhance the gameplay ex
     
     The Server provides its own sets of custom Advancements which can be unlocked while playing on the game.
 
--   ### [[Chicken]]
+-   ### [[Chest Sorting]]
+    
+    The Server adds the ability to sort items in a chest by using the Middle mouse button in any slot of the chest inventory.
+
+-   ### [[Chicken Loot]]
     
     The Server modifies the loot table of Chicken, allowing them to drop Feathers instead of an egg.
     
@@ -25,7 +29,7 @@ VanillaPlus provides a collection of Custom Mechanics to enhance the gameplay ex
     
     VanillaPlus adds custom tags that are used for various features.
 
--   ### [[Villagers]]
+-   ### [[Villager Trades]]
     
     The Server modifies Villager trades to support its emerald-based economy.
 

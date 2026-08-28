@@ -5,7 +5,7 @@ It is required to hold an item when trying to sort items.
 This is unfortunately a limitation of minecraft and nothing that a workaround can be found for
 ///
 
-VanillaPlus adds the ability to sort items in a chest by using the Middle mouse button in any slot of the chest inventory.
+The Server adds the ability to sort items in a chest by using the Middle mouse button in any slot of the chest inventory.
 
 ## Customization
 

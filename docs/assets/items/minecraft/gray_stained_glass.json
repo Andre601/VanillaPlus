@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:gray_glass_shard",
+            "2": "vanillaplus:gray_glass_shard",
+            "3": "vanillaplus:gray_glass_shard",
+            "4": "vanillaplus:gray_glass_shard",
+            "5": "vanillaplus:gray_glass_shard",
+            "6": "vanillaplus:gray_glass_shard",
+            "7": "vanillaplus:gray_glass_shard",
+            "8": "vanillaplus:gray_glass_shard",
+            "9": "vanillaplus:gray_glass_shard"
+        }
+    },
+    "name": "Gray Stained Glass",
+    "stack_size": 64
+}

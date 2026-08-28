@@ -1,4 +1,4 @@
-# Villagers
+# Villager Trades
 
 The Server modifies Villager trades to support its emerald-based economy.
 

@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:green_glass_shard",
+            "2": "vanillaplus:green_glass_shard",
+            "3": "vanillaplus:green_glass_shard",
+            "4": "vanillaplus:green_glass_shard",
+            "5": "vanillaplus:green_glass_shard",
+            "6": "vanillaplus:green_glass_shard",
+            "7": "vanillaplus:green_glass_shard",
+            "8": "vanillaplus:green_glass_shard",
+            "9": "vanillaplus:green_glass_shard"
+        }
+    },
+    "name": "Green Stained Glass",
+    "stack_size": 64
+}

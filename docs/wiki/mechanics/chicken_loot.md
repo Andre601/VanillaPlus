@@ -1,4 +1,4 @@
-# Chicken
+# Chicken Loot
 
 The Server modifies the loot table of Chicken, allowing them to drop [[mc:feather|Feathers]] instead of an egg.
 
