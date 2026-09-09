@@ -7,6 +7,10 @@ hide:
 
 # VanillaPlus
 
+/// warning | Important
+The server is not yet available for the public. As such will you be kicked for not being on the whitelist!
+///
+
 Welcome to VanillaPlus!
 
 VanillaPlus is a Minecraft Multiplayer Server that provides custom blocks, items, furniture and more without any mods being required to join! Just accept the resource pack and you're good to go.
