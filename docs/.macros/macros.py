@@ -102,7 +102,7 @@ def define_env(env):
 
             if isinstance(ingredient_data.get("variants"), list):
                 for i, variant in enumerate(ingredient_data["variants"]):
-                    item_slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="lazy" alt="{ingredient_id}">')
+                    item_slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{ingredient_id}">')
             else:
                 item_slot.append(f'<img src="/assets/img/items/{item_path}.{"gif" if "gif" in ingredient_data and ingredient_data["gif"] else "png"}" class="no-glight" loading="lazy" alt="{ingredient_id}">')
             
@@ -119,7 +119,7 @@ def define_env(env):
 
         if isinstance(json_data.get("variants"), list):
             for i, variant in enumerate(json_data["variants"]):
-                result_slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="lazy" alt="{id}">')
+                result_slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{id}">')
         else:
             result_slot.append(f'<img src="/assets/img/items/{item}.{"gif" if json_data.get("gif", False) else "png"}" class="no-glight" loading="lazy" alt="{id}">')
         
@@ -403,12 +403,12 @@ def define_env(env):
                     for vKey, vValue in value.items():
                         values.append(f"{vKey}: {vValue}")
                     
-                    strings.append(f'<td>{"<br>".join(values)}')
+                    strings.append(f'<td>{"<br>".join(values)}</td>')
                 elif isinstance(value, list):
-                    strings.append(f'<td>{"<br>".join(value)}')
+                    strings.append(f'<td>{"<br>".join(value)}</td>')
                 else:
                     if key.lower() == "stack_size" and isinstance(value, int):
-                        strings.append(f'<td>{f"Yes ({value})" if value > 1 else "No"}')
+                        strings.append(f'<td>{f"Yes ({value})" if value > 1 else "No"}</td>')
                     else:
                         strings.append(f'<td>{value}</td>')
         
