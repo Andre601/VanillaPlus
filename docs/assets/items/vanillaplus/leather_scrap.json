@@ -1,0 +1,10 @@
+{
+    "name": "Leather Scrap",
+    "smelting": {
+        "item": "rotten_flesh",
+        "exp": 0.1
+    },
+    "attributes": {
+        "stack_size": 64
+    }
+}

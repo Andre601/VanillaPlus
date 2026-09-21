@@ -33,6 +33,10 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
     
     Lava Carp is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
 
+-   ### [[Leather Scrap]]
+    
+    Leather Scrap is an item made from smelting [[mc:Rotten Flesh]].
+
 -   ### [[Magma Jelly]]
     
     Magma Jelly is an item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
