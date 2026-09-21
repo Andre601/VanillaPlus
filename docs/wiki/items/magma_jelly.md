@@ -8,6 +8,8 @@
 
 Magma Jelly can be crafted into Magma Cream when put into the Crafting table, giving 1 Magma Cream per Magma Jelly.
 
+{{ crafting_recipe("minecraft:magma_cream") }}
+
 ## Obtaining
 
 ### Fishing

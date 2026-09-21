@@ -12,7 +12,6 @@
         }
     },
     "name": "Spruce Couch",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_spruce_couch",
         "vanillaplus:blue_spruce_couch",
@@ -30,5 +29,14 @@
         "vanillaplus:red_spruce_couch",
         "vanillaplus:white_spruce_couch",
         "vanillaplus:yellow_spruce_couch"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "connectable": "Yes"
+    }
 }

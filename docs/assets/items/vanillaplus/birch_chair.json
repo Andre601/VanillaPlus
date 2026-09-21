@@ -9,7 +9,6 @@
         }
     },
     "name": "Birch Chair",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_birch_chair",
         "vanillaplus:blue_birch_chair",
@@ -27,5 +26,13 @@
         "vanillaplus:red_birch_chair",
         "vanillaplus:white_birch_chair",
         "vanillaplus:yellow_birch_chair"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Length": 1,
+            "Height": 1
+        }
+    }
 }

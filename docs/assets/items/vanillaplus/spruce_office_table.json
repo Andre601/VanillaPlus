@@ -8,5 +8,14 @@
             "6": "stripped_spruce_log"
         }
     },
-    "name": "Spruce Office Table"
+    "name": "Spruce Office Table",
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 3,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "storage_space": "9 Slots"
+    }
 }

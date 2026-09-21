@@ -12,7 +12,6 @@
         }
     },
     "name": "Oak Couch",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_oak_couch",
         "vanillaplus:blue_oak_couch",
@@ -30,5 +29,14 @@
         "vanillaplus:red_oak_couch",
         "vanillaplus:white_oak_couch",
         "vanillaplus:yellow_oak_couch"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "connectable": "Yes"
+    }
 }

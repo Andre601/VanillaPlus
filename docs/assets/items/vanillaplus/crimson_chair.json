@@ -9,7 +9,6 @@
         }
     },
     "name": "Crimson Chair",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_crimson_chair",
         "vanillaplus:blue_crimson_chair",
@@ -27,5 +26,13 @@
         "vanillaplus:red_crimson_chair",
         "vanillaplus:white_crimson_chair",
         "vanillaplus:yellow_crimson_chair"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Length": 1,
+            "Height": 1
+        }
+    }
 }

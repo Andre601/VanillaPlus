@@ -1,0 +1,9 @@
+{
+    "name": "Stone Tier Block <gray>[<aqua>Any<gray>]",
+    "lore": "<gray>Any matching Stone Tier Block can be used.<br><br><gray>Accepts Tag: #minecraft:stone_tool_materials",
+    "variants": [
+        "cobbled_deepslate",
+        "cobblestone",
+        "blackstone"
+    ]
+}

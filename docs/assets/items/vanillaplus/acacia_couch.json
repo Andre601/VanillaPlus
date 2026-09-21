@@ -12,8 +12,6 @@
         }
     },
     "name": "Acacia Couch",
-    "icon": "couch.gif",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_acacia_couch",
         "vanillaplus:blue_acacia_couch",
@@ -31,5 +29,14 @@
         "vanillaplus:red_acacia_couch",
         "vanillaplus:white_acacia_couch",
         "vanillaplus:yellow_acacia_couch"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "connectable": "Yes"
+    }
 }

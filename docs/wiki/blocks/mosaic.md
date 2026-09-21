@@ -1,6 +1,6 @@
 # Mosaic
 
-{{ infobox("vanillaplus:mosaic") }}
+{{ infobox("vanillaplus:acacia_mosaic", "vanillaplus:birch_mosaic", "vanillaplus:cherry_mosaic", "vanillaplus:crimson_mosaic", "vanillaplus:dark_oak_mosaic", "vanillaplus:jungle_mosaic", "vanillaplus:mangrove_mosaic", "vanillaplus:oak_mosaic", "vanillaplus:pale_oak_mosaic", "vanillaplus:spruce_mosaic", "vanillaplus:warped_mosaic") }}
 
 **Mosaic** is a decorative Block that can be crafted from Slabs of all the available wood types.
 

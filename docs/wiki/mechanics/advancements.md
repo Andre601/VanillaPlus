@@ -1,6 +1,6 @@
 # Advancements
 
-The Server provides its own sets of custom Advancements which can be unlocked while playing on the game.
+The Server provides its own sets of custom Advancements which can be unlocked while playing on the server.
 
 ## Criterias
 

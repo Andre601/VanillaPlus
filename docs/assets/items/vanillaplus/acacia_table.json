@@ -12,8 +12,6 @@
         }
     },
     "name": "Acacia Table",
-    "icon": "table.gif",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_acacia_table",
         "vanillaplus:blue_acacia_table",
@@ -31,5 +29,13 @@
         "vanillaplus:red_acacia_table",
         "vanillaplus:white_acacia_table",
         "vanillaplus:yellow_acacia_table"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        }
+    }
 }

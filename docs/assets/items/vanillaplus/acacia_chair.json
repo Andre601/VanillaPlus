@@ -9,8 +9,6 @@
         }
     },
     "name": "Acacia Chair",
-    "icon": "chair.gif",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_acacia_chair",
         "vanillaplus:blue_acacia_chair",
@@ -28,5 +26,13 @@
         "vanillaplus:red_acacia_chair",
         "vanillaplus:white_acacia_chair",
         "vanillaplus:yellow_acacia_chair"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Length": 1,
+            "Height": 1
+        }
+    }
 }

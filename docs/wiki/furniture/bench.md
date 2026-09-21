@@ -1,4 +1,4 @@
-{{ infobox("vanillaplus:bench") }}
+{{ infobox("vanillaplus:acacia_bench", "vanillaplus:bamboo_bench", "vanillaplus:birch_bench", "vanillaplus:cherry_bench", "vanillaplus:crimson_bench", "vanillaplus:dark_oak_bench", "vanillaplus:jungle_bench", "vanillaplus:mangrove_bench", "vanillaplus:oak_bench", "vanillaplus:pale_oak_bench", "vanillaplus:spruce_bench", "vanillaplus:warped_bench") }}
 
 # Bench
 

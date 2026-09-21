@@ -12,7 +12,6 @@
         }
     },
     "name": "Oak Table",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_oak_table",
         "vanillaplus:blue_oak_table",
@@ -30,5 +29,13 @@
         "vanillaplus:red_oak_table",
         "vanillaplus:white_oak_table",
         "vanillaplus:yellow_oak_table"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        }
+    }
 }

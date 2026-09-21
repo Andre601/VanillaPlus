@@ -12,7 +12,6 @@
         }
     },
     "name": "Cherry Table",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_cherry_table",
         "vanillaplus:blue_cherry_table",
@@ -30,5 +29,13 @@
         "vanillaplus:red_cherry_table",
         "vanillaplus:white_cherry_table",
         "vanillaplus:yellow_cherry_table"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        }
+    }
 }

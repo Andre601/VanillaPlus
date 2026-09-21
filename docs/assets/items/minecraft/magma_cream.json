@@ -1,0 +1,9 @@
+{
+    "name": "Magma Cream",
+    "crafting": {
+        "ingredients": {
+            "1": "vanillaplus:magma_jelly"
+        },
+        "shapeless": true
+    }
+}

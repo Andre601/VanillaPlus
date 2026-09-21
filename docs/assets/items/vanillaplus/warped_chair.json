@@ -9,7 +9,6 @@
         }
     },
     "name": "Warped Chair",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_warped_chair",
         "vanillaplus:blue_warped_chair",
@@ -27,5 +26,13 @@
         "vanillaplus:red_warped_chair",
         "vanillaplus:white_warped_chair",
         "vanillaplus:yellow_warped_chair"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Length": 1,
+            "Height": 1
+        }
+    }
 }

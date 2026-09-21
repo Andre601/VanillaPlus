@@ -1,4 +1,4 @@
-{{ infobox("vanillaplus:office_table") }}
+{{ infobox("vanillaplus:acacia_office_table", "vanillaplus:bamboo_office_table", "vanillaplus:birch_office_table", "vanillaplus:cherry_office_table", "vanillaplus:crimson_office_table", "vanillaplus:dark_oak_office_table", "vanillaplus:jungle_office_table", "vanillaplus:mangrove_office_table", "vanillaplus:oak_office_table", "vanillaplus:pale_oak_office_table", "vanillaplus:spruce_office_table", "vanillaplus:warped_office_table") }}
 
 # Office Table
 

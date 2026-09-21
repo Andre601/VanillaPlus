@@ -9,7 +9,6 @@
         }
     },
     "name": "Spruce Chair",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_spruce_chair",
         "vanillaplus:blue_spruce_chair",
@@ -27,5 +26,13 @@
         "vanillaplus:red_spruce_chair",
         "vanillaplus:white_spruce_chair",
         "vanillaplus:yellow_spruce_chair"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Length": 1,
+            "Height": 1
+        }
+    }
 }

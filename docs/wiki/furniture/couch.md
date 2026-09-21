@@ -1,4 +1,4 @@
-{{ infobox("vanillaplus:couch") }}
+{{ infobox("vanillaplus:acacia_couch", "vanillaplus:bamboo_couch", "vanillaplus:birch_couch", "vanillaplus:cherry_couch", "vanillaplus:crimson_couch", "vanillaplus:dark_oak_couch", "vanillaplus:jungle_couch", "vanillaplus:mangrove_couch", "vanillaplus:oak_couch", "vanillaplus:pale_oak_couch", "vanillaplus:spruce_couch", "vanillaplus:warped_couch") }}
 
 # Couch
 

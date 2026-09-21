@@ -1,4 +1,4 @@
-{{ infobox("vanillaplus:chair") }}
+{{ infobox("vanillaplus:acacia_chair", "vanillaplus:bamboo_chair", "vanillaplus:birch_chair", "vanillaplus:cherry_chair", "vanillaplus:crimson_chair", "vanillaplus:dark_oak_chair", "vanillaplus:jungle_chair", "vanillaplus:mangrove_chair", "vanillaplus:oak_chair", "vanillaplus:pale_oak_chair", "vanillaplus:spruce_chair", "vanillaplus:warped_chair") }}
 
 # Chair
 

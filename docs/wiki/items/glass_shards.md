@@ -1,6 +1,6 @@
 # Glass Shards
 
-{{ infobox("vanillaplus:glass_shards") }}
+{{ infobox("vanillaplus:glass_shard", "vanillaplus:black_glass_shard", "vanillaplus:blue_glass_shard", "vanillaplus:brown_glass_shard", "vanillaplus:cyan_glass_shard", "vanillaplus:gray_glass_shard", "vanillaplus:green_glass_shard", "vanillaplus:light_blue_glass_shard", "vanillaplus:light_gray_glass_shard", "vanillaplus:lime_glass_shard", "vanillaplus:magenta_glass_shard", "vanillaplus:orange_glass_shard", "vanillaplus:pink_glass_shard", "vanillaplus:purple_glass_shard", "vanillaplus:red_glass_shard", "vanillaplus:white_glass_shard", "vanillaplus:yellow_glass_shard") }}
 
 **Glass Shards** are items that can be dropped from [[mc:Glass]], [[mc:Glass Pane|Glass Panes]], [[mc:Stained Glass]] or [[mc:Stained Glass Pane|Stained Glass Panes]] if mined without a tool enchanted with Silk Touch.
 

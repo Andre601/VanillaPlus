@@ -12,7 +12,6 @@
         }
     },
     "name": "Spruce Table",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_spruce_table",
         "vanillaplus:blue_spruce_table",
@@ -30,5 +29,13 @@
         "vanillaplus:red_spruce_table",
         "vanillaplus:white_spruce_table",
         "vanillaplus:yellow_spruce_table"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        }
+    }
 }

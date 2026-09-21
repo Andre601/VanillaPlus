@@ -12,7 +12,6 @@
         }
     },
     "name": "Cherry Couch",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_cherry_couch",
         "vanillaplus:blue_cherry_couch",
@@ -30,5 +29,14 @@
         "vanillaplus:red_cherry_couch",
         "vanillaplus:white_cherry_couch",
         "vanillaplus:yellow_cherry_couch"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Lenght": 1,
+            "Height": 1
+        },
+        "connectable": "Yes"
+    }
 }

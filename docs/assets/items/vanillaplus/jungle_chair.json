@@ -9,7 +9,6 @@
         }
     },
     "name": "Jungle Chair",
-    "stack_size": 64,
     "variants": [
         "vanillaplus:black_jungle_chair",
         "vanillaplus:blue_jungle_chair",
@@ -27,5 +26,13 @@
         "vanillaplus:red_jungle_chair",
         "vanillaplus:white_jungle_chair",
         "vanillaplus:yellow_jungle_chair"
-    ]
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "hitbox": {
+            "Width": 1,
+            "Length": 1,
+            "Height": 1
+        }
+    }
 }

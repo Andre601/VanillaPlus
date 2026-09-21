@@ -1,13 +1,17 @@
 {
     "crafting": {
         "ingredients": {
-            "2": "cobblestone",
-            "3": "cobblestone",
-            "4": "cobblestone",
+            "2": "any_stone_tier_block",
+            "3": "any_stone_tier_block",
+            "4": "any_stone_tier_block",
             "6": "stick",
             "9": "stick"
         }
     },
     "name": "Stone Scythe",
-    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<dark_green>1 Attack Damage\n<dark_green>2 Attack Speed"
+    "lore": "<gray>Can break a <aqua>3x3x3 Area\n<gray>of harvestable Crops.\n\n<gray>When in Main Hand:\n<dark_green>1 Attack Damage\n<dark_green>2 Attack Speed",
+    "attributes": {
+        "stack_size": 1,
+        "durability": 131
+    }
 }
