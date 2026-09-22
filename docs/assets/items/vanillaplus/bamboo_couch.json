@@ -37,6 +37,6 @@
             "Lenght": 1,
             "Height": 1
         },
-        "connectable": "Yes"
+        "connectable": true
     }
 }
