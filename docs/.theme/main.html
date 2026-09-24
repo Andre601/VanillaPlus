@@ -3,32 +3,98 @@
 {% block extrahead %}
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
-    <meta property="og:title" content="{{ page.meta.title }} - {{ title }}" />
-    <meta name="twitter:title" content="{{page.meta.title }} - {{ title }}" />
+    {% set title = page.meta.title ~ " - " ~ config.site_name %}
   {% elif page and page.title and not page.is_homepage %}
-    <meta property="og:title" content="{{ title }} - {{ page.title | striptags }}" />
-    <meta name="twitter:title" content="{{ title }} - {{ page.title | striptags }}" />
-  {% else %}
-    <meta property="og:title" content="{{ title }}" />
-    <meta name="twitter:title" content="{{ title }}" />
+    {% set title = title ~ " - " ~ page.title|striptags %}
   {% endif %}
-  
+
+  <meta property="og:title" content="{{ title }}">
+  <meta name="twitter:title" content="{{ title }}">
+
+  {% set description = config.site_description %}
   {% if page and page.meta and page.meta.description %}
-    <meta property="og:description" content="{{ page.meta.description }}" />
-    <meta name="twitter:description" content="{{ page.meta.description }}" />
-  {% else %}
-    <meta property="og:description" content="{{ config.site_description }}" />
-    <meta name="twitter:description" content="{{ config.site_description }}" />
+    {% set description = page.meta.description %}
   {% endif %}
-  <meta name="theme-color" content="#757575">
+
+  <meta property="og:description" content="{{ description }}">
+  <meta name="twitter:description" content="{{ description }}">
+
+  <meta name="theme-color" content="#2C8904">
+
+  {% set icon = config.site_url|url ~ "assets/img/favicons/android-chrome-512x512.png" %}
+  {% if page and page.meta and page.meta.item_icon %}
+    {% set icon = config.site_url|url ~ "assets/img/icons/" ~ page.meta.item_icon ~ ".png" %}
+  {% endif %}
   
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.canonical_url }}" />
-  <meta property="og:image" content="{{ config.site_url | url }}assets/img/favicon/android-chrome-512x512.png" />
+  <meta property="og:image" content="{{ icon }}" />
   <meta property="og:image:type" content="image/png" />
   
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="Andre_601" />
-  <meta name="twitter:image" content="{{ config.site_url | url }}assets/img/favicon/android-chrome-512x512.png" />
+  <meta name="twitter:image" content="{{ icon }}" />
 
+  <script id="discord:component-embed" type="application/json">{
+    "component": {
+      "type": 17,
+      "accent_color": 2918660,
+      "components": [
+        {
+          "type". 9,
+          "accessory": {
+            "type": 11,
+            "media": {
+              "url": "{{ icon }}"
+            },
+            "description": "Page Logo"
+          },
+          "components": [
+            {
+              "type": 10,
+              "content": "## [{{ title }}]({{ page.canonical_url }})"
+            },
+            {
+              "type": 10,
+              "content": "{{ description }}"
+            }
+          ]
+        },
+        {
+          "type": 14,
+          "divider": true,
+          "spacing": 1
+        },
+        {
+          "type": 1,
+          "components": [
+            {
+              "type": 2,
+              "style": 5,
+              "label": "Main Site",
+              "emoji": null,
+              "disabled": false,
+              "url": "{{ config.site_url | url }}"
+            },
+            {
+              "type": 2,
+              "style": 5,
+              "label": "About",
+              "emoji": null,
+              "disabled": false,
+              "url": "{{ config.site_url | url }}about"
+            },
+            {
+              "type": 2,
+              "style": 5,
+              "label": "Wiki",
+              "emoji": null,
+              "disabled": false,
+              "url": "{{ config.site_url | url }}wiki"
+            }
+          ]
+        }
+      ]
+    }
+  }</script>
 {% endblock extrahead %}
