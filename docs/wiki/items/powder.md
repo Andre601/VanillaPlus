@@ -1,3 +1,8 @@
+---
+description: "Powder is an item that exists for Bauxite, Copper, Gold and Iron. It can be crafted from the Raw ores using the Mortar and allows you to double the ingot produce you usually get from a raw ore."
+item_icon: vanillaplus/iron_powder
+---
+
 # Powder
 
 {{ infobox("vanillaplus:bauxite_powder", "vanillaplus:copper_powder", "vanillaplus:gold_powder", "vanillaplus:iron_powder") }}

@@ -1,3 +1,8 @@
+---
+description: "Raw Bauxite is an item obtained from Bauxite Ore that can be smelted into Aluminum Ingots."
+item_icon: vanillaplus/raw_bauxite
+---
+
 # Raw Bauxite
 
 {{ infobox("vanillaplus:raw_bauxite") }}

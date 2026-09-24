@@ -1,6 +1,11 @@
-{{ infobox("vanillaplus:acacia_bench", "vanillaplus:bamboo_bench", "vanillaplus:birch_bench", "vanillaplus:cherry_bench", "vanillaplus:crimson_bench", "vanillaplus:dark_oak_bench", "vanillaplus:jungle_bench", "vanillaplus:mangrove_bench", "vanillaplus:oak_bench", "vanillaplus:pale_oak_bench", "vanillaplus:spruce_bench", "vanillaplus:warped_bench") }}
+---
+description: "Bench is a furniture that can be placed and allow players to sit on it."
+item_icon: vanillaplus/oak_bench
+---
 
 # Bench
+
+{{ infobox("vanillaplus:acacia_bench", "vanillaplus:bamboo_bench", "vanillaplus:birch_bench", "vanillaplus:cherry_bench", "vanillaplus:crimson_bench", "vanillaplus:dark_oak_bench", "vanillaplus:jungle_bench", "vanillaplus:mangrove_bench", "vanillaplus:oak_bench", "vanillaplus:pale_oak_bench", "vanillaplus:spruce_bench", "vanillaplus:warped_bench") }}
 
 **Bench** is a furniture that can be placed and allow players to sit on it.  
 When placed next to each other will the benches of the same type connect similar to Stairs in Minecraft.

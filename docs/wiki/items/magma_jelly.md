@@ -1,3 +1,8 @@
+---
+description: "Magma Jelly is an item that can be obtained when fishing in Lava Lakes in the Nether using the Iron Fishing Rod."
+item_icon: vanillaplus/magma_jelly
+---
+
 # Magma Jelly
 
 {{ infobox("vanillaplus:magma_jelly") }}

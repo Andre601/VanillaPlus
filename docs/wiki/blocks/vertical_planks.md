@@ -1,3 +1,8 @@
+---
+description: "Vertical Planks is a decorative block that can be crafted from 3 Planks of the same Wood type. It exists for all wood types."
+item_icon: vanillaplus/oak_vertical_planks
+---
+
 # Vertical Planks
 
 {{ infobox("vanillaplus:acacia_vertical_planks", "vanillaplus:bamboo_vertical_planks", "vanillaplus:birch_vertical_planks", "vanillaplus:cherry_vertical_planks", "vanillaplus:crimson_vertical_planks", "vanillaplus:dark_oak_vertical_planks", "vanillaplus:jungle_vertical_planks", "vanillaplus:mangrove_vertical_planks", "vanillaplus:oak_vertical_planks", "vanillaplus:pale_oak_vertical_planks", "vanillaplus:spruce_vertical_planks", "vanillaplus:warped_vertical_planks") }}

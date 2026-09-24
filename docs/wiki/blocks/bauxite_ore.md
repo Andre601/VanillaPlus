@@ -1,3 +1,8 @@
+---
+description: "Bauxite Ore is a mineral block typically found underground. It is a source of Raw Bauxite, which can be smelted into Aluminum Ingots."
+item_icon: vanillaplus/bauxite_ore
+---
+
 # Bauxite Ore
 
 {{ infobox("vanillaplus:bauxite_ore") }}

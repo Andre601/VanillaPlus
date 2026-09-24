@@ -1,3 +1,8 @@
+---
+description: "Baked Apple is a food item that can be obtained by cooking an Apple in the Furnace, Smoker or on a Campfire."
+item_icon: vanillaplus/baked_apple
+---
+
 # Baked Apple
 
 {{ infobox("vanillaplus:baked_apple") }}

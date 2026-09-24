@@ -5,7 +5,7 @@
   {% if page and page.meta and page.meta.title %}
     {% set title = page.meta.title ~ " - " ~ config.site_name %}
   {% elif page and page.title and not page.is_homepage %}
-    {% set title = title ~ " - " ~ page.title|striptags %}
+    {% set title = page.title|striptags ~ " - " ~ title %}
   {% endif %}
 
   <meta property="og:title" content="{{ title }}">
@@ -22,9 +22,6 @@
   <meta name="theme-color" content="#2C8904">
 
   {% set icon = config.site_url|url ~ "assets/img/favicons/android-chrome-512x512.png" %}
-  {% if page and page.meta and page.meta.item_icon %}
-    {% set icon = config.site_url|url ~ "assets/img/icons/" ~ page.meta.item_icon ~ ".png" %}
-  {% endif %}
   
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.canonical_url }}" />
@@ -41,7 +38,7 @@
       "accent_color": 2918660,
       "components": [
         {
-          "type". 9,
+          "type": 9,
           "accessory": {
             "type": 11,
             "media": {
@@ -59,41 +56,24 @@
               "content": "{{ description }}"
             }
           ]
-        },
+        }{% if page and page.meta and page.meta.item_icon %},
         {
           "type": 14,
           "divider": true,
           "spacing": 1
         },
         {
-          "type": 1,
-          "components": [
+          "type": 12,
+          "items": [
             {
-              "type": 2,
-              "style": 5,
-              "label": "Main Site",
-              "emoji": null,
-              "disabled": false,
-              "url": "{{ config.site_url | url }}"
-            },
-            {
-              "type": 2,
-              "style": 5,
-              "label": "About",
-              "emoji": null,
-              "disabled": false,
-              "url": "{{ config.site_url | url }}about"
-            },
-            {
-              "type": 2,
-              "style": 5,
-              "label": "Wiki",
-              "emoji": null,
-              "disabled": false,
-              "url": "{{ config.site_url | url }}wiki"
+              "media": {
+                "url": {{ (config.site_url | url ~ "assets/img/icons/" ~ page.meta.item_icon ~ ".png") | tojson }}
+              },
+              "description": "Image of {{ page.meta.item_icon }}",
+              "spoiler": false
             }
           ]
-        }
+        }{% endif %}
       ]
     }
   }</script>

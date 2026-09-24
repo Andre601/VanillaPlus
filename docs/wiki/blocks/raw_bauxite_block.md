@@ -1,3 +1,8 @@
+---
+description: "Block of Raw Bauxite is a block crafted from Raw Bauxite."
+item_icon: vanillaplus/raw_bauxite_block
+---
+
 # Block of raw Bauxite
 
 {{ infobox("vanillaplus:raw_bauxite_block") }}

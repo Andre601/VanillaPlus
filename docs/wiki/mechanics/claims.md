@@ -1,3 +1,7 @@
+---
+description: "Claims is a Server mechanic allowing a Player to claim a 3x3 Chunks area in the main world to build in."
+---
+
 # Claims
 
 **Claims** is a Server mechanic allowing a Player to claim a `3x3` chunks area in the main world to build in.

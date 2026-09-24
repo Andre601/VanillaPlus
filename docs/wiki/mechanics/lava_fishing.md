@@ -1,3 +1,7 @@
+---
+description: "Lava Fishing is a unique mechanic, allowing you to fish in Lava in the Nether Dimension using a Iron Fishing Rod."
+---
+
 # Lava Fishing
 
 **Lava Fishing** is a unique mechanic, allowing you to fish in Lava in the Nether Dimension using a [[Iron Fishing Rod]].

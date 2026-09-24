@@ -1,6 +1,10 @@
+---
+description: "The Server adds custom tags that are used for various features."
+---
+
 # Tags
 
-VanillaPlus adds custom tags that are used for various features.  
+The Server adds custom tags that are used for various features.  
 This page lists all the currently existing custom tags and the items, blocks, etc. they apply to.
 
 ## Block Tags

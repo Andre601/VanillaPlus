@@ -1,6 +1,10 @@
+---
+description: "The Server provides its own sets of custom Advancements which can be unlocked while playing."
+---
+
 # Advancements
 
-The Server provides its own sets of custom Advancements which can be unlocked while playing on the server.
+The Server provides its own sets of custom Advancements which can be unlocked while playing.
 
 ## Criterias
 

@@ -1,3 +1,7 @@
+---
+description: "The Server adds the ability to sort items in a chest by using the Middle mouse button in any slot of the chest inventory."
+---
+
 # Chest Sorting
 
 /// warning | Known limitations

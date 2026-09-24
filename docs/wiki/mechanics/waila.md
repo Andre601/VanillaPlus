@@ -1,6 +1,10 @@
+---
+description: "WAILA (What Am I Looking At) is a Server Mechanic displaying information about the block the player is currently looking at."
+---
+
 # WAILA
 
-**WAILA** (**W**hat **a**m **I** **l**ooking **a**t) is a Server mechanic displaying information about the block the player is currently looking at.
+**WAILA** (**W**hat **A**m **I** **L**ooking **A**t) is a Server mechanic displaying information about the block the player is currently looking at.
 
 ## Usage
 

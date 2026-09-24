@@ -1,6 +1,11 @@
-{{ infobox("vanillaplus:trashcan") }}
+---
+description: "Trashcan is a furniture that allows a player to open an inventory to dispose of items they no longer need.
+item_icon: vanillaplus/trashcan
+---
 
 # Trashcan
+
+{{ infobox("vanillaplus:trashcan") }}
 
 **Trashcan** is a furniture that allows a player to open an inventory to dispose of items they no longer need.
 

@@ -1,3 +1,8 @@
+---
+description: "Totem of Experience is an item that upon a player's death, stores their XP, allowing it to be retrieved to regain all their lost XP."
+item_icon: vanillaplus/totem_of_experience
+---
+
 # Totem of Experience
 
 {{ infobox("vanillaplus:totem_of_experience", "vanillaplus:totem_of_experience_active") }}

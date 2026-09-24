@@ -1,8 +1,13 @@
+---
+description: "Iron Bow is a Weapon that has the same features as the normal Bow, but increased durability."
+item_icon: vanillaplus/iron_bow
+---
+
 # Iron Bow
 
 {{ infobox("vanillaplus:iron_bow") }}
 
-**Iron Bow** is a Weapon that has the same features as the normal bow, but increased durability.
+**Iron Bow** is a Weapon that has the same features as the normal Bow, but increased durability.
 
 ## Obtaining
 

@@ -1,3 +1,8 @@
+---
+description: "Scythe is a tool that allows you to harvest multiple crops and plants simultaneously."
+item_icon: vanillaplus/wooden_scythe
+---
+
 # Scythe
 
 {{ infobox("vanillaplus:wooden_scythe", "vanillaplus:stone_scythe", "vanillaplus:golden_scythe", "vanillaplus:copper_scythe", "vanillaplus:iron_scythe", "vanillaplus:diamond_scythe", "vanillaplus:netherite_scythe") }}

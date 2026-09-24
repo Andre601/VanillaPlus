@@ -1,3 +1,8 @@
+---
+description: "Crushed Ender Pearl is an item used to craft the Teleport Crystal."
+item_icon: vanillaplus/crushed_ender_pearl
+---
+
 # Crushed Ender Pearl
 
 {{ infobox("vanillaplus:crushed_ender_pearl") }}

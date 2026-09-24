@@ -1,3 +1,8 @@
+---
+description: "Aluminum Ingot is an item used in various crafting recipes such as the Aluminum Hammer or the Trashcan."
+item_icon: vanillaplus/aluminum_ingot
+---
+
 # Aluminum Ingot
 
 {{ infobox("vanillaplus:aluminum_ingot") }}

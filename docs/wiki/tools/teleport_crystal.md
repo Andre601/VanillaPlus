@@ -1,3 +1,8 @@
+---
+description: "Teleport Crystal is an item that allows you to save a location to later teleport back to."
+item_icon: vanillaplus/teleport_crystal
+---
+
 # Teleport Crystal
 
 {{ infobox("vanillaplus:teleport_crystal") }}

@@ -1,6 +1,11 @@
-{{ infobox("vanillaplus:acacia_chair", "vanillaplus:bamboo_chair", "vanillaplus:birch_chair", "vanillaplus:cherry_chair", "vanillaplus:crimson_chair", "vanillaplus:dark_oak_chair", "vanillaplus:jungle_chair", "vanillaplus:mangrove_chair", "vanillaplus:oak_chair", "vanillaplus:pale_oak_chair", "vanillaplus:spruce_chair", "vanillaplus:warped_chair") }}
+---
+description: "Chair is a furniture that can be placed and allow players to sit on it.
+item_icon: vanillaplus/white_oak_chair
+---
 
 # Chair
+
+{{ infobox("vanillaplus:acacia_chair", "vanillaplus:bamboo_chair", "vanillaplus:birch_chair", "vanillaplus:cherry_chair", "vanillaplus:crimson_chair", "vanillaplus:dark_oak_chair", "vanillaplus:jungle_chair", "vanillaplus:mangrove_chair", "vanillaplus:oak_chair", "vanillaplus:pale_oak_chair", "vanillaplus:spruce_chair", "vanillaplus:warped_chair") }}
 
 **Chair** is a furniture that can be placed and allow players to sit on it.
 

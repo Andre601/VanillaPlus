@@ -1,6 +1,10 @@
+---
+description: "The Server modifies the loot table of Chicken, allowing them to drop Feathers instead of an egg at times."
+---
+
 # Chicken Loot
 
-The Server modifies the loot table of Chicken, allowing them to drop [[mc:feather|Feathers]] instead of an egg.
+The Server modifies the loot table of Chicken, allowing them to drop [[mc:Feather|Feathers]] instead of an egg at times.
 
 ## How it works
 

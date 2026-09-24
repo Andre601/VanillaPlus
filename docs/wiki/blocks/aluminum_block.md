@@ -1,3 +1,8 @@
+---
+description: "Block of Aluminum is a block crafted from Aluminum Ingots."
+item_icon: vanillaplus/aluminum_block
+---
+
 # Block of Aluminum
 
 {{ infobox("vanillaplus:aluminum_block") }}

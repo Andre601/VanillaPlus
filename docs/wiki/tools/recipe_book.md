@@ -1,3 +1,8 @@
+---
+description: "Recipe Book is an item that opens the recipes GUI."
+item_icon: vanillaplus/recipe_book
+---
+
 # Recipe Book
 
 {{ infobox("vanillaplus:recipe_book") }}

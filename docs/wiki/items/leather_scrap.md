@@ -1,3 +1,8 @@
+---
+description: "Leather Scrap is an item made from smelting Rotten Flesh. It can be crafted into Leather."
+item_icon: vanillaplus/leather_scrap
+---
+
 # Leather Scrap
 
 {{ infobox("vanillaplus:leather_scrap") }}

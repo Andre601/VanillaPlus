@@ -1,3 +1,8 @@
+---
+description: "Iron Fisging Rod is an upgraded variant of the normal Fishing Rod, providing higher durability."
+item_icon: vanillaplus/iron_fishing_rod
+---
+
 # Iron Fishing Rod
 
 {{ infobox("vanillaplus:iron_fishing_rod") }}

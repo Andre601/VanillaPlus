@@ -1,3 +1,8 @@
+---
+description: "Mortar is an item that can be used to craft Bone Meal, Dyes or other selective items with twice the output they usually yield in their vanilla recipe."
+item_icon: vanillaplus/mortar
+---
+
 # Mortar
 
 {{ infobox("vanillaplus:mortar") }}

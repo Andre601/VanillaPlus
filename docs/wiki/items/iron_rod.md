@@ -1,3 +1,8 @@
+---
+description: "Iron Rod is an item that can be crafted from 2 Iron Ingots."
+item_icon: vanillaplus/iron_rod
+---
+
 # Iron Rod
 
 {{ infobox("vanillaplus:iron_rod") }}

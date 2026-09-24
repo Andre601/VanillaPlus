@@ -1,6 +1,11 @@
-{{ infobox("vanillaplus:acacia_couch", "vanillaplus:bamboo_couch", "vanillaplus:birch_couch", "vanillaplus:cherry_couch", "vanillaplus:crimson_couch", "vanillaplus:dark_oak_couch", "vanillaplus:jungle_couch", "vanillaplus:mangrove_couch", "vanillaplus:oak_couch", "vanillaplus:pale_oak_couch", "vanillaplus:spruce_couch", "vanillaplus:warped_couch") }}
+---
+description: "Couch is a furniture that can be placed and allow players to sit on it."
+item_icon: vanillaplus/white_oak_couch
+---
 
 # Couch
+
+{{ infobox("vanillaplus:acacia_couch", "vanillaplus:bamboo_couch", "vanillaplus:birch_couch", "vanillaplus:cherry_couch", "vanillaplus:crimson_couch", "vanillaplus:dark_oak_couch", "vanillaplus:jungle_couch", "vanillaplus:mangrove_couch", "vanillaplus:oak_couch", "vanillaplus:pale_oak_couch", "vanillaplus:spruce_couch", "vanillaplus:warped_couch") }}
 
 **Couch** is a furniture that can be placed and allow players to sit on it.
 When placed next to each other will the benches of the same type connect similar to Stairs in Minecraft.
