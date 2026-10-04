@@ -6,6 +6,8 @@ nav:
     - wiki/index.md
     - Blocks:
       - wiki/blocks/*
+    - Food:
+      - wiki/food/*
     - Furniture:
       - wiki/furniture/*
     - Items:

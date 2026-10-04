@@ -8,5 +8,6 @@
 # Ignore IML
 /VanillaPlus.iml
 
-# Ignore Pycache
+# Ignore Pycache and venv
 docs/.macros/__pycache__/
+venv/

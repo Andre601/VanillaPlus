@@ -1,0 +1,10 @@
+{
+    "name": "Cherry",
+    "attributes": {
+        "stack_size": 64,
+        "restores": {
+            "Hunger": 3,
+            "Saturation": 2
+        }
+    }
+}

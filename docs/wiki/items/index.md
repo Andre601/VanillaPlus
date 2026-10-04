@@ -12,10 +12,6 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
 -   ### [[Aluminum Ingot]]
     
     Aluminum Ingot is an item used in various crafting recipes such as the [[Aluminum Hammer]] or the [[Trashcan]].
-
--   ### [[Baked Apple]]
-    
-    Baked Apple is a food item that can be obtained by cooking an Apple in the Furnace or Smoker.
     
 -   ### [[Crushed Ender Pearl]]
     
@@ -28,10 +24,6 @@ VanillaPlus contains various Items that can be obtained naturally or through oth
 -   ### [[Iron Rod]]
     
     Iron Rod is an item that can be crafted from 2 Iron Ingots.
-
--   ### [[Lava Carp]]
-    
-    Lava Carp is a consumable item that can be obtained when fishing in Lava Lakes in the Nether using the [[Iron Fishing Rod]].
 
 -   ### [[Leather Scrap]]
     
